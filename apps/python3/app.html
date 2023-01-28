@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="brython.css">
+<script src="brython.js"></script>
+<script src="brython_stdlib.js"></script>
+<body onload="brython(1)">
+    <table id="banner" cellpadding="0" cellspacing="0">
+        <tbody><tr id="banner_row"></tr>
+    </tbody></table>
+    <textarea id="code" class="codearea" rows="20" cols="80"></textarea>
+    <div id="content"></div>
+    <script type="text/python3">
+        from interpreter import Interpreter
+        Interpreter("code")
+    </script>
+    <style id="brython-interpreter">
+        .brython-interpreter {
+            background-color: #000;
+            color: #fff;
+            font-family: consolas, courier;
+        }
+    </style>
+</body>

