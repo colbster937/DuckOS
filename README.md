@@ -7,7 +7,7 @@
 <a href="https://twitter.com/ACompleteNewb"><img height="30px" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"><img></a>
 </p>
 <h1 align="center">AtlasOS</h1>
-<h5 align="center">AtlasOS, formerly DucKOS is a online web-based operating system writted mostly with Java and HTML. Proxy backend from Ultraviolet<br>App store is coming soon, and put some app suggestions in Issues</h5>
+<h5 align="center">AtlasOS, formerly DucKOS is a online web-based operating system written mostly with Java and HTML. Proxy backend from Ultraviolet<br>App store is coming soon, and put some app suggestions in Issues</h5>
 <h1 align="center">About this Project</h1>
 There are alot of other web-based OSes on github; tough I never found one that really suited my needs. So I decided to take matters into my own hands, thus creating AtlasOS. Of course, AtlasOS can never replace your real operating system, this is just something I created for fun, and might even make a little money by selling it at school lol
 <h1 align="center">Usage</h1>
