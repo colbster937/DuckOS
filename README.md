@@ -9,7 +9,7 @@
 <h1 align="center">AtlasOS</h1>
 <h5 align="center">AtlasOS, formerly DucKOS is a online web-based operating system writted mostly with Java and HTML. Proxy backend from Ultraviolet<br>App store is coming soon, and put some app suggestions in Issues</h5>
 <h1 align="center">About this Project</h1>
-There are alot of other web-based OSes on github; tough I never found one that really suited my needs. So I decided to take matters into my own hands, thus creating DuckOS. Of course, DuckOS can never replace your real operating system, this is just something I created for fun, and might even make a little money by selling it at school lol
+There are alot of other web-based OSes on github; tough I never found one that really suited my needs. So I decided to take matters into my own hands, thus creating AtlasOS. Of course, AtlasOS can never replace your real operating system, this is just something I created for fun, and might even make a little money by selling it at school lol
 <h1 align="center">Usage</h1>
 Just use this as you usually would on your own computer, but enjoy the extra apps you can't on a chromebook! (And, if you noticed, the proxies) Enter fullscreen with F11 or the fullscreen button on your chromebook for the best experience.<br><h4>Website blocked?</h4><br>You can host the website by yourself, with your own domain that you can register from freenom.com, by cloning this repository and linking it to your Netlify account. Further instructions won't be neccessary since it will be on Netlify
 <h1 align="center">Showcase Images</h1>
