@@ -1,6 +1,6 @@
 {
     "applications": [
-        {"name": "About DuckOS", "icon": "apps/about/icon.ico", "path": "apps/about"},
+        {"name": "About AtlasOS", "icon": "apps/about/icon.ico", "path": "apps/about"},
         {"name": "Calculator", "icon": "apps/calculator/icon.png", "path": "apps/calculator"},
         {"name": "Browser (Ultraviolet)", "icon": "apps/proxy/icon.png", "path": "apps/proxy"},
         {"name": "Discord", "icon": "apps/discord/icon.png", "path": "apps/discord"},
