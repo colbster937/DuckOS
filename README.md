@@ -14,5 +14,5 @@ There are alot of other web-based OSes on github; tough I never found one that r
 Just use this as you usually would on your own computer, but enjoy the extra apps you can't on a chromebook! (And, if you noticed, the proxies) Enter fullscreen with F11 or the fullscreen button on your chromebook for the best experience.<br><h4>Website blocked?</h4><br>You can host the website by yourself, with your own domain that you can register from freenom.com, by cloning this repository and linking it to your Netlify account. Further instructions won't be neccessary since it will be on Netlify
 <h1 align="center">Showcase Images</h1>
 <p align="center">
-<img src="https://github.com/ChainedTears/AtlasOS/raw/main/showcase1.png">
+<img src="https://github.com/GikitSRC/AtlasOS/raw/main/showcase1.png">
 </p>
