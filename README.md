@@ -1,5 +1,5 @@
 <p align="center">
-<img width="120px" src="https://github.com/ChainedTears/DuckOS/raw/main/duckos.png">
+<img width="120px" src="https://github.com/GikitSRC/DuckOS/raw/main/duckos.png">
 </p>
 <p align="center">
 <a href="https://discord.gg/2JbtU5HnrY"><img height="30px" src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white"><img></a>
