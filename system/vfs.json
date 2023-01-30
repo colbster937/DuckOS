@@ -57,8 +57,8 @@
         "7": "Sunday"
     },
     "sysinfo": {
-        "osname": "DuckOS RC-2",
+        "osname": "AtlasOS Stable V3",
         "version": "3.0-RC",
-        "repo": "https://github.com/ChainedTears"
+        "repo": "https://github.com/GikitSRC/"
     }
 }
