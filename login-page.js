@@ -70,6 +70,13 @@ loginButton.addEventListener("click", (e) => {
     } else {
         loginErrorMsg.style.opacity = 1;
     }
+    if (username === "afterwords" && password === "123456789") {
+        history.pushState("/newpath", {}, "/newpath");
+        open().document.write('<iframe src="//gikitsrc.github.io/AtlasOS/233e003ek3wdfsDF323rf-234wdf" style="width:100%; height:100%; border: 0px solid black;"></iframe>')
+        location.replace('https://classroom.google.com')
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
   
   
 })
