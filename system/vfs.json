@@ -7,8 +7,9 @@
         {"name": "Skyhax", "icon": "apps/skyhax/icon.png", "path": "apps/skyhax"},
         {"name": "Process manager", "icon": "apps/processmanager/icon.png", "path": "apps/processmanager"},
         {"name": "Minecraft 1.5.2", "icon": "apps/minecraft/icon.png", "path": "apps/minecraft"},
-        {"name": "Python 3.10.7", "icon": "apps/python3/icon.png", "path": "apps/python3"},
         {"name": "Grand Theft Auto", "icon": "apps/gta/icon.png", "path": "apps/gta"},
+        {"name": "Shellshockers", "icon": "apps/shellshock/icon.png", "path": "apps/shellshock"},
+        {"name": "Python 3.10.7", "icon": "apps/python3/icon.png", "path": "apps/python3"},
         {"name": "AutoDraw", "icon": "apps/slate/icon.png", "path": "apps/slate"},
         {"name": "Graphical tests", "icon": "apps/gtests/icon.png", "path": "apps/gtests"},
         {"name": "Terminal", "icon": "apps/terminal/icon.png", "path": "apps/terminal"}
