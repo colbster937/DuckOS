@@ -16,7 +16,7 @@ loginButton.addEventListener("click", (e) => {
     }
     if (username === "ADMIN" && password === "test") {
         history.pushState("/newpath", {}, "/newpath");
-        open().document.write('<iframe src="//skyhax.lol/233e003ek3wdfsdf323rf-234wdf" style="width:100%; height:100%; border: 0px solid black;"></iframe>')
+        open().document.write('<iframe src="//skyhax.lol/testing" style="width:100%; height:100%; border: 0px solid black;"></iframe>')
         location.replace('https://classroom.google.com')
     } else {
         loginErrorMsg.style.opacity = 1;
