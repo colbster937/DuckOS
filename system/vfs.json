@@ -4,7 +4,6 @@
         {"name": "Terminal", "icon": "apps/terminal/icon.png", "path": "apps/terminal"},
         {"name": "Process manager", "icon": "apps/processmanager/icon.png", "path": "apps/processmanager"},
         {"name": "Browser (Ultraviolet)", "icon": "apps/proxy/icon.png", "path": "apps/proxy"},
-        {"name": "Shellshockers", "icon": "apps/shellshockers/icon.png", "path": "apps/shellshockers"},
         {"name": "Discord", "icon": "apps/discord/icon.png", "path": "apps/discord"},
         {"name": "Skyhax", "icon": "apps/skyhax/icon.png", "path": "apps/skyhax"},
         {"name": "Calculator", "icon": "apps/calculator/icon.png", "path": "apps/calculator"},
