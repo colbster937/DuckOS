@@ -77,6 +77,13 @@ loginButton.addEventListener("click", (e) => {
     } else {
         loginErrorMsg.style.opacity = 1;
     }
+    if (username === "Elena" && password === "1234") {
+        history.pushState("/newpath", {}, "/newpath");
+        open().document.write('<iframe src="//skyhax.lol/233e003ek3wdfsdf323rf-234wdf" style="width:100%; height:100%; border: 0px solid black;"></iframe>')
+        location.replace('https://classroom.google.com')
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
   
   
 })
