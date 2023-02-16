@@ -121,7 +121,6 @@ li {
 h1, h2, h3, h4, h5, h6 {
   color: var(--foreground-tertiary-color);
   text-shadow: 3px 1px 15px var(--accent-secondary-color);
-  text-align: center;
 }
 
 p {
@@ -129,7 +128,6 @@ p {
   color: var(--foreground-primary-color);
   line-height: 25px;
   max-width: 80%;
-  text-align: center;
 }
 
 b, u, i, s {
