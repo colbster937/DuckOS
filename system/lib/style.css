@@ -115,7 +115,7 @@ li {
 }
 
 .hamburger:hover {
-  cursor: poDelius;
+  cursor: pointer;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -192,7 +192,7 @@ button {
   padding-right: 15px;
   padding-left: 15px;
   transition: 0.3s;
-  cursor: poDelius;
+  cursor: pointer;
   margin: 10px;
 }
 
@@ -211,7 +211,7 @@ button:hover {
   border-radius: 10px;
   padding-right: 15px;
   padding-left: 15px;
-  cursor: poDelius;
+  cursor: pointer;
   transition: 0.15s, border 0s;
 }
 
@@ -326,7 +326,7 @@ input[type="file"] {
   border-radius: 10px;
   padding: 13px;
   transition: 0.3s;
-  cursor: poDelius;
+  cursor: pointer;
 }
 
 .file-selector:hover {
@@ -353,7 +353,7 @@ input[type="file"] {
 
 .slider {
   position: absolute;
-  cursor: poDelius;
+  cursor: pointer;
   top: 0;
   left: 0;
   right: 0;
@@ -450,7 +450,7 @@ code {
 .checkbox-container input {
   position: absolute;
   opacity: 0;
-  cursor: poDelius;
+  cursor: pointer;
 }
 
 .checkbox-mark {
@@ -462,7 +462,7 @@ code {
   background-color: transparent;
   border: 1.5px var(--background-secondary-color) solid;
   border-radius: 5px;
-  cursor: poDelius;
+  cursor: pointer;
   transition: 0.3s;
 }
 
@@ -521,7 +521,7 @@ code {
   border: 1.5px var(--background-secondary-color) solid;
   border-radius: 50%;
   transition: 0.3s;
-  cursor: poDelius;
+  cursor: pointer;
 }
 
 .radio-container input:checked ~ .radio-mark {
