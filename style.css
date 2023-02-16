@@ -1,0 +1,56 @@
+ @font-face { font-family: Delius; src: url('Delius-Regular.ttf'); } 
+ button {
+    width: 300px;
+    height: 40px;
+    border-radius: 25px;
+    background: linear-gradient(to right, #003049, #006064, #009080, #00B09C, #00D0B8);
+    transition: background 0.5s ease;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    font-family: Delius;
+    margin-bottom: 10px;
+    margin-top: 10px;  
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+button:hover {
+    background: linear-gradient(to right, #5900ff, #ff0019, #ff00a2, #ae00ff, #002aff);
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+  }
+
+  button:hover::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #51014e, #ff0000, #0033ff, #ff00ae, #ffe0e0, #90EE90);
+    z-index: -1;
+    transition: all 1s ease;
+    transform: rotate(45deg);
+  }
+body {
+  background-color: black;
+}
+h1, p {
+  color: lime;
+  font-family: Delius;
+  text-align: center;
+}
+a {
+  color: white;
+  font-family: Delius;
+  text-align: center;
+}
+hr {
+  background-color: lime;
+  color: lime;
+  border-color: red;
+}
