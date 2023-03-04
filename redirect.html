@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>DuckOS Redirect</title>
+  <link href="https://unpkg.com/movement.css/movement.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Delius:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Rock+Salt:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius:wght@400;700&display=swap');
+:root {
+  --font-family: 'Delius', Open-Sans;
+  --background-primary-color: #18181a;
+  --background-secondary-color: #292929;
+  --foreground-primary-color: #b8b8b8;
+  --foreground-secondary-color: white;
+  --foreground-tertiary-color: orange;
+  --accent-primary-color: orange;
+  --accent-secondary-color: #ff4405;
+}
+body {
+  text-align: center;
+  cursor: url("https://w7.pngwing.com/pngs/476/443/png-transparent-reticle-computer-icons-cursor-miscellaneous-angle-symmetry-thumbnail.png"), auto;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+  background-image: url("/media/background.gif") 
+}
+h1, h2, h3, h4, h5, img {
+  font-family: "Delius";
+  text-align: center;
+  color: white;
+}
+h6 {
+  font-family: "Delius";
+}
+p {
+  font-family: "Delius";
+  text-align: center;
+  color: white;
+}
+img {
+  border-radius: 30px;
+  border-color: black;
+  border: 5px solid yellow;
+}
+/* Image grow */
+.grow img{
+  transition: 1s ease;
+}
+.grow img:hover{
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease;
+  text-align: center;
+}
+button {
+  text-align: center;
+  align-self: center;
+  font-family: var(--font-family);
+  background: linear-gradient(90deg, var(--accent-primary-color), var(--accent-secondary-color));
+  color: var(--foreground-secondary-color);
+  border: none;
+  font-size: 20px;
+  min-width: 150px;
+  max-width: 300px;
+  height: 100px;
+  border-radius: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  transition: 0.3s;
+  cursor: pointer;
+  margin: 10px;  
+}
+button:hover {
+  box-shadow: 3px 1px 15px var(--accent-secondary-color);
+}
+
+.aim {
+  cursor:url(/media/aim.cur),auto;}
+}
+  </style>
+</head>
+
+<body>
+  <div data-m="bounce-down" data-m-duration="3" data-m-delay="1">
+    <h1>DuckOS</h1>
+    <p><b>Thank you for logging in. What do you want to do?</b></p>
+    <a href="/233e003ek3wdfsdf323rf-234wdf.html"><button>Open DuckOS without about:blank</button></a><br>
+    <button onclick="aboutb()">Open with about:blank</button>
+
+   <script>
+      function aboutb(){
+         history.pushState("/newpath", {}, "/newpath");
+        open().document.write('<iframe src="//skyhax.lol/233e003ek3wdfsdf323rf-234wdf" frameborder="0" style="width:100%; height:100%; border: 0px solid black;"></iframe>')
+        location.replace('https://classroom.google.com')
+      }
+   </script>
+    <hr>
+    <h2>What is about:blank?</h2>
+    <p>It's a exploit found; that when you open a page like that, it will GoGuardian or any<br>other extensions can't read the page.</p>
+    </div>
+</body>
+
+</html>
