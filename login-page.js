@@ -8,9 +8,7 @@ loginButton.addEventListener("click", (e) => {
     const password = loginForm.password.value;
 
     if (username === "Arthur" && password === "()()123()") {
-        history.pushState("/newpath", {}, "/newpath");
-        open().document.write('<iframe src="//skyhax.lol/233e003ek3wdfsdf323rf-234wdf" frameborder="0" style="width:100%; height:100%; border: 0px solid black;"></iframe>')
-        location.replace('https://classroom.google.com')
+        open("/redirect.html")
     } else {
         loginErrorMsg.style.opacity = 1;
     }
