@@ -51,7 +51,6 @@ body {
     -ms-user-select: none;       /* Internet Explorer/Edge */
     user-select: none;
     overflow: hidden !important;
-    opacity: 0;
     transition: 0.2s;
 }
 .screen {
@@ -93,10 +92,11 @@ body {
     height: calc(100% - 35px);
     overflow: auto;
     border-radius: var(--var-window-content-radius);
+    transition: 0.2s;
 }
 .window .content[uns] {
     pointer-events: none;
-    /*opacity: 0.7;*/
+    /*transform: rotate(180deg);*/
 }
 .buttons div {
     width: 14px;
@@ -377,6 +377,8 @@ p {
 .optionchance .opdesc {
     font-size: 14px;
     color: #727272;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .optionchance[selected] { background: #6159e3; border-bottom: 1px solid #6159e3; }
 .optionchance[selected] .optitle { color: white; }
@@ -451,6 +453,7 @@ p {
     padding: 15px;
     right: -100%;
     transition: 0.2s;
+    display: none;
 }
 .notsblock {
     background: #222a2ef2;
@@ -564,4 +567,256 @@ textarea[term] {
 textarea[term]::selection {
     background: rgb(168, 168, 168);
     color: rgb(0, 0, 0);
+}
+
+.freezeinter {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    background-color: #1a1f22;
+}
+.freezeouter {
+    position: relative;
+    height: 100%;
+    background-color: #1a1f22;
+}
+.freezeui {
+    min-height: 100%;
+    background-color: #1a1f22;
+    margin-bottom: 45px;
+}
+.freezeui .cover {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 0px 0px 12px 12px;
+}
+.freezeui .avatar {
+    width: 120px;
+    object-fit: cover;
+    border-radius: 100px;
+    margin-top: -80px;
+    height: 120px;
+    border: 4px solid #1a1f22;
+}
+.freezeui .centred {
+    text-align: center;
+}
+.freezeui .name {
+    font-size: 20px;
+    color: rgb(233, 233, 233);
+    font-weight: 600;
+    margin-top: 2px;
+}
+.freezeui .nickname {
+    font-size: 16px;
+    color: rgb(168, 168, 168);
+    font-weight: 500;
+    margin-top: -4px;
+}
+.freezeui .bar {
+    position: absolute;
+    bottom: -1px;
+    border-top: 1px solid #272f33;
+    width: 100%;
+    display: flex;
+    background-color: #1a1f22;
+    border-radius: 0px 0px 4px 4px;
+}
+.freezeui .bar .cat {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+.freezeui .blockl {
+    width: 100%;
+    display: flex;
+    padding: 0px 10px;
+    margin-top: 5px;
+}
+.freezeui .blockl .chain {
+    padding: 3px;
+    width: 50%;
+}
+.freezeui .full {
+    width: 100%;
+    padding: 0px 13px;
+    margin-top: 10px;
+}
+.freezeui .textbox {
+    background-color: #242c30;
+    border-radius: 5px;
+    padding: 10px 10px 8px 10px;
+    text-align: left;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 500;
+}
+.freezeui .blockl .chain .block {
+    background-color: #090b0c;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    font-weight: 800;
+    border-radius: 5px;
+    color: lightgrey;
+    font-size: 20px;
+}
+.freezeui .blockl .chain .block .small {
+    font-size: 14px;
+    margin: 0px;
+    color: rgb(124 124 124);
+    margin-top: -5px;
+    font-weight: 600;
+}
+.freezeui .banner {
+    background-color: #25292a;
+    padding: 5px 16px;
+    padding-bottom: 4px;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.freezeui .posts {
+    border-top: 1px solid #262d31;
+    margin-top: 10px;
+    text-align: left;
+}
+.freezeui .posts .p10 {
+    padding: 1rem;
+    border-bottom: 1px solid #262d31;
+    padding-bottom: 10px;
+    background: transparent;
+    display: inline-block;
+    width: 100%;
+    transition: 0.2s;
+}
+.freezeui .posts .p10 .postav {
+    object-fit: cover;
+    border-radius: 5px;
+    width: 42px;
+    height: 42px;
+}
+.freezeui .posts .p10 .userq {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: -3px;
+    margin-top: -3px;
+    color: #e1e1e1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.freezeui .posts .p10 ewq {
+    font-weight: 500;
+    color: #515970;
+}
+.freezeui .posts .p10 .postcont {
+    float: right;
+    width: calc(100% - 55px);
+}
+.freezeui .posts .p10 .posttitle {
+    color: white;
+    font-weight: 500;
+}
+.freezeui .posts .p10 .title {
+    font-weight: 500;
+    line-height: 20px;
+    color: #fbfbfb;
+    margin-top: 5px;
+    word-break: break-word;
+}
+.freezeui .posts .p10 .posttitle img {
+    width: auto;
+    max-width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+.freezeui .posts .p10 .hashtags {
+    color: #84898f;
+}
+.freezeui .posts #userlist {
+    padding: 0.4rem 1rem;
+    border-bottom: none;
+}
+.freezeui .posts [circleavatar] {
+    object-fit: cover;
+    border-radius: 50% !important;
+}
+.freezeui .posts #userlist .userq {
+    line-height: 20px;
+    padding-top: 11px;
+    margin: 0px;
+}
+[tracklists] {
+    border-top: 1px solid #424242;
+    height: 300px;
+    overflow: auto;
+    background: var(--var-window-background);
+    padding: 15px;
+    padding-bottom: 5px;
+}
+[tracklists] .tracktitle {
+    margin-bottom: 15px;
+}
+[searchlist] {
+    border-top: 1px solid #424242;
+    background: var(--var-window-background);
+    height: auto;
+    padding: 9px 15px 7px 15px;
+}
+[searchlist] div {
+    display: inline-block;
+    margin-right: 4px;
+    color: #757575;
+}
+[searchlist] input {
+    background: transparent;
+    border: none;
+    outline: none !important;
+    color: white;
+}
+[searchapps] {
+    border-bottom: 1px solid #424242;
+    background: var(--var-window-background);
+    height: auto;
+    padding: 9px 15px 7px 15px;
+}
+[searchapps] div {
+    display: inline-block;
+    margin-right: 4px;
+    color: #757575;
+}
+[searchapps] input {
+    background: transparent;
+    border: none;
+    outline: none !important;
+    color: white;
+}
+[appslist] {
+    height: 480px;
+    overflow: auto;
+    background: var(--var-window-background);
+}
+.store_app_preview {
+    padding: 15px;
+    background: #2f3c42;
+    padding-bottom: 4px;
+    padding-top: 11px;
+    border-bottom: 1px solid #4a4a4a;
+}
+[bgtrans] {
+    background: transparent;
+    width: 46px;
+    height: 46px;
+    margin-right: 15px;
+}
+[bolder] {
+    font-weight: 600;
 }
