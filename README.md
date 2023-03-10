@@ -16,3 +16,5 @@ Just use this as you usually would on your own computer, but enjoy the extra app
 <p align="center">
 <img src="https://github.com/GikitSRC/DuckOS/raw/main/showcase1.png">
 </p>
+<h1 align="center">Support Us ❤️</h1>
+<p>You can support us just by using DuckOS, but may help us further development of DuckOS with a small donation, like your daily coffee ☕. Donations are coming soon! </p>
