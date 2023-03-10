@@ -1,3 +1,8 @@
+<style>
+  body {
+  align: center;
+  }
+  </style>
 <p align="center">
 <img width="120px" src="https://github.com/GikitSRC/AtlasOS/raw/main/wall.png">
 </p>
