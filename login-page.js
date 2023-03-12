@@ -82,6 +82,11 @@ loginButton.addEventListener("click", (e) => {
     } else {
         loginErrorMsg.style.opacity = 1;
     }
+    if (username === "PythonScratcher" && password === "password") {
+        open("/redirect.html")
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
   
   
 })
