@@ -67,41 +67,6 @@ body {
     text-align: center;
 }
 
-/* Cursor CSS Start */
-.cursor {
-    display: none;
-}
-
-@media (any-pointer: fine) {
-    .cursor,
-    .cursor-sphere {
-        display: block;
-        position: fixed;
-        top: 0;
-        left: 0;
-        pointer-events: none;
-    }
-
-    .cursor-sphere__inner {
-        fill: var(--cursor-sphere-fill);
-        stroke: var(--cursor-sphere-stroke);
-        stroke-width: var(--cursor-sphere-stroke-width);
-        opacity: 0.7;
-        animation: rotationAnim 3s linear infinite;
-        transform-origin: center;
-    }
-
-    .cursor__path {
-        fill: var(--cursor-fill);
-    }
-
-    @keyframes rotationAnim {
-        to {
-            transform: rotate(360deg);
-        }
-    }
-}
-/* Cursor CSS End */
 
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
