@@ -11,6 +11,7 @@
         {"name": "Python 3.10.7", "icon": "apps/python3/icon.png", "path": "apps/python3"},
         {"name": "Process manager", "icon": "apps/processmanager/icon.png", "path": "apps/processmanager"},
         {"name": "Terminal", "icon": "apps/terminal/icon.png", "path": "apps/terminal"}
+        {"name": "Meowzie's Adventure 3", "icon": "apps/MeowzieAdventureThree/icon.png", "path": "apps/MeowzieAdventureThree"}
     ],
     "vmem": {
         "windows": [],
@@ -56,8 +57,8 @@
         "7": "Sunday"
     },
     "sysinfo": {
-        "osname": "DuckOS Stable V4",
-        "version": "3.0-RC",
+        "osname": "DuckOS Stable V4.1",
+        "version": "4.1",
         "repo": "https://github.com/GikitSRC/"
     }
 }
