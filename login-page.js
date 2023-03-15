@@ -87,6 +87,10 @@ loginButton.addEventListener("click", (e) => {
     } else {
         loginErrorMsg.style.opacity = 1;
     }
-  
+      if (username === "Meowie_Gamer" && password === "meowmameowmeow") {
+        open("/redirect.html")
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
   
 })
