@@ -8,13 +8,11 @@
 </p>
 <h1 align="center">What Is DuckOS?</h1>
 <h5 align="center">An Operating System. A Internet Proxy. A tool used by students. And more! We focus mainly on exploiting Chromebooks™ and putting a stop to internet censorship once and for all. Enjoy using your computer completely without restrictions, limits and with the (probably) fastest internet proxy [[Rammerhead]] and the (based on opinion) best games you can play on the internet right now. {Sneak peak: Minecraft!} <br>Start your uncensored internet journey with a quck now by using DuckOS, while supporting us paid or free. 🦆</h5>
-<h1 align="center">About this Project</h1>
-There are alot of other web-based OSes on github; tough I never found one that really suited my needs. So I decided to take matters into my own hands, thus creating DuckOS. Of course, DuckOS can never replace your real operating system, this is just something I created for fun, and might even make a little money by selling it at school lol
-<h1 align="center">Usage</h1>
-Just use this as you usually would on your own computer, but enjoy the extra apps you can't on a chromebook! (And, if you noticed, the proxies) Enter fullscreen with F11 or the fullscreen button on your chromebook for the best experience.<br><h4>Website blocked?</h4><br>You can host the website by yourself, with your own domain that you can register from freenom.com, by cloning this repository and linking it to your Netlify account. Further instructions won't be neccessary since it will be on Netlify
+<h2 align="center">Blocked? It's alright! Host DuckOS by yourself.</h2>
+<h5 align="center">Alright! Let's start with explaining how school filters work (Most of them)<br>Most filters are either on the wifi router or a chrome extension, like iBoss, Securely, and GoGuardian. They auto-block sites by looking up the website's keywords, description, title and their domains in general for blacklisted words, and sometimes if you get caught on a site by a teacher the teacher, hypothetically, can report the site to the filter they use, to get it blocked. In that case, you would need a new domain.<br>So now that you understand, let's get on to the hosting part. You can host with multiple services: Repl, Glitch, Github, or any other static site hosting services that's unblocked by your school. It's very easy, you probably won't even need a guide but if you do, I'll put buttons and instructions down below.</h5>
 <h1 align="center">Showcase Images</h1>
 <p align="center">
 <img src="https://github.com/GikitSRC/DuckOS/raw/main/showcase.png">
 </p>
 <h1 align="center">Support Us ❤️</h1>
-<p align="center">You can support us just by using DuckOS, but may help us further development of DuckOS with a small donation, like your daily coffee ☕. <br>Donations are coming soon! </p>
+<p align="center">Whoa... You actually scrolled down here? <br> You can support us just by using DuckOS, free or not <br> But... If you really love the project, you can donate! <br> Donations are coming soon, they will be just like your daily coffee ☕</p>
