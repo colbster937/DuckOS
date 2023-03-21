@@ -6,8 +6,8 @@
 <a href="https://github.com/GikitSRC"><img height="30px" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"><img></a>
 <a href="https://twitter.com/ACompleteNewb"><img height="30px" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"><img></a>
 </p>
-<h1 align="center">DuckOS</h1>
-<h5 align="center">DuckOS is a operating system that can be ran fully from your browser. We focus mainly on exploiting Chromebooks™ and putting a stop to internet censorship once and for all. Enjoy using your computer completely without restrictions, limits and with the (probably) fastest internet proxy [[Rammerhead]] and the (based on opinion) best games you can play on the internet right now. {Sneak peak: Minecraft!} <br>Start your uncensored internet journey with a quck now by using DuckOS, while supporting us paid or free. 🦆</h5>
+<h1 align="center">What Is DuckOS?</h1>
+<h5 align="center">An Operating System. A Internet Proxy. A tool used by students. And more! We focus mainly on exploiting Chromebooks™ and putting a stop to internet censorship once and for all. Enjoy using your computer completely without restrictions, limits and with the (probably) fastest internet proxy [[Rammerhead]] and the (based on opinion) best games you can play on the internet right now. {Sneak peak: Minecraft!} <br>Start your uncensored internet journey with a quck now by using DuckOS, while supporting us paid or free. 🦆</h5>
 <h1 align="center">About this Project</h1>
 There are alot of other web-based OSes on github; tough I never found one that really suited my needs. So I decided to take matters into my own hands, thus creating DuckOS. Of course, DuckOS can never replace your real operating system, this is just something I created for fun, and might even make a little money by selling it at school lol
 <h1 align="center">Usage</h1>
