@@ -15,7 +15,7 @@
 <img src="https://github.com/GikitSRC/DuckOS/raw/main/showcase.png">
 </p>
 <h1 align="center">Support Us ❤️</h1>
-<p align="center">Whoa... You actually scrolled down here? <br> You can support us just by using DuckOS, free or not <br> But... If you really love the project, you can donate! <br>Tysm, they will be just like your daily coffee ☕</p>
+<p align="center">Whoa... You actually scrolled down here? <br> You can support us just by using DuckOS, free or not <br> But... If you really love the project, you can donate! (Pretty please 🥺) <br>They will be just like your daily coffee ☕</p>
 <h1 align="center">Crypto Donations</h1>
 BTC: <em>1YwNwARrQUuLhxHZSPrnHhwhEZkdf4Hk6</em><br>
 BCH: <em>qzhwwlmqgh33g2k23m57yazy6mjz5ux2kc48lwjxw4</em><br>
