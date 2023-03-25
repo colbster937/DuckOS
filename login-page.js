@@ -1,1 +1,101 @@
-function _0x5615(_0x15d1a0,_0x2ed01a){const _0x2e4436=_0x2e44();return _0x5615=function(_0x5615f8,_0x4233dd){_0x5615f8=_0x5615f8-0xf5;let _0x3f6320=_0x2e4436[_0x5615f8];return _0x3f6320;},_0x5615(_0x15d1a0,_0x2ed01a);}const _0x61e0ab=_0x5615;(function(_0x533bd0,_0x51e61c){const _0x4ba38e=_0x5615,_0x12b428=_0x533bd0();while(!![]){try{const _0x2a918d=-parseInt(_0x4ba38e(0x119))/0x1*(-parseInt(_0x4ba38e(0x121))/0x2)+parseInt(_0x4ba38e(0x107))/0x3*(-parseInt(_0x4ba38e(0x102))/0x4)+-parseInt(_0x4ba38e(0x110))/0x5*(parseInt(_0x4ba38e(0x108))/0x6)+-parseInt(_0x4ba38e(0x11b))/0x7+-parseInt(_0x4ba38e(0x109))/0x8+parseInt(_0x4ba38e(0xff))/0x9+parseInt(_0x4ba38e(0x11a))/0xa*(parseInt(_0x4ba38e(0x117))/0xb);if(_0x2a918d===_0x51e61c)break;else _0x12b428['push'](_0x12b428['shift']());}catch(_0x598a2a){_0x12b428['push'](_0x12b428['shift']());}}}(_0x2e44,0xa9e41));function _0x2e44(){const _0x5dbbc1=['preventDefault','click','5520036VIJcfU','username','Rushil2009!!','test','Krish','3hNnbGC','7368BQVdyK','6710240QfgKtZ','value','1234','opacity','NeilM','443','Yoshi','25RcCrmQ','Elena','rushilc','login-form','/redirect.html','style','HelloDudWow','2783gzcQUE','97193','612299iXnvjo','56370UiQxZR','2943913oqvlVJ','()()123()','byeadmin','PythonScratcher','4235','getElementById','4zLptKj','g4o2','Bhejafry13@1234','my\x20name','addEventListener','evan','ADMIN','Neel','123456789','password','Marshmallow','login-error-msg','6215418ONVYrG'];_0x2e44=function(){return _0x5dbbc1;};return _0x2e44();}const loginForm=document[_0x61e0ab(0x120)](_0x61e0ab(0x113)),loginButton=document['getElementById']('login-form-submit'),loginErrorMsg=document[_0x61e0ab(0x120)](_0x61e0ab(0xfe));loginButton[_0x61e0ab(0xf7)](_0x61e0ab(0x101),_0x1836ab=>{const _0x2a45cd=_0x61e0ab;_0x1836ab[_0x2a45cd(0x100)]();const _0x5c3686=loginForm[_0x2a45cd(0x103)][_0x2a45cd(0x10a)],_0x13eea7=loginForm['password'][_0x2a45cd(0x10a)];_0x5c3686==='Arthur'&&_0x13eea7===_0x2a45cd(0x11c)?open('/redirect.html'):loginErrorMsg[_0x2a45cd(0x115)][_0x2a45cd(0x10c)]=0x1,_0x5c3686===_0x2a45cd(0xf9)&&_0x13eea7===_0x2a45cd(0x105)?open('/redirect.html'):loginErrorMsg[_0x2a45cd(0x115)][_0x2a45cd(0x10c)]=0x1,_0x5c3686===_0x2a45cd(0x116)&&_0x13eea7==='ERICISALEBA'?open('/redirect.html'):loginErrorMsg[_0x2a45cd(0x115)][_0x2a45cd(0x10c)]=0x1,_0x5c3686===_0x2a45cd(0x10f)&&_0x13eea7===_0x2a45cd(0x118)?open('/redirect.html'):loginErrorMsg['style'][_0x2a45cd(0x10c)]=0x1,_0x5c3686===_0x2a45cd(0x10d)&&_0x13eea7==='123456'?open('/redirect.html'):loginErrorMsg[_0x2a45cd(0x115)][_0x2a45cd(0x10c)]=0x1,_0x5c3686===_0x2a45cd(0xf8)&&_0x13eea7==='123456'?open(_0x2a45cd(0x114)):loginErrorMsg[_0x2a45cd(0x115)][_0x2a45cd(0x10c)]=0x1,_0x5c3686==='ghgi'&&_0x13eea7===_0x2a45cd(0x10e)?open(_0x2a45cd(0x114)):loginErrorMsg[_0x2a45cd(0x115)][_0x2a45cd(0x10c)]=0x1,_0x5c3686===_0x2a45cd(0x122)&&_0x13eea7==='god'?open('/redirect.html'):loginErrorMsg[_0x2a45cd(0x115)][_0x2a45cd(0x10c)]=0x1,_0x5c3686===_0x2a45cd(0xf6)&&_0x13eea7===_0x2a45cd(0x11d)?open('/redirect.html'):loginErrorMsg[_0x2a45cd(0x115)]['opacity']=0x1,_0x5c3686===_0x2a45cd(0xfa)&&_0x13eea7===_0x2a45cd(0x11f)?open(_0x2a45cd(0x114)):loginErrorMsg[_0x2a45cd(0x115)]['opacity']=0x1,_0x5c3686==='afterwords'&&_0x13eea7===_0x2a45cd(0xfb)?open('/redirect.html'):loginErrorMsg[_0x2a45cd(0x115)]['opacity']=0x1,_0x5c3686===_0x2a45cd(0x111)&&_0x13eea7===_0x2a45cd(0x10b)?open(_0x2a45cd(0x114)):loginErrorMsg['style'][_0x2a45cd(0x10c)]=0x1,_0x5c3686==='Momo'&&_0x13eea7===_0x2a45cd(0xfd)?open('/redirect.html'):loginErrorMsg[_0x2a45cd(0x115)][_0x2a45cd(0x10c)]=0x1,_0x5c3686===_0x2a45cd(0x112)&&_0x13eea7===_0x2a45cd(0x104)?open(_0x2a45cd(0x114)):loginErrorMsg['style'][_0x2a45cd(0x10c)]=0x1,_0x5c3686===_0x2a45cd(0x106)&&_0x13eea7===_0x2a45cd(0xf5)?open(_0x2a45cd(0x114)):loginErrorMsg[_0x2a45cd(0x115)]['opacity']=0x1,_0x5c3686===_0x2a45cd(0x11e)&&_0x13eea7===_0x2a45cd(0xfc)?open(_0x2a45cd(0x114)):loginErrorMsg[_0x2a45cd(0x115)][_0x2a45cd(0x10c)]=0x1,_0x5c3686==='Meowie_Gamer'&&_0x13eea7==='meowmameowmeow'?open(_0x2a45cd(0x114)):loginErrorMsg[_0x2a45cd(0x115)][_0x2a45cd(0x10c)]=0x1;});
+const loginForm = document.getElementById("login-form");
+const loginButton = document.getElementById("login-form-submit");
+const loginErrorMsg = document.getElementById("login-error-msg");
+
+loginButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    const username = loginForm.username.value;
+    const password = loginForm.password.value;
+
+    if (username === "Arthur" && password === "()()123()") {
+        open("/redirect.html")
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
+    if (username === "ADMIN" && password === "test") {
+        open("/redirect.html")
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
+    if (username === "HelloDudWow" && password === "ERICISALEBA") {
+        open("/redirect.html")
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
+    if (username === "Yoshi" && password === "97193") {
+        open("/redirect.html")
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
+    if (username === "NeilM" && password === "123456") {
+        open("/redirect.html")
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
+    if (username === "evan" && password === "123456") {
+        open("/redirect.html")
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
+    if (username === "ghgi" && password === "443") {
+        open("/redirect.html")
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
+    if (username === "g4o2" && password === "god") {
+        open("/redirect.html")
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
+    if (username === "my name" && password === "byeadmin") {
+        open("/redirect.html")
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
+    if (username === "Neel" && password === "4235") {
+        open("/redirect.html")
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
+    if (username === "afterwords" && password === "123456789") {
+        open("/redirect.html")
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
+    if (username === "Elena" && password === "1234") {
+        open("/redirect.html")
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
+    if (username === "Momo" && password === "Marshmallow") {
+        open("/redirect.html")
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
+    if (username === "rushilc" && password === "Rushil2009!!") {
+        open("/redirect.html")
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
+    if (username === "Krish" && password === "Bhejafry13@1234") {
+        open("/redirect.html")
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
+    if (username === "PythonScratcher" && password === "password") {
+        open("/redirect.html")
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
+      if (username === "Meowie_Gamer" && password === "meowmameowmeow") {
+        open("/redirect.html")
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
+        if (username === "Inspired" && password === "InspiredIsCool") {
+        open("/redirect.html")
+    } else {
+        loginErrorMsg.style.opacity = 1;
+    }
+  
+})
