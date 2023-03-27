@@ -249,7 +249,7 @@ body {
     width: 300px;
     max-height: 500px;
     top: -100%;
-    transition: 0.2s;
+    transition: 0.3s;
     padding: 12px 0px 12px 0px;
     overflow-y: auto;
 }
@@ -265,6 +265,7 @@ body {
 }
 .taskmenu .package:hover {
     background: #676e7262;
+    border: #000000
 }
 .taskmenu .package img {
     width: 30px;
