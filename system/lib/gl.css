@@ -8,7 +8,7 @@
     --var-window-border-radius: 5px;
     --var-window-header-radius: 2px 2px 0px 0px;
     --var-window-content-radius: 0px 0px 2px 2px;
-    --var-window-anim-transition: 0s;
+    --var-window-anim-transition: 0.3s;
     --var-window-header-fontsize: 14px;
     --var-window-header-color: #f6f6f6;
     --var-window-header-uns-color: #cfcfcf;
