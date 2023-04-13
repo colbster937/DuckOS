@@ -21,3 +21,4 @@ BTC: <em>1YwNwARrQUuLhxHZSPrnHhwhEZkdf4Hk6</em><br>
 BCH: <em>qzhwwlmqgh33g2k23m57yazy6mjz5ux2kc48lwjxw4</em><br>
 DOGE: <em>DKyt9qctXfrk2yAhnS3bPJt4BvQqPZRajg</em><br>
 ETH: <em>0x43aD2Bc29e54D926Dcaf21Eef64C0FaFd3B21708</em><br>
+<h1>I haven't been updating this project cuz I'm working on DuckOS v5 :)</h1>
