@@ -16,10 +16,3 @@ Now that you understand how it works, let's move on to hosting. You can host wit
 
 <p align="center"> <img src="https://github.com/GikitSRC/DuckOS/raw/main/showcase.png"> </p>
 
-<h1 align="center">Support Us ❤️</h1>
-
-<p align="center">Wow, you actually scrolled down here? You can support us just by using DuckOS, whether it's free or not. But if you really love the project, you can donate! (Pretty please 🥺) Your donations will be just like your daily coffee ☕</p>
-
-<h1 align="center">Crypto Donations</h1>
-<h4 align="center">Coming Soon</h4>
-<h1>I haven't been updating this project cuz I'm working on DuckOS v5 :)</h1>
