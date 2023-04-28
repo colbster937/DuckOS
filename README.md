@@ -12,9 +12,9 @@
 
 Now that you understand how it works, let's move on to hosting. You can host with multiple services, such as Repl, Glitch, Github, or any other static site hosting services that are unblocked by your school. It's very easy, and you probably won't even need a guide, but if you do, we'll provide buttons and instructions below.</h5>
 
-<h5 align="center">This Project is now discontinued. We (ok fine i have been but i need people to help me) have been rewriting DuckOS, making it look way better, fixing bugs, just making everything better in general. Refer to <a href="https://github.com/GikitSRC/DuckOS-v5">DuckOS v5</a> for more updates! </h5>
-
 <h1 align="center">Showcase Images</h1>
 
 <p align="center"> <img src="https://github.com/GikitSRC/DuckOS/raw/main/showcase.png"> </p>
+
+<h2 align="center">This Project is now discontinued. We (ok fine i have been but i need people to help me) have been rewriting DuckOS, making it look way better, fixing bugs, just making everything better in general. Refer to <a href="https://github.com/GikitSRC/DuckOS-v5">DuckOS v5</a> for more updates! </h2>
 
