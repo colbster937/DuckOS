@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>DuckOS Landing 🚀</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&family=DM+Sans&family=Lexend&display=swap');
+
+    body {
+      background-color: black;
+      color: white;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: "DM Sans";
+      user-select: none;
+    
+      margin: 0;
+      padding: 0;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    #title {
+      font-family: 'Lexend';
+      font-size: 50px;
+      color: white;
+      padding: 0rem clamp(1rem, 2vw, 3rem);
+      border-radius: clamp(0.4rem, 0.75vw, 1rem);
+      user-select: none;
+      z-index: 9999999999999999999;
+      
+    }
+    
+    #title:hover {
+      background-color: white;
+      color: black;
+      cursor: pointer;
+    }
+
+    .selectbtn {
+      background-color: inherit;
+      width: 300px;
+      height: 28px;
+      border: solid 2px white;
+      font-family: "DM Sans";
+      font-size: 16px;
+      color: white;
+      padding: 8px 0px;
+      box-sizing: content-box;
+      transition: 0.3s;
+      border-radius: 15px;
+      cursor: pointer;
+      z-index: 999999999999999;
+    }
+
+    .selectbtn:hover {
+      scale: 1.05;
+      border-radius: 3px;
+    }
+    section {
+      flex-direction: column;
+      z-index: 9999999999999999999;
+    }
+    #particles-js canvas {
+  display: block;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+  transition: opacity .8s ease, transform 1.4s ease
+}
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.alienhub {
+  margin-top: 30px;
+}
+  </style>
+</head>
+
+<body>
+  <div id="particles-js"></div>
+  <script src="/js/particles.min.js"></script>
+  <script src="/js/particles.js"></script>
+  
+  <section>
+    <h1 data-value="Welcome to DuckOS" id="title">Welcome to DuckOS</h1>
+    <h2>Copied Landing Page from <a href="https://discord.gg/M3J9EmuwBm">Complex</a></h2><br>
+    <button class="selectbtn" onclick="play('/directories/main.html')" style="margin-right: 15px">Open in about:blank</button>
+    <a href="/directories/main.html">
+    <button class="selectbtn" href="https://discord.gg/2JbtU5HnrY">Join Discord Server</button></a><br>
+    <br>
+    <hr class="statshr">
+    <br>
+    <h1>AD</h1>
+    <p>Official Partner: Alienhub. Get 20% off using the code skyhaxlibrary20</p>
+    <iframe src="https://hub.alienhub.xyz/show?utm_medium=complex" scrolling="no" width="450" height="150" frameborder="0" class="alienhub" left="50%" ></iframe>
+    <br>
+    <p>Stop internet censorship with Alienhub - the ultimate unblocking solution.</p>
+  </section>
+  
+  <!-- talking area
+  -->
+  
+  
+  <script>  
+
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+let interval = null;
+
+document.querySelector("#title").onmouseover = event => {  
+  let iteration = 0;
+  
+  clearInterval(interval);
+  
+  interval = setInterval(() => {
+    event.target.innerText = event.target.innerText
+      .split("")
+      .map((letter, index) => {
+        if(index < iteration) {
+          return event.target.dataset.value[index];
+        }
+      
+        return letters[Math.floor(Math.random() * 26)]
+      })
+      .join("");
+    
+    if(iteration >= event.target.dataset.value.length){ 
+      clearInterval(interval);
+    }
+    
+    iteration += 1 / 3;
+  }, 30);
+}
+
+fetch('/data/splashtexts.json')
+  .then(res => res.json())
+  .then(data => {
+    document.querySelector("#splash").innerHTML = data.splashtexts[Math.floor(Math.random() * data.splashtexts.length)];
+  })
+
+  </script>
+  <script>
+    setTimeout(function() {
+    document.getElementById('loader').classList.add('hide');
+    document.body.style.overflow = 'auto';
+    setTimeout(function() {
+        document.getElementById('loader').style.display = 'none';
+    }, 100);
+}, 1000);
+
+fetch('games.json').then(response => response.json()).then(games => {
+    games.forEach(game => {
+        document.getElementById('games').innerHTML += `<div class="item" style="background: url('${game[2]}') 0% 0% / cover;" onclick="play('${game[3]}')"></div>`;
+    });
+});
+
+function play(path) {
+    var url = window.location.origin + path;
+    var newWindow = window.open("about:blank", "_blank");
+    if (newWindow != null) {
+      var newContent = document.createElement("iframe");
+      newContent.src = url;
+      newContent.style.width = "100vw";
+      newContent.style.height = "100vh";
+      newContent.style.border = "none";
+      newContent.style.position = "absolute";
+      newContent.style.top = "0";
+      newContent.style.left = "0";
+      newWindow.document.body.appendChild(newContent);
+    }
+  }  
+  </script>
+</body>
+
+</html>
