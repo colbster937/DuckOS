@@ -1,4 +1,4 @@
-<p align="center"> <img width="400px" src="https://github.com/GikitSRC/DuckOS-v5/blob/main/system/media/DuckOS_image.png?raw=true"> </p>
+<p align="center"> <img width="400px" src="/system/media/DuckOS_image.png?raw=true"> </p>
 <h1 align="center">Experience the 🌍's First Web-Based Operating System with DuckOS v5*</h1>
 <p align="center"> <a href="https://discord.gg/2JbtU5HnrY"><img height="30px" src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white"></a> <a href="https://github.com/GikitSRC"><img height="30px" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a> <a href="https://twitter.com/ACompleteNewb"><img height="30px" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"></a> </p>
 
