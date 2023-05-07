@@ -84,6 +84,11 @@ li {
   font-family: Overlock;
 }
 
+.left h4{
+  padding: 40px;
+  font-size: 20px;
+}
+
 #learn {
   color: white;
   margin: 30px;
