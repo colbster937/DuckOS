@@ -13,9 +13,6 @@
 <p align="center">The world's leading web-based operating system remains unblocked by any hosting services to date! You have the opportunity to host DuckOS independently by forking this repository on Repl.it <a href="https://replit.com/github/GikitSRC/DuckOS-V5">here!</a><br>In the near future, DuckOS will integrate a proxy directly into its system, eliminating the need for iFrame elements. Unfortunately, this means that hosting DuckOS independently will no longer be possible 😔</p>
 
 <h1 align="center">Showcase Images 📷</h1>
-<p align="center"> <img src="/system/media/showcasemainwindow.png"></p>
-<p align="center"> <img src="/system/media/showcaselanding.png"></p>
-<p align="center"> <img src="/system/media/showcasemainsettings.png"></p>
 <p align="center"> <img src="/system/media/showcasemain.png"></p>
 
 <h2 align="center">Enjoying this Project? 😊</h2>
