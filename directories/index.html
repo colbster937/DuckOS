@@ -1,242 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Dekko:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Overlock:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap');
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Dekko:wght@400;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Overlock:wght@400;700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap");
 
-html, body, #iframe-container {
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-body {
-  background-color: black;
-  user-select: none;
-}
-#login-container a {
-  color: red;
-}
-#login-container button {
-  border-radius: 15px;
-  border: 1px solid transparent;
-  background-color: black;
-  padding: 10px;
-  color: white;
-  font-family: Catamaran;
-  transition: all 0.3s ease;
-  user-select: none;
-}
-#login-container button:hover {
-  border-radius: 4px;
-    transform: scale(1.2);
-  background-color: transparent;
-  color: black;
-  border: 1px solid black;
-  cursor: pointer;
-}
-#login-container input {
-  border-radius: 15px;
-  border: 1px solid black;
-  padding: 7px;
-  margin-top: 5px;
-  transition: all 0.3s ease-in-out;
-}
+      html,
+      body,
+      #iframe-container {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: black;
+        user-select: none;
+      }
+      #login-container a {
+        color: red;
+      }
+      #login-container button {
+        border-radius: 15px;
+        border: 1px solid transparent;
+        background-color: black;
+        padding: 10px;
+        color: white;
+        font-family: Catamaran;
+        transition: all 0.3s ease;
+        user-select: none;
+      }
+      #login-container button:hover {
+        border-radius: 4px;
+        transform: scale(1.2);
+        background-color: transparent;
+        color: black;
+        border: 1px solid black;
+        cursor: pointer;
+      }
+      #login-container input {
+        border-radius: 15px;
+        border: 1px solid black;
+        padding: 7px;
+        margin-top: 5px;
+        transition: all 0.3s ease-in-out;
+      }
 
-#login-container input:focus {
-  transform: scale(1.1);
-}
+      #login-container input:focus {
+        transform: scale(1.1);
+      }
 
-#login-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: white;
-   width: 50%;
-  height: 80%;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  justify-content: center;
-  z-index: 99;
-  border-radius: 15px;
-    -webkit-box-shadow: 0px 0px 36px 8px rgba(255,255,255,0.86);
-    -moz-box-shadow: 0px 0px 36px 8px rgba(255,255,255,0.86);
-    box-shadow: 0px 0px 36px 8px rgba(255,255,255,0.86);
-    padding: 15px;
-    text-align: center;
-    font-family: Overlock;
-    overflow-y: auto;
-  scrollbar-width: none;  /* Firefox */
-    -ms-overflow-style: none;  /* IE and Edge */
-}
+      #login-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width: 50%;
+        height: 80%;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        justify-content: center;
+        z-index: 99;
+        border-radius: 15px;
+        -webkit-box-shadow: 0px 0px 36px 8px rgba(255, 255, 255, 0.86);
+        -moz-box-shadow: 0px 0px 36px 8px rgba(255, 255, 255, 0.86);
+        box-shadow: 0px 0px 36px 8px rgba(255, 255, 255, 0.86);
+        padding: 15px;
+        text-align: center;
+        font-family: Overlock;
+        overflow-y: auto;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+      }
 
-.base64-encoder {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #f8f9fa;
-  display: none;
-  padding: 10px;
-  margin-top: 20px;
-  z-index: 99;
-}
-#toggle-encoder-btn {
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-  opacity: 0;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-#iframe-container {
-  z-index: 999999999999999999999;
-  user-select: none;
-}
-#login-form {
-  display: flex;
-  flex-direction: column;
-}
- .loading-page {
-     position: fixed;
-     top: 0;
-     left: 0;
-     right: 0;
-     bottom: 0;
-     background-color: #000000;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     z-index: 999999999999999999999999999999999999999999999999999999999999999999999;
-     opacity: 1;
-     transition: opacity 0.5s ease-out;
-}
- .loading-page img {
-     max-width: 100%;
-     max-height: 100%;
-     object-fit: contain;
-}
- .loading-page.fade-out {
-     opacity: 0;
-}
-  </style>
-  <script src="/psw.js" defer></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-  const loginForm = document.getElementById("login-form");
-  const iframeContainer = document.getElementById("iframe-container");
-  const loginContainer = document.getElementById("login-container");
-  const inputText = document.getElementById("input-text");
-  const outputText = document.getElementById("output-text");
-  const encodeButton = document.getElementById("encode-button");
-  const toggleEncoderBtn = document.getElementById("toggle-encoder-btn");
-  const base64Encoder = document.querySelector(".base64-encoder");
+      .base64-encoder {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f8f9fa;
+        display: none;
+        padding: 10px;
+        margin-top: 20px;
+        z-index: 99;
+      }
+      #toggle-encoder-btn {
+        position: fixed;
+        bottom: 10px;
+        left: 10px;
+        opacity: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      #iframe-container {
+        z-index: 999999999999999999999;
+        user-select: none;
+      }
+      #login-form {
+        display: flex;
+        flex-direction: column;
+      }
+      .loading-page {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 999999999999999999999999999999999999999999999999999999999999999999999;
+        opacity: 1;
+        transition: opacity 0.5s ease-out;
+      }
+      .loading-page img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+      .loading-page.fade-out {
+        opacity: 0;
+      }
+    </style>
+    <script src="/psw.js" defer></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const loginForm = document.getElementById("login-form");
+        const iframeContainer = document.getElementById("iframe-container");
+        const loginContainer = document.getElementById("login-container");
+        const inputText = document.getElementById("input-text");
+        const outputText = document.getElementById("output-text");
+        const encodeButton = document.getElementById("encode-button");
+        const toggleEncoderBtn = document.getElementById("toggle-encoder-btn");
+        const base64Encoder = document.querySelector(".base64-encoder");
 
-  toggleEncoderBtn.addEventListener("click", () => {
-    base64Encoder.style.display = base64Encoder.style.display === "none" ? "block" : "none";
-  });
+        toggleEncoderBtn.addEventListener("click", () => {
+          base64Encoder.style.display =
+            base64Encoder.style.display === "none" ? "block" : "none";
+        });
 
-  loginForm.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const username = event.target.username.value;
-    const password = event.target.password.value;
+        loginForm.addEventListener("submit", (event) => {
+          event.preventDefault();
+          const username = event.target.username.value;
+          const password = event.target.password.value;
 
-    if (validateCredentials(username, password)) {
-      loginContainer.style.display = "none";
-      iframeContainer.style.display = "block";
-    } else {
-      alert("Incorrect username or password");
-    }
-  });
+          if (validateCredentials(username, password)) {
+            loginContainer.style.display = "none";
+            iframeContainer.style.display = "block";
+          } else {
+            alert("Incorrect username or password");
+          }
+        });
 
-  encodeButton.addEventListener("click", () => {
-    const text = inputText.value;
-    const encodedText = btoa(text);
-    outputText.value = encodedText;
-  });
+        encodeButton.addEventListener("click", () => {
+          const text = inputText.value;
+          const encodedText = btoa(text);
+          outputText.value = encodedText;
+        });
 
-  // Hide iFrame container initially
-  iframeContainer.style.display = "none";
-});
+        // Hide iFrame container initially
+        iframeContainer.style.display = "none";
+      });
 
-function validateCredentials(username, password) {
-  const encodedUsername = btoa(username);
-  const encodedPassword = btoa(password);
+      function validateCredentials(username, password) {
+        const encodedUsername = btoa(username);
+        const encodedPassword = btoa(password);
 
-  return credentials.some(
-    (credential) =>
-      credential.username === encodedUsername &&
-      credential.password === encodedPassword
-  );
-}
-window.addEventListener('load', function() {
-    var loadingPage = document.querySelector('.loading-page');
-    var delayTime = localStorage.getItem('delayTime');
-    if (delayTime === null) {
-        // First time user, apply 7000ms delay
-        setTimeout(function() {
-            loadingPage.classList.add('fade-out');
-            setTimeout(function() {
-                loadingPage.style.display = 'none';
+        return credentials.some(
+          (credential) =>
+            credential.username === encodedUsername &&
+            credential.password === encodedPassword
+        );
+      }
+      window.addEventListener("load", function () {
+        var loadingPage = document.querySelector(".loading-page");
+        var delayTime = localStorage.getItem("delayTime");
+        if (delayTime === null) {
+          // First time user, apply 7000ms delay
+          setTimeout(function () {
+            loadingPage.classList.add("fade-out");
+            setTimeout(function () {
+              loadingPage.style.display = "none";
             }, 500);
-        }, 7000);
-        localStorage.setItem('delayTime', '7000');
-    } else {
-        // Returning user, apply 1ms delay
-        setTimeout(function() {
-            loadingPage.classList.add('fade-out');
-            setTimeout(function() {
-                loadingPage.style.display = 'none';
+          }, 7000);
+          localStorage.setItem("delayTime", "7000");
+        } else {
+          // Returning user, apply 1ms delay
+          setTimeout(function () {
+            loadingPage.classList.add("fade-out");
+            setTimeout(function () {
+              loadingPage.style.display = "none";
             }, 500);
-        }, 1);
-    }
-});
-
-  </script>
-</head>
-<body>
-  <div class="loading-page">
-      <img src="/system/media/loading.gif" alt="Loading..."/>
+          }, 1);
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div class="loading-page">
+      <img src="/system/media/loading.gif" alt="Loading..." />
     </div>
-  <div id="login-container">
-    <h1>Welcome to DuckOS!</h1>
-    <p>Please login below to acess DuckOS. You can get an account by requesting one on our <a href="https://discord.gg/2JbtU5HnrY">Discord Server!</a></p>
-    <p>Or you can use DuckOS with ads no login <a href="ads.html">Here!</a></p>
-    <br>
-    <br>
-    <br>
-    <br>
-    <form id="login-form">
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required>
-      <br>
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required>
-      <br>
-      <button type="submit">Login</button>
-    </form>
-    <button id="toggle-encoder-btn">Encoder</button>
-    <div class="base64-encoder">
-      <h3>Encoder</h3>
-      <label for="input-text">Text:</label><br>
-      <input type="text" id="input-text">
-      <br>
-      <br>
-      <button id="encode-button">Encode</button>
-      <br><br>
-      <label for="output-text">Encoded Text:</label><br>
-      <input type="text" id="output-text" readonly>
+    <div id="login-container">
+      <h1>Welcome to DuckOS!</h1>
+      <p>
+        Please login below to acess DuckOS. You can get an account by requesting
+        one on our <a href="https://discord.gg/2JbtU5HnrY">Discord Server!</a>
+      </p>
+      <p>
+        Or you can use DuckOS with ads no login <a href="ads.html">Here!</a>
+      </p>
+      <br />
+      <br />
+      <br />
+      <br />
+      <form id="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+        <br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <br />
+        <button type="submit">Login</button>
+      </form>
+      <button id="toggle-encoder-btn">Encoder</button>
+      <div class="base64-encoder">
+        <h3>Encoder</h3>
+        <label for="input-text">Text:</label><br />
+        <input type="text" id="input-text" />
+        <br />
+        <br />
+        <button id="encode-button">Encode</button>
+        <br /><br />
+        <label for="output-text">Encoded Text:</label><br />
+        <input type="text" id="output-text" readonly />
+      </div>
     </div>
-  </div>
-  <iframe id="iframe-container" src="/directories/landing.html" frameborder="0" style="display:none;"></iframe>
-</body>
+    <iframe
+      id="iframe-container"
+      src="/directories/landing.html"
+      frameborder="0"
+      style="display: none"
+    ></iframe>
+  </body>
 </html>

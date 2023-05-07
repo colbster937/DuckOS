@@ -24,3 +24,15 @@
 
 <h2 align="center">Some text nobody would read 📝</h2>
 <p align="center">DuckOS is a personal project created by Arthur Jiang, and it is not affiliated with any educational institution or organization. The purpose of DuckOS is solely for personal use and educational experimentation. The creator of DuckOS does not endorse or promote any illegal activities, such as internet censorship evasion, and will not be held responsible for any such actions taken by the users of DuckOS. DuckOS is provided as-is, without any warranties or guarantees, and the creator of DuckOS shall not be held liable for any damages or losses arising from the use of DuckOS. If you are a teacher or school administrator, please note that DuckOS is not a school-sanctioned project, and it is solely the product of my personal initiative and creativity.</p>
+
+<h2 align='center'>✨Skyhax Employees✨</h2>
+
+<h2 align="center">
+<a href="https://github.com/GikitSRC">👑Arthur Jiang - CEO and Founder of Skyhax👑</a>
+
+<a href="https://github.com/xDarkAngelXD">🧑🏽‍💻Avaneesh Shetti - Developer(Frontend)🧑🏽‍💻</a>
+
+<a href="https://github.com/MeowPi">😺Meowie Gamer - Github Helper😺</a>
+
+<a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdZdZr5hr5PIQJQUHVWVwI5mrkgAAQLB6eAiL6biQ4Wg&s">👨🏽‍💼Neil Mallu - Advertiser/Salesman👨🏽‍💼</a>
+</h2>
