@@ -65,6 +65,7 @@ body {
   border-radius: 20px;
   font-family: Catamaran;
 }
+
 #heading {
   font-family: Overlock;
   text-align: center;
@@ -82,6 +83,11 @@ li {
   font-size: 20px;
   color: black;
   font-family: Overlock;
+}
+
+.left h4{
+  padding: 40px;
+  font-size: 20px;
 }
 
 #learn {
