@@ -1,5 +1,6 @@
 <p align="center"> <img width="400px" src="/system/media/DuckOS_image.png?raw=true"> </p>
 <h1 align="center">Experience the 🌍's First Web-Based Operating System with DuckOS v5*</h1>
+<p align="center">*ik its not the first its just there for effects yk</p>
 <p align="center"> <a href="https://discord.gg/2JbtU5HnrY"><img height="30px" src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white"></a> <a href="https://github.com/GikitSRC"><img height="30px" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a> <a href="https://twitter.com/ACompleteNewb"><img height="30px" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"></a> </p>
 
 <p align="center">Introducing DuckOS: the world's first web-based operating system crafted purely with HTML, CSS, and JS. It offers an exceptional interface, top-notch apps, and an unmatched user experience. This enhanced version of DuckOS is dedicated to overcoming internet censorship, equipped with advanced proxies, popular games, and more. Embrace the future of web-based operating systems with DuckOS.</p>
