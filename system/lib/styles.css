@@ -1,39 +1,31 @@
-@import url("https://fonts.googleapis.com/css2?family=Dekko:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Overlock:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap");
-
-* {
-  text-decoration: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Dekko:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap');
 
 body {
+  text-align: center;
   background-color: black;
   font-family: Dekko;
   user-select: none;
   color: white;
-  text-align: center;
 }
 
 #navbar {
   color: white;
   width: 95%;
-  height: 80px;
+  height: 2%;
   border: 1px solid white;
   margin: 5px auto 0;
   border-radius: 30px;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 99999;
 }
 
-#slogan {
-  font-size: 30px;
-}
-
 .showcaseimg {
   border-radius: 15px;
-  padding: 10px;
 }
 
 .projectbtn {
@@ -41,64 +33,35 @@ body {
   color: white;
   font-family: Catamaran;
   padding: 15px;
-  margin: 20px;
-  font-size: 15px;
 }
 
 .project {
+  background-color: white;
   color: black;
+  margin-left: 30px;
+  width: 40%;
+  height: auto;
+  border-radius: 15px;
   font-family: Overlock;
   padding-bottom: 10px;
   padding-top: 10px;
-  display: flex;
+  float: left; 
 }
 
-.left {
+.updates {
   background-color: white;
-  margin-right: 20px;
-  border-radius: 20px;
-  text-align: center;
-}
-
-.right {
-  background-color: rgb(173, 173, 173);
-  border-radius: 20px;
-  font-family: Catamaran;
-}
-
-#heading {
-  font-family: Overlock;
-  text-align: center;
-  text-decoration: underline 5px;
-}
-
-#vnum {
-  font-family: Overlock;
-  font-size: 25px;
-  text-align: center;
-}
-
-li {
-  padding: 10px;
-  font-size: 20px;
   color: black;
+  margin-right: 30px;
+  width: 40%;
+  border-radius: 15px;
   font-family: Overlock;
+  padding: 10px;
+  float: right; 
 }
 
-.left h4{
-  padding: 40px;
-  font-size: 20px;
-}
-
-#learn {
-  color: white;
-  margin: 30px;
-  font-size: 30px;
-  text-align: center;
-}
 
 button {
-  background-color: black;
+  background-color: transparent;
   border: 1px solid white;
   color: white;
   padding: 8px;
@@ -119,8 +82,8 @@ button:hover {
   -ms-transform: scale(1);
   transform: scale(1);
   opacity: 1;
-  -webkit-transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
-  transition: opacity 0.8s ease, transform 1.4s ease;
+  -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+  transition: opacity .8s ease, transform 1.4s ease
 }
 
 #particles-js {
