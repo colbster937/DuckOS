@@ -59,6 +59,16 @@ body {
   float: right; 
 }
 
+#slogan{
+  font-size: 30px;
+  padding: 0;
+}
+
+#verified{
+  height: 400px;
+  width: 250px;
+}
+
 
 button {
   background-color: transparent;
