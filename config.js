@@ -3,7 +3,7 @@ const config = {
   buttons: [
     {
       id: 'rammerhead-browser',
-      iframeSrc: 'https://cac.101cc.org/',
+      iframeSrc: 'https://melvin.begreenhome.be/',
       defaultWidth: 50,
       defaultHeight: 80,
       buttonText: 'Rammerhead',
@@ -46,6 +46,15 @@ const config = {
       buttonText: 'Kasm Server',
       windowTitle: 'Kasm. The best thing to ever exist!',
       imgSrc: '/system/media/kasm_icon.png'
+    },
+    {
+      id: 'vscode',
+      iframeSrc: 'https://vscode.dev/',
+      defaultWidth: 50,
+      defaultHeight: 80,
+      buttonText: 'Visual Studio',
+      windowTitle: 'Visual Studio Code',
+      imgSrc: '/system/media/vscode_icon.png'
     }
   ]
 };
