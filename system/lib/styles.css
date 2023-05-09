@@ -67,6 +67,7 @@ body {
 #verified{
   height: 400px;
   width: 250px;
+  border-radius: 15px;
 }
 
 
