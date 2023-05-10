@@ -82,6 +82,7 @@ button {
   z-index: 9999;
   transition: 0.3s;
   cursor: pointer;
+	font-size: 20px;
 }
 button:hover {
   border-radius: 10px;
