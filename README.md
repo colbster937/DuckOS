@@ -8,6 +8,7 @@
 <h2 align="center">DuckOS in the future 🕒</h2>
 <p align="center">What will DuckOS be like in the future? Nobody knows. But here's some things that I'm planning to add to DuckOS when I have more time:</p><br>
 <p align="center">• An app menu, allowing user to remove/add apps to taskbar</p>
+<p align="center">• Proxy Backend & Free Kasm!</p>
 <p align="center">• An more! You can view DuckOS v5's developement on Projects page</p>
 
 <h2 align="center">Deploying DuckOS 🚀</h2>
