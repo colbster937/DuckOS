@@ -30,8 +30,6 @@
 <p align="center">THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
 
 <h2 align="center">Spare me a ☕!</h2>
-<a href="https://ko-fi.com/chainedtears">
-    <img src="https://storage.ko-fi.com/cdn/brandasset/kofi_button_blue.png" alt="Support Me on Ko-fi">
-</a>
+<p align="center"><a align="center" href="https://ko-fi.com/chainedtears">Support me on Ko-Fi!</a></p>
 <p align="center">or...</p>
 <p align="center"><b>Bitcoin Donation Address</b> - bc1qz94gtn5znde3hmpts98fcewqwe26ava8fm00ws</p>
