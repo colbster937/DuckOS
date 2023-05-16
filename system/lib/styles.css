@@ -119,7 +119,7 @@ button:hover {
   background-repeat: no-repeat;
   background-position: center;
   backdrop-filter: blur(3px);
-  color: white;
+  color: black;
   font-family: Catamaran;
   padding: 15px;
 }
