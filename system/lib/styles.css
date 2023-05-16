@@ -117,6 +117,7 @@ button:hover {
   background-image: url('https://moonlight.silvereen.net/src/static/images/moon-light-moon-background.png');
   background-size: fit;
   background-repeat: no-repeat;
+  background-position: center;
   backdrop-filter: blur(3px);
   color: white;
   font-family: Catamaran;
