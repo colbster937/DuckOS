@@ -200,6 +200,13 @@ padding-right: 10px;
     animation: shrink 300ms forwards;
 }
 
+.ml-partner {
+    background: url('https://moonlight.silvereen.net/src/static/images/moon-light-moon-background.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(3px);
+}
+
 .squeeze {
     animation: squeeze 300ms forwards;
 }
