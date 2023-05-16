@@ -115,7 +115,7 @@ button:hover {
 
 .ml-partner {
   background-image: url('https://moonlight.silvereen.net/src/static/images/moon-light-moon-background.png');
-  background-size: auto;
+  background-size: fit;
   background-repeat: no-repeat;
   backdrop-filter: blur(3px);
   color: white;
