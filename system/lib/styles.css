@@ -113,4 +113,12 @@ button:hover {
   z-index: -1111;
 }
 
+.ml-partner {
+  background: url('https://moonlight.silvereen.net/src/static/images/moon-light-moon-background.png');
+  background-size: fill;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(3px);
+  color: white;
+  font-family: Catamaran;
+  padding: 15px;
 
