@@ -21,7 +21,7 @@
 <h2 align='center'>✨Skyhax Contributors✨</h2>
 <p align="center">Arthur Jiang - Founder of Skyhax; sole developer of DuckOS</p>
 <p align="center">Avaneesh Shetti - Front-End developer; Quality of life & Improvements</p>
-<p align="center">Neil Mallu - Didn't really help except for advertising at school 🤷</p>
+<p align="center">Other Contributors - Friends and partners 🤷</p>
 
 
 <h2 align="center">DISCLAIMER 📝</h2>
