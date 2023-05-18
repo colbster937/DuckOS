@@ -117,7 +117,7 @@ $(document).ready(function() {
                   </button>`);
 
         if (buttonConfig.onStart) {
-            createIFrameWindow(buttonConfig); // created ifrem window
+            createIFrameWindow(buttonConfig); // created ifram window
         }
 
         $button.on('click', function() {
@@ -135,9 +135,12 @@ $(document).ready(function() {
 
 
     config.buttons.forEach(buttonConfig => {
-        const $button = createButton(buttonConfig);
-        $('#apps').append($button);
-    });
+  const $button = createButton(buttonConfig);
+  $('#apps').append($button); // Append buttons to the first <div id="apps"></div>
+
+  const $menuapps = createButton(buttonConfig);
+  $('#menuapps').append($menuapps); // Append buttons to the second <div id="apps2"></div>
+});
 
     $('body').on('click', '.minimize-btn', function() {
         $(this).closest('.appwindow').hide();

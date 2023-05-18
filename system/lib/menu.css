@@ -1,52 +1,17 @@
-#appmenu {
-  background-color: white;
-  border: 1px solid black;
-  padding: 10px;
-  width: 200px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: fixed;
+#appsmenu {
+  background-color: #6e6868;
+  width: 50%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none;
-  border-radius: 15px;
-  border: 1px solid transparent;
-  text-align: center;
-}
-
-
-.context-menu {
-  background-color: white;
-  border: 1px solid black;
-  padding: 5px;
-  width: 150px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: absolute;
-  display: none;
-  z-index: 99999;
-}
-
-.appmenubtn {
-  display: inline-block;
-  background-color: rgba(0, 0, 0, 0.8);
-  border: none;
-  border-radius: 15px;
   padding: 10px;
-  color: white;
-  cursor: pointer;
-  user-select: none;
-  z-index: 9999;
-  transition: transform 0.2s ease-in-out;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  display: none;
+  z-index: 999999999999999999;
+  text-align: center;  
 }
-
-
-.appmenubtn:hover {
-  transform: scale(1.15);
-  border-radius: 10px;
-}
-

@@ -26,8 +26,17 @@ const config = {
       defaultWidth: 70,
       defaultHeight: 80,
       buttonText: 'Minecraft',
-      windowTitle: 'EaglerCraft 1.8.8 Beta',
+      windowTitle: 'Eaglercraft Launcher',
       imgSrc: '/system/media/bloxd_icon.png'
+    },
+    {
+      id: 'Calculator',
+      iframeSrc: 'https://www.online-calculator.com/full-screen-calculator/',
+      defaultWidth: 20,
+      defaultHeight: 65,
+      buttonText: 'Calculator',
+      windowTitle: 'Online Calculator',
+      imgSrc: '/system/media/calculator_icon.png'
     },
     {
       id: 'about',
@@ -37,24 +46,6 @@ const config = {
       buttonText: 'About Page',
       windowTitle: 'Learn about DuckOS!',
       imgSrc: '/system/media/about_icon.png'
-    },
-    {
-      id: 'kasmserver',
-      iframeSrc: '/apps/kasm/index.html',
-      defaultWidth: 50,
-      defaultHeight: 80,
-      buttonText: 'Kasm Server',
-      windowTitle: 'Kasm. The best thing to ever exist!',
-      imgSrc: '/system/media/kasm_icon.png'
-    },
-    {
-      id: 'vscode',
-      iframeSrc: 'https://vscode.dev/',
-      defaultWidth: 50,
-      defaultHeight: 80,
-      buttonText: 'Visual Studio',
-      windowTitle: 'Visual Studio Code',
-      imgSrc: '/system/media/vscode_icon.png'
     }
   ]
 };

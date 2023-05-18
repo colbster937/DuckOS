@@ -20,3 +20,11 @@ window.addEventListener('load', function() {
         }, 1);
     }
 });
+function isMobileDevice () {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+function redirectMobile() {
+  if (isMobileDevice)) {
+    window.location.href = "/directories/mobile.html"
+  }
+}

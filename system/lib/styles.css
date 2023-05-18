@@ -33,6 +33,7 @@ body {
   color: white;
   font-family: Catamaran;
   padding: 15px;
+	margin: 8px;
 }
 
 .project {
@@ -61,7 +62,6 @@ body {
 
 #slogan{
   font-size: 30px;
-  padding: 0;
 }
 
 .partners {
@@ -113,13 +113,17 @@ button:hover {
   z-index: -1111;
 }
 
-.ml-partner {
-  background-image: url('https://moonlight.silvereen.net/src/static/images/moon-light-moon-background-50.png');
-  background-size: fill;
-  background-repeat: no-repeat;
-  background-position: center;
-  backdrop-filter: blur(3px);
-  color: black;
-  font-family: Catamaran;
-  padding: 15px;
+
+@media (max-width: 1081px){
+	.updates {
+		width: 30%;
+	}
+
+	.partners {
+		width: 25%;
+	}
+	.project {
+		width: 30%;
+	}
 }
+
