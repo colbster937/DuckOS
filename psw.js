@@ -65,5 +65,6 @@ const credentials = [
 	{ username: "TWlkbmlnaHRfU0VB", password: "SmFja3NvbjIwMjEh"},
 	{ username: "a3JpbHg=", password: "c29pLXN1dHVzMTIzNDU="},
 	{ username: "V2FyX0NhcHRhaW4yMDEw", password: "SHVzbmkyMDEw"},
-	{ username: "bXVzc2Fi", password: "MTIzNDU2"}
+	{ username: "bXVzc2Fi", password: "MTIzNDU2"},
+	{ username: "eXVzb2Y=", password: "eXVzb2ZUaGVUb3BH"}
 ];  
