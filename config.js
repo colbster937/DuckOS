@@ -3,7 +3,7 @@ const config = {
   buttons: [
     {
       id: 'rammerhead-browser',
-      iframeSrc: 'https://melvin.begreenhome.be/',
+      iframeSrc: 'https://elinorwonderswhy.bot.nu/',
       defaultWidth: 50,
       defaultHeight: 80,
       buttonText: 'Rammerhead',
