@@ -3,7 +3,7 @@ const config = {
   buttons: [
     {
       id: 'rammerhead-browser',
-      iframeSrc: 'https://study.skyhax.lol/',
+      iframeSrc: 'https://study.skyhax.store/',
       defaultWidth: 50,
       defaultHeight: 80,
       buttonText: 'Rammerhead',
