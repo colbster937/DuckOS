@@ -53,8 +53,8 @@ const credentials = [
   { username: "anZrZWJveA==", password: "UGxhaW53ZWxsMTgh"},
   { username: "SmF5X2RhR29hdA==", password: "MDQxMzIwMTAhIQ=="},
   { username: "UG9vZnBvb2Y1MA==", password: "Q2hpenp5NTAh"},
-	{ username: "cmV5", password:"aWxpa2VtZW4xMjM="},
-	{ username: "WmVtb25rZWVz", password: "1024326"},
+	{ username: "cmV5", password:"IGlsaWtlbWVuMTIz"},
+	{ username: "WmVtb25rZWVz", password: "MTAyNDMyNg=="},
 	{ username: "RnJvc3R5Q29va2ll", password: "Q29va2llc0FyZUNvb2w="},
 	{ username: "Y29va2llaW8=", password: "Y2h1bmt5bW9ua2V5NDI="},
 	{ username: "dHVydGxlYm9pMTgy", password: "MzE0MTU5MjY1MzU4OQ=="},
@@ -66,5 +66,7 @@ const credentials = [
 	{ username: "a3JpbHg=", password: "c29pLXN1dHVzMTIzNDU="},
 	{ username: "V2FyX0NhcHRhaW4yMDEw", password: "SHVzbmkyMDEw"},
 	{ username: "bXVzc2Fi", password: "MTIzNDU2"},
-	{ username: "eXVzb2Y=", password: "eXVzb2ZUaGVUb3BH"}
+	{ username: "eXVzb2Y=", password: "eXVzb2ZUaGVUb3BH"},
+	{ username: "eGVub24=", password: "aW9uaWM="},
+	{ username: "RnJhY3Rvcg==", password: "RnJhY3Rvcmhk"},
 ];  
