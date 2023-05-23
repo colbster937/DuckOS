@@ -10,7 +10,7 @@
 <p align="center">What will DuckOS be like in the future? Nobody knows. But here's some things that I'm planning to add to DuckOS when I have more time:</p><br>
 <p align="center">• An app menu, allowing user to remove/add apps to taskbar</p>
 <p align="center">• Proxy Backend & Free Kasm!</p>
-<p align="center">• An more! You can view DuckOS v5's developement on Projects page</p>
+<p align="center">• And more! You can view DuckOS v5's developement on Projects page</p>
 
 <h2 align="center">Deploying DuckOS 🚀</h2>
 <p align="center">The world's leading web-based operating system remains unblocked by any hosting services to date! You have the opportunity to host DuckOS independently by forking this repository on Repl.it <a href="https://replit.com/github/GikitSRC/DuckOS-V5">here!</a><br>In the near future, DuckOS will integrate a proxy directly into its system, eliminating the need for iFrame elements. Unfortunately, this means that hosting DuckOS independently will no longer be possible 😔</p>
