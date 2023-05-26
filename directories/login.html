@@ -1,0 +1,125 @@
+<html>
+  <head>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dekko:wght@400;700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Overlock:wght@400;700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap');
+
+      body {
+        background-image: url('/system/media/background.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
+      .ducklogo {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 5px solid blue;
+      }
+
+      h1 {
+        font-family: Overlock;
+        position: absolute;
+        top: calc(30% + 100px);
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .subtitle {
+        font-family: overlock;
+        position: absolute;
+        top: calc(30% + 150px);
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .bottom {
+        font-family: overlock;
+        position: absolute;
+        bottom: 1;
+        color: white;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      form {
+        font-family: overlock;
+        position: absolute;
+        top: calc(30% + 200px);
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      label {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      input {
+        text-align: center;
+        margin: 10px;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: gray;
+        border: 3px solid black;
+        transition: transform 0.3s ease;
+        color: white;
+      }
+
+      input:focus {
+        transform: scale(1.1);
+        border-radius: 5px;
+      }
+      input::placeholder {
+        color: white;
+      }
+      .login {
+  transition: transform 0.3s ease;
+        
+}
+
+.login:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  border-radius: 5px;
+}
+
+    </style>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const inputs = document.querySelectorAll('input');
+
+        inputs.forEach(function(input) {
+          input.addEventListener('click', function() {
+            this.focus();
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <img class="ducklogo" src="/system/media/favicons/goofyah.png" alt="Duck Logo">
+    <h1>DuckOS</h1>
+    <form method="POST" action="http://duckoslogin.rf.gd/">
+      <label for="username">
+        <input type="text" id="username" name="username" placeholder="Enter your Username" required>
+      </label>
+      <label for="password">
+        <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+      </label>
+      <input class="login" type="submit" value="Login">
+    </form>
+    <p class="bottom">By using DuckOS, you acknowledge that you have read, understood, and agreed to these <a href="tac.html">Terms & Conditions</a></p>
+  </body>
+</html>

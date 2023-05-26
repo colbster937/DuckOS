@@ -1,0 +1,218 @@
+<html>
+  <head>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dekko:wght@400;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Overlock:wght@400;700&display=swap');
+ html {
+     height: 100%;
+     width: 100%;
+}
+ body {
+     background-color: black;
+     color: white;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     overflow: hidden;
+   padding: 50px;
+}
+ h1, h2, h3, h4, h5, h6, p, a, span {
+     font-family: 'Overlock', sans-serif;
+     align-self: center;
+   text-align: center;
+}
+ .a-btn {
+     background: hsla(39, 51%, 85%, 1);
+     background: linear-gradient(90deg, hsla(39, 51%, 85%, 1) 0%, hsla(182, 93%, 68%, 1) 50%, hsla(318, 79%, 79%, 1) 100%);
+     background: -moz-linear-gradient(90deg, hsla(39, 51%, 85%, 1) 0%, hsla(182, 93%, 68%, 1) 50%, hsla(318, 79%, 79%, 1) 100%);
+     background: -webkit-linear-gradient(90deg, hsla(39, 51%, 85%, 1) 0%, hsla(182, 93%, 68%, 1) 50%, hsla(318, 79%, 79%, 1) 100%);
+     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ECDEC4", endColorstr="#62F4F9", GradientType=1 );
+     border-radius: 30px;
+     border: 1px solid transparent;
+     padding: 10px;
+     text-decoration: none;
+}
+ .a-btn:hover {
+     opacity: 0.5 
+}
+ #taskbar {
+     background-color: rgba(28, 28, 28, 0.8);
+     border-radius: 30px;
+     bottom: 10px;
+     height: 50px;
+     position: fixed;
+     width: 90%;
+     left: 50%;
+     padding-top: 2px;
+     padding-bottom: 2px;
+     transform: translateX(-50%);
+     align-items: center;
+     display: flex;
+     justify-content: center;
+     z-index: 9999;
+     -webkit-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+     -moz-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+     box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+}
+ #topbar {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+ #time {
+     background-color: rgba(28, 28, 28, 0.8);
+     border-radius: 30px;
+     width: auto;
+     margin-right: 10px;
+     padding-left: 10px;
+     padding-right: 10px;
+     color: white;
+     height: auto;
+     padding-top: 6px;
+     padding-bottom: 6px;
+     cursor: pointer;
+     user-select: none;
+     z-index: 9999;
+     -webkit-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+     -moz-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+     box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+}
+ #time:hover {
+     background-color: rgba(0, 0, 0, 0.9);
+}
+ #settingsbtn {
+     background-color: rgba(28, 28, 28, 0.8);
+     border-radius: 15px;
+     width: auto;
+     padding-left: 10px;
+     padding-right: 10px;
+     color: white;
+     height: auto;
+     padding-top: 6px;
+     padding-bottom: 6px;
+     user-select: none;
+     cursor: pointer;
+     margin-right: 10px;
+     z-index: 99;
+     -webkit-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+     -moz-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+     box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+}
+ #settingsbtn:hover {
+     background-color: rgba(0, 0, 0, 0.9);
+}
+ #fullscreenbtn {
+     background-color: rgba(28, 28, 28, 0.8);
+     border-radius: 15px;
+     width: auto;
+     padding-left: 10px;
+     padding-right: 10px;
+     color: white;
+     height: auto;
+     padding-top: 6px;
+     padding-bottom: 6px;
+     user-select: none;
+     cursor: pointer;
+     margin-right: 10px;
+     z-index: 99;
+     -webkit-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+     -moz-box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+     box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.75);
+}
+ #fullscreenbtn:hover {
+     background-color: rgba(0, 0, 0, 0.9);
+}
+ .loading-page {
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: #000000;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     z-index: 999999999999999999999999999999999999999999999999999999999999999999999;
+     opacity: 1;
+     transition: opacity 0.5s ease-out;
+}
+ .loading-page img {
+     max-width: 100%;
+     max-height: 100%;
+     object-fit: contain;
+}
+ .loading-page.fade-out {
+     opacity: 0;
+}
+ .slide-in {
+     animation-name: slide-in;
+     animation-duration: 0.5s;
+     animation-fill-mode: forwards;
+}
+ .slide-out {
+     animation-name: slide-out;
+     animation-duration: 0.5s;
+     animation-fill-mode: forwards;
+}
+ @keyframes slide-in {
+     from {
+         transform: translateY(100%);
+         opacity: 0;
+    }
+     to {
+         transform: translateY(0);
+         opacity: 1;
+    }
+}
+ @keyframes slide-out {
+     from {
+         transform: translateY(0);
+         opacity: 1;
+    }
+     to {
+         transform: translateY(100%);
+         opacity: 0;
+    }
+}
+.container {
+  text-align: center;
+}
+
+button {
+  display: inline-block;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  background-color: white;
+  padding: 10px;
+  color: black;
+  font-family: Overlock;
+  transition: all 0.3s ease;
+  user-select: none;
+  cursor: pointer;
+  font-size: 25px;
+  margin: 20px;
+}
+
+button:hover {
+  border-radius: 4px;
+  transform: scale(1.2);
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <h1>Minecraft (EaglerCraft - Made by Lax1dude)</h1>
+    <p>Welcome to the Minecraft app! Choose which version you want to play below. Please note that 1.8.8 is extremely laggy, even on high-end devices as it is not optimized very well. 1.5.2 is optimized and not as laggy. For chromebooks, you can avoid frame rate spikes and lagging by turning all the settings to minimal or off in "video settings". Also remember to turn sound off if you're not using it!</p>
+    <div class="container">
+      <a href="/apps/minecraft15/index.html">
+    <button href="/apps/minecraft15/index.html">Launch Minecraft 1.5.2</button>
+      </a>
+      <a href="/apps/minecraft18/index.html">
+    <button href="/apps/minecraft18/index.html">Launch Minecraft 1.8.8</button>
+      </a>
+    </div>
+  </body>
+</html>

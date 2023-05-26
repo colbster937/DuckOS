@@ -1,0 +1,25 @@
+/* styles.css */
+#search-container {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#search-bar {
+    width: 300px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+#search-results {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 5px;
+    background-color: white;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 300px;
+}
