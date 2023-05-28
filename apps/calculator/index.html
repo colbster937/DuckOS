@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    .calculator {
+      width: 200px;
+      height: 400px;
+      background-color: #f2f2f2;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 15px;
+      margin: 0 auto;
+    }
+    
+    .calculator input[type="button"] {
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+      margin: 2px;
+      border-radius: 15px;
+      border: 1px solid black;
+    }
+    .calculator input[type="button"]:hover {
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+      margin: 2px;
+      border-radius: 15px;
+      border: 1px solid black;
+      scale: 1.1;
+      cursor: pointer;
+    }
+    
+    .calculator input[type="text"] {
+      width: 90%;
+      margin-bottom: 10px;
+      border-radius: 15px;
+      text-align: center;
+      padding: 8px;
+      font-size: 18px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="result" readonly>
+    <input type="button" value="1" onclick="addToResult('1')">
+    <input type="button" value="2" onclick="addToResult('2')">
+    <input type="button" value="3" onclick="addToResult('3')">
+    <input type="button" value="+" onclick="addToResult('+')">
+    <br>
+    <input type="button" value="4" onclick="addToResult('4')">
+    <input type="button" value="5" onclick="addToResult('5')">
+    <input type="button" value="6" onclick="addToResult('6')">
+    <input type="button" value="-" onclick="addToResult('-')">
+    <br>
+    <input type="button" value="7" onclick="addToResult('7')">
+    <input type="button" value="8" onclick="addToResult('8')">
+    <input type="button" value="9" onclick="addToResult('9')">
+    <input type="button" value="*" onclick="addToResult('*')">
+    <br>
+    <input type="button" value="0" onclick="addToResult('0')">
+    <input type="button" value="." onclick="addToResult('.')">
+    <input type="button" value="=" onclick="calculateResult()">
+    <input type="button" value="/" onclick="addToResult('/')">
+    <br>
+    <input type="button" value="C" onclick="clearResult()">
+  </div>
+
+  <script>
+    function addToResult(value) {
+      document.getElementById("result").value += value;
+    }
+
+    function calculateResult() {
+      try {
+        var result = eval(document.getElementById("result").value);
+        document.getElementById("result").value = result;
+      } catch (error) {
+        document.getElementById("result").value = "Error";
+      }
+    }
+
+    function clearResult() {
+      document.getElementById("result").value = "";
+    }
+  </script>
+</body>
+</html>

@@ -203,3 +203,38 @@ padding-right: 10px;
 .squeeze {
     animation: squeeze 300ms forwards;
 }
+@keyframes appwindow-open {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes appwindow-close {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+
+
+.appwindow-opening {
+  animation: appwindow-open 0.3s ease;
+}
+
+.appwindow-closing {
+  animation: appwindow-close 0.3s ease;
+}
+
+
+
+

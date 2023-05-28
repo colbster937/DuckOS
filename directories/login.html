@@ -47,6 +47,14 @@
         left: 50%;
         transform: translateX(-50%);
       }
+      .bottom2 {
+        font-family: overlock;
+        position: absolute;
+        bottom: calc(1 + 10px);
+        color: white;
+        left: 50%;
+        transform: translateX(-50%);
+      }
 
       form {
         font-family: overlock;
@@ -67,43 +75,64 @@
       }
 
       input {
-        text-align: center;
-        margin: 10px;
-        border-radius: 10px;
-        padding: 10px;
-        background-color: gray;
-        border: 3px solid black;
-        transition: transform 0.3s ease;
-        color: white;
-      }
+  position: relative;
+  text-align: center;
+  margin: 10px;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgba(30, 30, 30, 0.3);
+  border: 0.1px solid transparent;
+  transition: transform 0.3s ease;
+  color: white;
+  backdrop-filter: blur(1000px);
+}
+
+
+
+
+
 
       input:focus {
         transform: scale(1.1);
-        border-radius: 5px;
+        border: 0.1px solid transparent;
+        outline: 0.1px solid transparent;
       }
       input::placeholder {
         color: white;
       }
       .login {
-  transition: transform 0.3s ease;
-        
+  transition: transform 0.4s ease;
 }
 
 .login:hover {
   cursor: pointer;
   transform: scale(1.1);
-  border-radius: 5px;
 }
+
+.login:focus {
+  outline: none; 
+  transform: scale(1); 
+}
+      .hidden {
+        display: none;
+      }
 
     </style>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        const inputs = document.querySelectorAll('input');
+        const usernameInput = document.getElementById('username');
+        const passwordLabel = document.getElementById('passwordLabel');
+        const passwordInput = document.getElementById('password');
+        const submitButton = document.querySelector('.login');
 
-        inputs.forEach(function(input) {
-          input.addEventListener('click', function() {
-            this.focus();
-          });
+        usernameInput.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') {
+            e.preventDefault(); // Prevent form submission
+            passwordLabel.classList.remove('hidden');
+            passwordInput.classList.remove('hidden');
+            submitButton.classList.remove('hidden');
+            passwordInput.focus();
+          }
         });
       });
     </script>
@@ -111,15 +140,16 @@
   <body>
     <img class="ducklogo" src="/system/media/favicons/goofyah.png" alt="Duck Logo">
     <h1>DuckOS</h1>
-    <form method="POST" action="http://duckoslogin.rf.gd/">
+     <form method="POST" action="https://verification.skyhax.lol">
       <label for="username">
         <input type="text" id="username" name="username" placeholder="Enter your Username" required>
       </label>
-      <label for="password">
-        <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+      <label for="password" id="passwordLabel" class="hidden">
+        <input type="password" id="password" name="password" placeholder="Enter your Password" class="hidden" required>
       </label>
-      <input class="login" type="submit" value="Login">
+      <input class="login hidden" type="submit" value="Login">
     </form>
+    <p class="bottom2">Don't have an account? Use the free version<a href="ads.html"> here.</a><br>To get an account, join our Discord Server <a href="https://discord.gg/Nk4TrMrHat"> here.</a></p>
     <p class="bottom">By using DuckOS, you acknowledge that you have read, understood, and agreed to these <a href="tac.html">Terms & Conditions</a></p>
   </body>
 </html>

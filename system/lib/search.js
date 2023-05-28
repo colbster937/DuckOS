@@ -1,48 +1,35 @@
-$(document).on('keydown', function (event) {
-    if (event.key === 'Tab') {
-        event.preventDefault();
-        $('#search-container').show();
-        $('#search-bar').focus();
-    }
-});
+$(document).keydown(function(e) {
+    if (e.altKey) {
+        // Alt key was pressed.
+        if ($('#searchbar').length) {
+            // If the searchbar already exists, give it focus.
+            $('#searchbar').focus();
+        } else {
+            // If the searchbar doesn't exist, create it.
+            const $searchbar = $(`
+                <input type="text" id="searchbar" placeholder="Search for an app..." style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            `);
 
-$('#search-bar').on('blur', function () {
-    $('#search-container').hide();
-});
-const searchApps = (query) => {
-    const filteredApps = config.buttons.filter((app) => app.buttonText.toLowerCase().includes(query.toLowerCase()));
-    const $searchResults = $('#search-results');
-    $searchResults.empty();
+            $searchbar.on('keydown', function(e) {
+                if (e.key === 'Enter') {
+                    // When Enter is pressed, find the first button whose text includes the search input and click it.
+                    const searchText = $(this).val().toLowerCase();
+                    const $matchingButton = $('.buttondefault').filter(function() {
+                        return $(this).text().toLowerCase().includes(searchText);
+                    }).first();
+                    $matchingButton.click();
+                }
+            });
 
-    if (query.length > 0) {
-        filteredApps.forEach((app) => {
-            const $listItem = $('<li></li>');
-            const $button = createButton(app);
-            $listItem.append($button);
-            $searchResults.append($listItem);
-        });
-    }
-};
-
-$('#search-bar').on('input', function () {
-    const query = $(this).val();
-    searchApps(query);
-});
-
-$('#search-bar').on('keydown', function (event) {
-    if (event.key === 'Enter') {
-        event.preventDefault();
-        const query = $(this).val();
-        const matchingApp = config.buttons.find((app) => app.buttonText.toLowerCase() === query.toLowerCase());
-
-        if (matchingApp) {
-            const $existingWindow = $(`#appwindow-${matchingApp.id}`);
-            if ($existingWindow.length) {
-                $existingWindow.show();
-            } else {
-                createIFrameWindow(matchingApp);
-            }
-            $('#search-container').hide();
+            $('body').append($searchbar);
+            $searchbar.focus();
         }
+    }
+});
+
+$(document).click(function(e) {
+    if ($(e.target).closest('#searchbar').length === 0) {
+        // If you click outside the searchbar, remove it.
+        $('#searchbar').remove();
     }
 });

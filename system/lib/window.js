@@ -10,7 +10,7 @@ $(document).ready(function() {
         } = config;
 
         const $window = $(`
-      <div class="appwindow" id="appwindow-${config.id}" style="width: ${defaultWidth}%; height: ${defaultHeight}%; top: calc(50% - ${defaultHeight / 2}%); left: calc(50% - ${defaultWidth / 2}%);">
+      <div class="appwindow appwindow-opening" id="appwindow-${config.id}" style="width: ${defaultWidth}%; height: ${defaultHeight}%; top: calc(50% - ${defaultHeight / 2}%); left: calc(50% - ${defaultWidth / 2}%);">
         <div class="toolbar">
           <h4 class="window-title">${windowTitle}</h4>
           <div>
@@ -24,8 +24,12 @@ $(document).ready(function() {
     `);
         const $closeButton = $window.find('.close-btn');
         $closeButton.on('click', function() {
-            $window.remove();
-        });
+    $window.addClass('appwindow-closing');
+    $window.on('animationend', function() {
+      $window.remove();
+    });
+  });
+      
         const $iframe = $window.find('iframe');
         $iframe.on('load', function() {
             const iframeWindow = this.contentWindow;
@@ -91,6 +95,7 @@ $(document).ready(function() {
                 $window.find('.iframe-overlay').remove();
             }
         });
+      
 
 
 
@@ -105,6 +110,7 @@ $(document).ready(function() {
             }
         });
         $window.css('z-index', zIndexCounter++);
+      
         return $window;
     };
 
@@ -122,11 +128,12 @@ $(document).ready(function() {
 
         $button.on('click', function() {
             const $existingWindow = $(`#appwindow-${buttonConfig.id}`);
-            if ($existingWindow.length) {
-                $existingWindow.show();
-            } else {
-                createIFrameWindow(buttonConfig);
-            }
+    if ($existingWindow.length) {
+        $existingWindow.show();
+        $existingWindow.css('z-index', zIndexCounter++);
+    } else {
+        createIFrameWindow(buttonConfig);
+    }
         });
         return $button;
     };

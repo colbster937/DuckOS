@@ -8,7 +8,7 @@ const config = {
       defaultHeight: 80,
       buttonText: 'Rammerhead',
       windowTitle: 'Rammerhead Browser',
-      imgSrc: '/system/media/rammerhead_icon.png'
+      imgSrc: '/system/media/appicons/rammerhead_icon.png'
     },
     {
       id: 'meowzies-adventure',
@@ -21,22 +21,32 @@ const config = {
       onStart: false
     },
     {
+      id: 'a1r',
+      iframeSrc: 'https://game.duckos.site',
+      defaultWidth: 70,
+      defaultHeight: 80,
+      buttonText: 'A1R',
+      windowTitle: 'A1R Games - Made by BlazerHM',
+      imgSrc: '/system/media/appicons/air_icon.png',
+      onStart: false
+    },
+    {
       id: 'minecraft',
       iframeSrc: '/apps/minecraft/index.html',
       defaultWidth: 70,
       defaultHeight: 80,
       buttonText: 'Minecraft',
       windowTitle: 'Eaglercraft Launcher',
-      imgSrc: '/system/media/bloxd_icon.png'
+      imgSrc: '/system/media/appicons/bloxd_icon.png'
     },
     {
       id: 'Calculator',
-      iframeSrc: 'https://www.online-calculator.com/full-screen-calculator/',
-      defaultWidth: 20,
-      defaultHeight: 65,
+      iframeSrc: '/apps/calculator/index.html',
+      defaultWidth: 15,
+      defaultHeight: 50,
       buttonText: 'Calculator',
-      windowTitle: 'Online Calculator',
-      imgSrc: '/system/media/calculator_icon.png'
+      windowTitle: 'Calculator App',
+      imgSrc: '/system/media/appicons/calculator_icon.png'
     },
     {
       id: 'about',
@@ -45,7 +55,7 @@ const config = {
       defaultHeight: 80,
       buttonText: 'About Page',
       windowTitle: 'Learn about DuckOS!',
-      imgSrc: '/system/media/about_icon.png'
+      imgSrc: '/system/media/appicons/about_icon.png'
     }
   ]
 };
