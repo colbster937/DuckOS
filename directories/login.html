@@ -140,7 +140,13 @@
   <body>
     <img class="ducklogo" src="/system/media/favicons/goofyah.png" alt="Duck Logo">
     <h1>DuckOS</h1>
-     <form method="POST" action="https://verification.{{ window.location.hostname }}">
+     <form id="verificationForm" method="POST" action="">
+       <script>
+  var form = document.getElementById("verificationForm");
+  var currentDomain = window.location.hostname;
+  var subdomain = "verification." + currentDomain;
+  form.action = "https://" + subdomain;
+</script>
       <label for="username">
         <input type="text" id="username" name="username" placeholder="Enter your Username" required>
       </label>
