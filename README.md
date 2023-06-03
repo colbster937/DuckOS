@@ -1,4 +1,4 @@
-<p align="center"> <img width="400px" src="/system/media/DuckOS_image.png?raw=true"> </p>
+<p align="center"> <img width="200px" src="/system/media/DuckOS_image.png?raw=true"> </p>
 <h1 align="center">Experience the 🌍's First Web-Based Operating System with DuckOS v5*</h1>
 <p align="center"><a align="center" href="https://ko-fi.com/chainedtears">Support me on Ko-Fi!</a></p>
 <p align="center">*ik its not the first its just there for effects yk</p>
