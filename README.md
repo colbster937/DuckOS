@@ -1,16 +1,14 @@
 <p align="center"> <img width="200px" src="/system/media/DuckOS_image.png?raw=true"> </p>
-<h1 align="center">Experience the 🌍's First Web-Based Operating System with DuckOS v5*</h1>
-<p align="center"><a align="center" href="https://ko-fi.com/chainedtears">Support me on Ko-Fi!</a></p>
-<p align="center">*ik its not the first its just there for effects yk</p>
+<h1 align="center">DuckOS - The future of Web-Based Operating Systems 🌌</h1>
 <p align="center"> <a href="https://discord.gg/2JbtU5HnrY"><img height="30px" src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white"></a> <a href="https://github.com/GikitSRC"><img height="30px" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a> <a href="https://twitter.com/ACompleteNewb"><img height="30px" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"></a> </p>
 
-<p align="center">Introducing DuckOS: the world's first web-based operating system crafted purely with HTML, CSS, and JS. It offers an exceptional interface, top-notch apps, and an unmatched user experience. This enhanced version of DuckOS is dedicated to overcoming internet censorship, equipped with advanced proxies, popular games, and more. Embrace the future of web-based operating systems with DuckOS.</p>
+<p align="center">Introducing DuckOS: An innovative web-based operating system created entirely with HTML, CSS, and JS. Experience a remarkable interface, superior applications, and an unparalleled user journey. This advanced iteration of DuckOS is designed to combat internet censorship, featuring state-of-the-art proxies, an extensive collection of popular games, and much more. Embrace the cutting-edge era of web-based operating systems with DuckOS, paving the way for a transformative digital landscape.</p>
 
 <h2 align="center">DuckOS in the future 🕒</h2>
-<p align="center">What will DuckOS be like in the future? Nobody knows. But here's some things that I'm planning to add to DuckOS when I have more time:</p><br>
-<p align="center">• An app menu, allowing user to remove/add apps to taskbar</p>
-<p align="center">• Proxy Backend & Free Kasm!</p>
-<p align="center">• And more! You can view DuckOS v5's developement on Projects page</p>
+<p align="center">While the future of DuckOS remains uncertain, there are exciting plans for its development. As more time becomes available, the following features are envisioned to enhance DuckOS:</p><br>
+<p align="center">• An app menu that allows users to customize their taskbar by adding or removing apps to suit their preferences.</p>
+<p align="center">• Implementation of a robust proxy backend to enhance internet accessibility, overcoming censorship.</p>
+<p align="center">• Seamless User Experience: Enjoy the convenience of effortless data synchronization across devices within DuckOS. Your preferences and important data will be seamlessly available to you, providing a consistent and personalized user experience.</p>
 
 <h2 align="center">Deploying DuckOS 🚀</h2>
 <p align="center">The world's leading web-based operating system remains unblocked by any hosting services to date! You have the opportunity to host DuckOS independently by forking this repository on Repl.it <a href="https://replit.com/github/GikitSRC/DuckOS-V5">here!</a><br>In the near future, DuckOS will integrate a proxy directly into its system, eliminating the need for iFrame elements. Unfortunately, this means that hosting DuckOS independently will no longer be possible 😔</p>
