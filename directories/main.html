@@ -80,15 +80,26 @@
     <span id="statscenterbtn" class="animate__animated animate__backInDown animate__delay-1s"><i class="fa-solid fa-envelope"></i></span>
 	<div id="statscenter">
 		<h1>Status/Notification Center</h1>
-    <p>You can scroll down btw</p>
-    <hr class="settingshr">
     <h2>Weather</h2>
-    <div id="ww_6ab4adda7c44c" v='1.3' loc='auto' a='{"t":"responsive","lang":"en","sl_lpl":1,"ids":[],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"#000000","cl_font":"#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107","cl_thund":"#FF5722","cl_odd":"#FFFFFF17"}'><a href="https://weatherwidget.org/" id="ww_6ab4adda7c44c_u" target="_blank">Weather forecast widget</a></div><script async src="https://app1.weatherwidget.org/js/?id=ww_6ab4adda7c44c"></script>
-    <p>NOTE: Weather info incorrect if adblocker on</p>
+    <!-- WEATHER WIDGET START -->
+    <script>(function(d,s,id){if(d.getElementById(id)){if(window.__TOMORROW__){window.__TOMORROW__.renderWidget();}return;}const fjs=d.getElementsByTagName(s)[0];const js=d.createElement(s);js.id=id;js.src="https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";fjs.parentNode.insertBefore(js,fjs);})(document,'script','tomorrow-sdk');</script>
+<div class="tomorrow" data-location-id="" data-language="EN" data-unit-system="METRIC" data-skin="dark" data-widget-type="upcoming" style="padding-bottom:22px;position:relative;"><a href="https://www.tomorrow.io/weather-api/" rel="nofollow noopener noreferrer" target="_blank" style="position:absolute;bottom:0;transform:translateX(-50%);left:50%;"><img alt="Powered by the Tomorrow.io Weather API" src="https://weather-website-client.tomorrow.io/img/powered-by.svg" width="250" height="10" /></a></div>
+<!-- WEATHER WIDGET END -->
     <hr class="settingshr">
-    <h1>Future Notifications Center</h1>
 	</div>
     <script src="/system/lib/stats.js"></script>
     <script src="/system/lib/autohide.js"></script>
+    <script>
+      function isMobileDevice() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+    function redirectToMobilePage() {
+      if (isMobileDevice()) {
+        window.location.href = "mobile.html";
+      }
+    }
+    window.onload = redirectToMobilePage;
+    </script>
   </body>
 </html>
