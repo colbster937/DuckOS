@@ -126,6 +126,19 @@
   outline: none; 
   transform: scale(1); 
 }
+.backup {
+  transition: transform 0.4s ease;
+}
+
+.backup:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.backup:focus {
+  outline: none; 
+  transform: scale(1); 
+}
       .hidden {
         display: none;
       }
@@ -138,6 +151,7 @@
         const passwordInput = document.getElementById('password');
         const submitButton = document.querySelector('.login');
         const legacyButton = document.querySelector('.legacy');
+        const backupButton = document.querySelector('.backup');
 
         usernameInput.addEventListener('keydown', function(e) {
           if (e.key === 'Enter') {
@@ -146,6 +160,7 @@
             passwordInput.classList.remove('hidden');
             submitButton.classList.remove('hidden');
             legacyButton.classList.remove('hidden');
+            backupButton.classList.remove('hidden');
             passwordInput.focus();
           }
         });
@@ -163,16 +178,17 @@
         form.action = "https://" + subdomain;
     </script>
     <label for="username">
-        <input type="text" id="username" name="username" placeholder="Enter your Username" required>
+        <input type="text" id="username" name="username" placeholder="Username" required>
     </label>
     <label for="password" id="passwordLabel" class="hidden">
-        <input type="password" id="password" name="password" placeholder="Enter your Password" class="hidden" required>
+        <input type="password" id="password" name="password" placeholder="Password" class="hidden" required>
     </label>
-    <input class="login hidden" type="submit" value="Login">
-    <input class="legacy hidden" type="submit" value="Backup/Legacy Login" formaction="https://arian-fire.000webhostapp.com/">
+    <input class="login hidden" type="submit" value="Login (Main Server)">
+    <input class="legacy hidden" type="submit" value="Backup Server 1" formaction="https://arian-fire.000webhostapp.com/">
+    <input class="backup hidden" type="submit" value="Backup Server 2" formaction="http://duckoslogin.rf.gd/">
 </form>
 
-    <p class="bottom2">Don't have an account? Use the free version<a href="ads.html"> here.</a><br>To get an account, join our Discord Server <a href="https://discord.gg/Nk4TrMrHat"> here.</a></p>
+<p class="bottom2">Don't have an account? Use the version with ALOT of ads <a href="ads.html">here</a>.<br>To sign up and remove the ads, simply join our Discord Server by clicking <a href="https://discord.gg/Nk4TrMrHat">here</a>.</p>
     <p class="bottom">By using DuckOS, you acknowledge that you have read, understood, and agreed to these <a href="tac.html">Terms & Conditions</a></p>
   </body>
 </html>
