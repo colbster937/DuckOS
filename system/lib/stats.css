@@ -3,6 +3,7 @@
 }
 
 #statscenter {
+  background-color: rgba(90, 90, 90, 0.7);
     position: fixed;
     text-align: center;
     top: 50%;
@@ -15,12 +16,13 @@
     border: 1px solid transparent;
     border-radius: 15px;
     transition: right 0.5s ease-in-out, visibility 0s linear 0.5s;
-    background-color: rgba(28, 28, 28, 1);
     z-index: 9999999;
     visibility: hidden;
     padding-left: 10px;
     padding-right: 10px;
     overflow-y: scroll;
+  -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
 }
 
 
