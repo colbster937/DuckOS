@@ -110,23 +110,45 @@ p {
     border: 5px solid blue;
 }
 
+
 .uploadwall {
-    border: 5px solid blue;
-    border-radius: 15px;
+  display: block;
+  margin: 20px auto;
 }
 
-.uploadwall:hover {
-    cursor: pointer;
+.uploadwall::file-selector-button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #6e776e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.uploadwall::file-selector-button:hover {
+  scale: 1.1;
+  border-radius: 10px;
 }
 
 .imgupload {
-    border: 5px solid blue;
-    border-radius: 15px;
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background-color: #6e776e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .imgupload:hover {
-    cursor: pointer;
+  scale: 1.1;
+  border-radius: 10px;
 }
+
 
 .settingshr {
     border: 0;
@@ -136,4 +158,59 @@ p {
 
 .settingshr:after {
     content: "\00a0";
+}
+.toggle-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  margin-bottom: 10px;
+  align-self: center;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+}
+
+.toggle-switch input[type="checkbox"] {
+  display: none;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+  align-self: center;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input[type="checkbox"]:checked + .toggle-slider {
+  background-color: #2196F3;
+}
+
+input[type="checkbox"]:checked + .toggle-slider:before {
+  transform: translateX(24px);
+}
+
+#toggleLabel {
+  margin-left: 10px;
 }
