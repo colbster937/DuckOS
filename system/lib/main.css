@@ -44,7 +44,6 @@ span {
 }
 
 #taskbar {
-    background-color: rgba(28, 28, 28, 0.8);
     border-radius: 30px;
     bottom: 10px;
     height: 50px;
@@ -61,7 +60,8 @@ span {
     -webkit-box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
 }
 
 #topbar {
