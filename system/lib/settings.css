@@ -4,10 +4,12 @@
     text-align: center;
     user-select: none;
     align-self: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     -webkit-box-shadow: 0px 0px 50px 3px rgba(0, 0, 0, 0.52);
     -moz-box-shadow: 0px 0px 50px 3px rgba(0, 0, 0, 0.52);
     box-shadow: 0px 0px 50px 3px rgba(0, 0, 0, 0.52);
-    background-color: rgba(30, 30, 30, 0.7);
+    background-color: rgba(90, 90, 90, 0.7);
     border-radius: 15px;
     color: white;
     padding: 20px;
@@ -22,6 +24,7 @@
     z-index: 9999999999999999999999999999999999999999999999999999;
 }
 
+
 #settingspage>h1,
 h2,
 p {
@@ -31,7 +34,6 @@ p {
 #settingspage.show {
     display: block;
     animation: grow 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) forwards;
-    opacity: 0.6;
 }
 
 #settingspage.hide {
