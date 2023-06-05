@@ -1,8 +1,7 @@
-// NEW UPDATE: Now uses % instead of width ;) good luck lmao
 const config = {
     buttons: [{
             id: 'rammerhead-browser',
-            iframeSrc: window.location.protocol + '//study.' + window.location.hostname + '/',
+            iframeSrc: window.location.protocol + '//study.' + window.location.hostname + '/', //New dynamic URL; lower chances of getting blocked. Also switching to Abyss browser soon!
             defaultWidth: 50,
             defaultHeight: 80,
             buttonText: 'Rammerhead',
@@ -31,13 +30,13 @@ const config = {
             onStart: false
         },
         {
-            id: 'minecraft',
-            iframeSrc: '/apps/minecraft/index.html',
-            defaultWidth: 70,
-            defaultHeight: 80,
-            buttonText: 'Minecraft',
-            windowTitle: 'Eaglercraft Launcher',
-            imgSrc: '/system/media/appicons/bloxd_icon.png'
+            id: 'terminal',
+            iframeSrc: '/apps/terminal/index.html',
+            defaultWidth: 30,
+            defaultHeight: 45,
+            buttonText: 'Terminal',
+            windowTitle: 'DuckOS Terminal Emulator',
+            imgSrc: '/system/media/appicons/terminal.png'
         },
         {
             id: 'Calculator',
