@@ -23,7 +23,7 @@
 
 
 <h2 align="center">DISCLAIMER 📝</h2>
-<p align="center">[Click here to view the DuckOS Disclaimer](disclaimer.md)</p>
+<p align="center"><a href="disclaimer.md">Click here to view the Disclaimer.</a></p>
 
 
 <h2 align="center">License 📄</h2>
