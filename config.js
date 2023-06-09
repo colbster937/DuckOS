@@ -15,7 +15,7 @@ const config = {
             defaultWidth: 30,
             defaultHeight: 45,
             buttonText: 'Meowzies Adventure 3',
-            windowTitle: 'Meowzies Adventure 3',
+            windowTitle: 'Meowzies Adventure 3 - (meowiegames.com)',
             imgSrc: '/apps/meowiegames/meowziesadventurethree/icon.png',
             onStart: false
         },

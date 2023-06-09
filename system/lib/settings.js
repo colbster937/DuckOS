@@ -35,20 +35,23 @@ document.addEventListener('DOMContentLoaded', function() {
     toggleSwitch.textContent = document.body.classList.contains('light-mode') ? 'Light Mode' : 'Dark Mode';
 
     if (document.body.classList.contains('light-mode')) {
-        document.getElementById('settingspage').style.backgroundColor = 'white';
-        document.getElementById('taskbar').style.backgroundColor = 'white';
-        document.getElementById('statscenter').style.backgroundColor = 'white';
-        document.getElementById('time').style.backgroundColor = 'white';
-        document.getElementById('time').style.color = 'black';
-        document.getElementById('settingsbtn').style.backgroundColor = 'white';
-        document.getElementById('settingsbtn').style.color = 'black';
-        document.getElementById('fullscreenbtn').style.backgroundColor = 'white';
-        document.getElementById('fullscreenbtn').style.color = 'black';
-        document.getElementById('settingspage').style.color = 'black';
-        document.getElementById('taskbar').style.color = 'black';
-        document.getElementById('statscenter').style.color = 'black';
-        document.getElementById('statscenterbtn').style.backgroundColor = 'white';
-        document.getElementById('statscenterbtn').style.color = 'black';
+        document.getElementById('settingspage').style.backgroundColor = 'rgba(255, 255, 255, 0.7)';
+        document.getElementById('taskbar').style.backgroundColor = 'rgba(255, 255, 255, 0.7)';
+        document.getElementById('statscenter').style.backgroundColor = 'rgba(255, 255, 255, 0.7)';
+        document.getElementById('time').style.backgroundColor = 'rgba(255, 255, 255, 0.7)';
+        document.getElementById('time').style.color = 'rgba(0, 0, 0, 0.7)';
+        document.getElementById('settingsbtn').style.backgroundColor = 'rgba(255, 255, 255, 0.7)';
+        document.getElementById('settingsbtn').style.color = 'rgba(0, 0, 0, 0.7)';
+        document.getElementById('fullscreenbtn').style.backgroundColor = 'rgba(255, 255, 255, 0.7)';
+        document.getElementById('fullscreenbtn').style.color = 'rgba(0, 0, 0, 0.7)';
+        document.getElementById('settingspage').style.color = 'rgba(0, 0, 0, 0.7)';
+        document.getElementById('taskbar').style.color = 'rgba(0, 0, 0, 0.7)';
+        document.getElementById('statscenter').style.color = 'rgba(0, 0, 0, 0.7)';
+        document.getElementById('toolbar').style.color = 'rgba(0, 0, 0, 0.7)';
+        document.getElementById('toolbar').style.backgroundColor = 'rgba(255, 255, 255, 0.7)';
+        document.getElementById('statscenterbtn').style.backgroundColor = 'rgba(255, 255, 255, 0.7)';
+        document.getElementById('statscenterbtn').style.color = 'rgba(0, 0, 0, 0.7)';
+        document.getElementById('buttondefualt').style.backgroundColor = 'rgba(1, 1, 1, 0.3)';
     } else {
         document.getElementById('settingspage').style.backgroundColor = '';
         document.getElementById('taskbar').style.backgroundColor = '';
@@ -64,8 +67,12 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('statscenter').style.color = '';
         document.getElementById('statscenterbtn').style.backgroundColor = '';
         document.getElementById('statscenterbtn').style.color = '';
+      document.getElementById('toolbar').style.color = '';
+        document.getElementById('toolbar').style.backgroundColor = '';
+      
     }
 }
+
 
 
 

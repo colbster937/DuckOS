@@ -232,3 +232,19 @@ $(document).ready(function() {
         $window.find('.iframe-overlay').remove();
     });
 });
+$('#multiplewindows').on('change', function() {
+    const allowMultipleWindows = $(this).is(':checked');
+    config.buttons.forEach(buttonConfig => {
+      const $existingWindows = $(`.appwindow-${buttonConfig.id}`);
+      if (allowMultipleWindows) {
+        // Enable opening multiple windows
+        $existingWindows.removeClass('appwindow-closing');
+      } else {
+        // Disable opening multiple windows
+        $existingWindows.addClass('appwindow-closing');
+        $existingWindows.on('animationend', function() {
+          $(this).remove();
+        });
+      }
+    });
+  });
