@@ -21,6 +21,19 @@
           section.scrollIntoView({ behavior: 'smooth' });
         }
       }
+      function addAnimationOnScroll() {
+      const sections = document.querySelectorAll('.section');
+      const windowHeight = window.innerHeight;
+
+      sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top;
+
+        if (sectionTop < windowHeight) {
+          section.classList.add('animate', 'fade-up');
+        }
+      });
+    }
+    window.addEventListener('scroll', addAnimationOnScroll);
     </script>
   </head>
   <body>
@@ -31,7 +44,8 @@
     <img onclick="scrollToSection('Home')" class="logo" src="/system/media/Skyhax.gif">
     <button onclick="scrollToSection('DuckOS')" class="left1"><p>DuckOS</p></button>
     <button onclick="scrollToSection('Kasm')" class="left2"><p>Kasm Server</p></button>
-    <button onclick="scrollToSection('Partners')" class="left3"><p>Partners</p></button>
+    <button onclick="scrollToSection('Accounts')" class="left3"><p>Accounts</p></button>
+    <button onclick="scrollToSection('Partners')" class="left4"><p>Partners</p></button>
     <button onclick="window.location.href='https://discord.gg/skyhax'" class="right"><p>Discord Server</p></button>
       <div class="intro">
         <img class="banner" src="/system/media/banner.png">
@@ -43,14 +57,16 @@
         </div>
       </div>
     </div>
-    <div id="DuckOS">
+    <div id="DuckOS" class="section">
       <h1>Greetings, power. Caution, tyrants, for behold, DuckOS has finally arrived.</h1>
+      <p>Remarkable speed. Striking looks. Unparalleled performance. Impressive productivity.</p>
+      <br>
       <img class="duckbanner" src="/system/media/duckbanner.png">
       <div class="redirectcontainer">
         <button class="centerbtn" onclick="window.location.href='/directories/login.html'">Access DuckOS</button>
       </div>
-    </div>
-    <div id="Kasm">
+    </div>  
+    <div id="Kasm" class="section">
       <div class="intro">
         <div class="hookcontainer">
         <h1>Kasm</h1>
@@ -60,9 +76,23 @@
         <img class="kasmimg" src="/system/media/kasm.png">
       </div>
     </div>
-    <div id="Partners">
+    <div id="Accounts" class="section">
+      <h1>Cracked Premium Accounts</h1>
+      <p>Don't have the funds? Or simply don't want to pay for a subscription you won't use? All premium accounts available. First-come, first-served basis. If the login is invalid, it may have been terminated by the provider or someone might have already acquired the account and changed the password before you had a chance.</p>
+      <div class="redirectcontainer">
+        <button class="centerbtn" onclick="window.location.href='https://docs.google.com/document/d/19gzwvjS876BTGiY5PMjGdPHf68Ws0eP-hBEQVsui5yQ/edit?usp=sharing'">NordVPN</button>
+        <button class="centerbtn" onclick="window.location.href='/directories/soon.html'">Spotify</button>
+        <button class="centerbtn" onclick="window.location.href='/directories/soon.html'">Netflix</button>
+        <button class="centerbtn" onclick="window.location.href='/directories/soon.html'">Disney+</button>
+        <button class="centerbtn" onclick="window.location.href='/directories/soon.html'">IPVanish</button>
+        <button class="centerbtn" onclick="window.location.href='/directories/soon.html'">HBO Max</button>
+        <button class="centerbtn" onclick="window.location.href='/directories/soon.html'">Steam</button>
+      </div>
+    </div>  
+    <div id="Partners" class="section">
+      <br>
       <h1>Partners 🤝</h1>
-      <h4>Don't think Skyhax is enough for you? Check out our awesome supports and partners!</h4>
+      <p>Don't think Skyhax is enough for you? Check out our awesome supporter and partners!</p>
       <div class="redirectcontainer">
       <button class="centerbtn" onclick="window.location.href='https://discord.gg/desmos'">Artclass</button>
       <button class="centerbtn" onclick="window.location.href='https://discord.gg/goabyss'">Abyss Services</button>
@@ -75,6 +105,8 @@
       </div>
       
     </div>
+    <br>
+    <br>
     <div class="redirectcontainer">
     <p class="left">© 2023 Skyhax. All rights reserved. Website Design by Arthur Jiang.</p>
     <p class="right"><a href="/directories/tac.html">Terms of Service</a></p>

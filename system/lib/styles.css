@@ -45,6 +45,12 @@ body {
   margin-left: 30%;
   margin-top: 25px;
 }
+.left4 {
+  position: absolute;
+  left: 0;
+  margin-left: 40%;
+  margin-top: 25px;
+}
 
 .right {
  position: absolute;
@@ -177,6 +183,7 @@ button:active::after {
 .kasmimg {
   width: 50%;
   z-index: 99999;
+  border-radius: 15px;
 }
 #Partners {
   text-align: center;
@@ -191,7 +198,7 @@ button:active::after {
   }
 
   .logo {
-    margin: 15px auto;
+    margin: 15px;
   }
 
   .banner {
@@ -247,3 +254,35 @@ button:active::after {
       margin: 0;
       padding: 0;
     }
+.animate {
+      animation-duration: 2s;
+      animation-fill-mode: both;
+    }
+
+    /* Define animation keyframes */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Apply animation to elements */
+    .fade-up {
+      animation-name: fadeInUp;
+    }
+section {
+  animation-delay: 1s;
+}
+#Accounts {
+  margin-top: 10%;
+  justify-content: center;
+  text-align: center;
+}
+p {
+  font-size: 25px;
+}
