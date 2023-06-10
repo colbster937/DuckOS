@@ -15,6 +15,7 @@ body {
   color: white;
   font-family: Overlock;
   z-index: 99999999;
+  padding: 10px;
 }
 .title {
   font-family: Overlock;
@@ -250,10 +251,6 @@ button:active::after {
   left: 0;
   z-index: -1;
 }
-* {
-      margin: 0;
-      padding: 0;
-    }
 .animate {
       animation-duration: 2s;
       animation-fill-mode: both;
