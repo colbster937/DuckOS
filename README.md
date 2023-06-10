@@ -19,7 +19,7 @@
 <h2 align='center'>✨Skyhax Contributors✨</h2>
 <p align="center">Arthur Jiang - Founder of Skyhax; sole developer of DuckOS</p>
 <p align="center">Avaneesh Shetti - Front-End developer; Quality of life & Improvements</p>
-<p align="center">Other Contributors - Friends and partners 🤷</p>
+<p align="center">Other Contributors - These wonderful individuals generously devote their personal time to creating incredible pull requests. 🤷</p>
 
 
 <h2 align="center">DISCLAIMER 📝</h2>
