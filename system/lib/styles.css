@@ -307,3 +307,10 @@ p {
         #content {
             display: none;
         }
+.down-arrow {
+  font-size: 50px;
+}
+.scrolldown {
+  text-align: center;
+  margin-top: 25px;
+}
