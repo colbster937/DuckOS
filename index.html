@@ -15,6 +15,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <script>
+     window.addEventListener('load', function() {
+            var loader = document.getElementById('loader');
+            var content = document.getElementById('content');
+            setTimeout(function() {
+                loader.classList.add('hide');
+                setTimeout(function() {
+                    loader.style.display = 'none';
+                    content.style.display = 'block';
+                }, 1000); 
+            }, 2000); 
+        });
       function scrollToSection(sectionId) {
         const section = document.getElementById(sectionId);
         if (section) {
@@ -37,6 +48,10 @@
     </script>
   </head>
   <body>
+    <div id="loader">
+        <img src="/system/media/loading.gif" alt="Loading...">
+    </div>
+    <div id="content">
     <div id="particles-js"></div>
   <script src="/js/particles.min.js"></script>
   <script src="/js/particles.js"></script>
@@ -118,5 +133,6 @@
         channel: '1115668900353417216' // #🍭duckos-chatroom
     })
 </script>
+      </div>
   </body>
 </html>
