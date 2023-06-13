@@ -1,3 +1,9 @@
+window.addEventListener('message', function(event) {
+      if (event.data && event.data.type === 'notification') {
+        const { title, message, delay } = event.data;
+        showNotification(title, message, delay);
+      }
+    });
 function showNotification(title, message, delay) {
       const timestamp = new Date().toLocaleTimeString();
 
