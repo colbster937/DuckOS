@@ -20,6 +20,7 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="/system/lib/main.css" rel="stylesheet" type="text/css" />
+    <link href="/system/lib/notifications.css" rel="stylesheet" type="text/css" />
     <link href="/system/lib/window.css" rel="stylesheet" type="text/css" />
     <link href="/system/lib/settings.css" rel="stylesheet" type="text/css" />
     <link href="/system/lib/menu.css" rel="stylesheet" type="text/css" />
@@ -32,6 +33,7 @@
     <link rel="icon" type="image/png" href="/system/media/favicons/eye.png">
   </head>
   <body>
+    <div id="notification-container"></div>
     <div id="topbar">
       <span id="settingsbtn" class="animate__animated animate__fadeInDown animate__delay-1s">
         <i class="fa-solid fa-gear"></i>
@@ -96,6 +98,7 @@
 	</div>
     <script src="/system/lib/stats.js"></script>
     <script src="/system/lib/autohide.js"></script>
+    <script src="/system/lib/notifications.js"></script>
     <script>
       function isMobileDevice() {
       return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
