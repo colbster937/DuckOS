@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
    function toggleMode() {
+     showNotification('Settings', 'Switched system theme successfully!', 2500);
     document.body.classList.toggle('light-mode');
     toggleSwitch.textContent = document.body.classList.contains('light-mode') ? 'Light Mode' : 'Dark Mode';
 
