@@ -16,7 +16,24 @@
       margin-bottom: 10px;
       opacity: 0;
       transition: top 0.5s, opacity 0.5s, transform 0.5s;
-      z-index: 99999999999999999999999999999999999;
+      z-index: 2147483647;
+    }
+.notification:hover {
+      position: fixed;
+      top: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 15px;
+      background-color: #0c3c5a;
+      cursor: pointer;
+      color: white;
+      border: 1px solid #ccc;
+      font-family: Overlock;
+      border-radius: 15px;
+      margin-bottom: 10px;
+      opacity: 0;
+      transition: top 0.5s, opacity 0.5s, transform 0.5s;
+      z-index: 2147483647;
     }
 
     .notification.show {
@@ -53,7 +70,14 @@
       right: 15px;
       cursor: pointer;
     }
-
+.close-button:hover {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  cursor: pointer;
+  transform: scale(1.5);
+  transition: transform 0.3s ease;
+}
     @keyframes slideOut {
       0% {
         opacity: 1;
