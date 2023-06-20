@@ -32,4 +32,4 @@
 <h2 align="center">Spare me a ☕!</h2>
 <p align="center"><a align="center" href="https://ko-fi.com/chainedtears">Support me on Ko-Fi!</a></p>
 <p align="center">or...</p>
-<p align="center"><b>Bitcoin Donation Address</b> - bc1qz94gtn5znde3hmpts98fcewqwe26ava8fm00ws</p>
+<p align="center"><b>Bitcoin Donation Address</b> - bc1q0dd0ggjlf7s7dezkx5qqdzve4ej6kec2vn8kgy</p>
