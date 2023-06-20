@@ -52,9 +52,25 @@
       });
     }
     window.addEventListener('scroll', addAnimationOnScroll);
+      if (!localStorage.getItem('popupShown')) {
+      // Display the popup
+      document.getElementById('popup').style.display = 'block';
+      // Set a flag in local storage to indicate that the popup has been shown
+      localStorage.setItem('popupShown', 'true');
+    }
+
+    // Function to close the popup
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
     </script>
   </head>
   <body>
+    <div id="popup" class="popup">
+    <h1>Welcome to Skyhax!</h1>
+    <p>I regret to inform you that the Skyhax Discord Server has recently been taken down due to the disabling of my account by Discord. My account was flagged for engaging in activities such as malicious hacking, fraud, account or credit card cracking, and attempting to damage computer networks or machines. I deeply regret my actions and the choices I made. As a result, Skyhax will be shutting down indefinitely. I sincerely appreciate your understanding in this matter.</p>
+    <button class="popupbtn" onclick="closePopup()">Close</button>
+  </div>
     <div id="particles-js"></div>
   <script src="/js/particles.min.js"></script>
   <script src="/js/particles.js"></script>
