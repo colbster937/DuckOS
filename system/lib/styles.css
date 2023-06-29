@@ -52,6 +52,18 @@
      margin-left: 40%;
      margin-top: 25px;
 }
+ .left5 {
+     position: absolute;
+     left: 0;
+     margin-left: 50%;
+     margin-top: 25px;
+}
+ .left6 {
+     position: absolute;
+     left: 0;
+     margin-left: 60%;
+     margin-top: 25px;
+}
  .right {
      position: absolute;
      right: 0;
