@@ -14,7 +14,7 @@
 <p align="center">The world's leading web-based operating system remains unblocked by any hosting services to date! You can find instructions on how to deploy and host DuckOS by yourself on our <a href="https://docs.google.com/document/d/1RuPMm-cL3VS4Dpq4lmo3D2YhPgMatnJ-GoNhRIuPTUI/edit?usp=sharing">Google Docs</a> instructions.</p>
 
 <h1 align="center">Showcase Images 📷</h1>
-<p align="center"> <img src="/system/media/showcasemain.png"></p>
+<p align="center"> <img src="/system/media/duckbanner.png"></p>
 
 <h2 align='center'>✨Skyhax Contributors✨</h2>
 <p align="center">Arthur Jiang - Founder of Skyhax; sole developer of DuckOS</p>
