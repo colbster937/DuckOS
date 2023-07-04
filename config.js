@@ -8,17 +8,6 @@ const config = {
             windowTitle: 'Rammerhead Browser',
             imgSrc: '/system/media/appicons/rammerhead_icon.png'
         },
-
-        {
-            id: 'meowzies-adventure',
-            iframeSrc: window.location.protocol + '//study.' + window.location.hostname + '/',  
-            defaultWidth: 30,
-            defaultHeight: 45,
-            buttonText: 'Meowzies Adventure 3',
-            windowTitle: 'Meowzies Adventure 3 - (meowiegames.com)',
-            imgSrc: '/apps/meowiegames/meowziesadventurethree/icon.png',
-            onStart: false
-        },
         {
             id: 'a1r',
             iframeSrc: window.location.protocol + '//game.' + window.location.hostname + '/',
