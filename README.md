@@ -1,4 +1,4 @@
-<p align="center"> <img width="200px" src="/system/media/favicons/Duck.png?raw=true"> </p>
+<p align="center"> <img width="200px" src="/system/media/banner.png"> </p>
 <h1 align="center">DuckOS - The future of Web Operating Systems 🌌</h1>
 <p align="center"> <a href="https://discord.gg/yesJj684P5"><img height="30px" src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white"></a> <a href="https://github.com/GikitSRC"><img height="30px" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white"></a> <a href="https://twitter.com/ACompleteNewb"><img height="30px" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"></a> </p>
 
