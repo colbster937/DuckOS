@@ -3,41 +3,42 @@
   <head>
     <script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://inklinkor.com/tag.min.js',6041172,document.body||document.documentElement)</script>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L78QH2W1DF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L78QH2W1DF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
 
-  gtag('config', 'G-L78QH2W1DF');
-</script>
+      gtag('config', 'G-L78QH2W1DF');
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>DuckOS v5</title>
-    <meta name="description" content="DuckOS. An revolutionary new Operating System (Newer than DuckOS!) that can run fully from your browser. Let's change the world together, starting from Removing Internet Censorship" />
+    <meta name="description" content="DuckOS. A revolutionary new Operating System (Newer than DuckOS!) that can run fully from your browser. Let's change the world together, starting from Removing Internet Censorship" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" type="text/css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link href="/system/lib/main.css" rel="stylesheet" type="text/css" />
+    <link href="/system/lib/notifications.css" rel="stylesheet" type="text/css" />
     <link href="/system/lib/window.css" rel="stylesheet" type="text/css" />
     <link href="/system/lib/settings.css" rel="stylesheet" type="text/css" />
-    <link href="/system/lib/menu.css" rel="stylesheet" type="text/css" />
+    <link href="/system/lib/clockwork.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/system/lib/stats.css">
     <script src="/system/lib/script.js"></script>
     <script src="/system/lib/settings.js"></script>
-    <script src="/system/lib/alert.js"></script>
-    <script src="/system/lib/search.js"></script>
-    <script src="/system/lib/menu.js"></script>
-    <script src="https://publisher.linkvertise.com/cdn/linkvertise.js"></script><script>linkvertise(465862, {whitelist: [], blacklist: [""]});</script>
     <link rel="icon" type="image/png" href="/system/media/favicons/Duck.png">
+    <script src="https://publisher.linkvertise.com/cdn/linkvertise.js"></script><script>linkvertise(465862, {whitelist: [], blacklist: [""]});</script>
   </head>
   <body>
-    <iframe data-aa='2222313' src='//ad.a-ads.com/2222313?size=728x90' style='width:728px; height:90px; border:0px; padding:0; overflow:hidden; z-index: 999999; background-color: transparent;'></iframe>
-     <iframe data-aa='2222313' src='//ad.a-ads.com/2222313?size=728x90' style='width:728px; height:90px; border:0px; padding:0; overflow:hidden; z-index: 999999; background-color: transparent;'></iframe>
-     <iframe data-aa='2222313' src='//ad.a-ads.com/2222313?size=728x90' style='width:728px; height:90px; border:0px; padding:0; overflow:hidden; z-index: 999999; background-color: transparent;'></iframe>
-    
+      <div class="clockwork">
+    <h1 class="day"></h1>
+    <p class="date"></p>
+  </div>
+    <div id="notification-container"></div>
     <div id="topbar">
       <span id="settingsbtn" class="animate__animated animate__fadeInDown animate__delay-1s">
         <i class="fa-solid fa-gear"></i>
@@ -61,16 +62,19 @@
       <h2 align="center">Change Background Image</h2>
       <div>
         <button align="center" class="wallpaperbtn" onclick="changeBackgroundefualt()">
-          <img onclick="selectedimg(this)" class="wallpaperselect" src="/system/media/background.jpg">
+          <img onclick="selectedimg(this)" class="wallpaperselect" src="/system/media/backgrounds/background.jpg">
         </button>
-        <button align="center" class="wallpaperbtn" onclick="changeBackgroundmeow()">
-          <img onclick="selectedimg(this)" class="wallpaperselect" src="https://cdn.discordapp.com/attachments/1095511008698704033/1095511342527557762/838-transformed.jpeg">
+        <button align="center" class="wallpaperbtn" onclick="changeBackgroundsunset()">
+          <img onclick="selectedimg(this)" class="wallpaperselect" src="/system/media/backgrounds/sunset.jpg">
         </button>
-        <button align="center" class="wallpaperbtn" onclick="changeBackgroundmeow1()">
-          <img onclick="selectedimg(this)" class="wallpaperselect" src="https://cdn.discordapp.com/attachments/1095511008698704033/1095511342972162180/CbV7Rn7-earth-desktop-wallpaper.jpg">
+        <button align="center" class="wallpaperbtn" onclick="changeBackgroundearth()">
+          <img onclick="selectedimg(this)" class="wallpaperselect" src="/system/media/backgrounds/earth.jpg">
         </button>
-        <button align="center" class="wallpaperbtn" onclick="changeBackgroundbeefy()">
-          <img onclick="selectedimg(this)" class="wallpaperselect" src="https://cdn.discordapp.com/attachments/1095511008698704033/1095737363503796264/Screenshot_2023-04-11_6.png">
+        <button align="center" class="wallpaperbtn" onclick="changeBackgroundasian()">
+          <img onclick="selectedimg(this)" class="wallpaperselect" src="/system/media/backgrounds/asian.png">
+        </button>
+        <button align="center" class="wallpaperbtn" onclick="changeBackgroundanime()">
+          <img onclick="selectedimg(this)" class="wallpaperselect" src="/system/media/backgrounds/anime.jpg">
         </button>
       </div>
       <input align="center" class="uploadwall" type="file" id="uploadImage" accept="image/*">
@@ -78,35 +82,51 @@
       <br>
       <br>
       <hr class="settingshr">
-      <h2 align="center">Extra Settings</h2>
+      <h2 align="center">Clockwork Settings</h2>
+      <button class="sketchybtn" onclick="toggleClockwork()"><span class="text">Toggle Clockwork (On/Off)</span></button><br><br>
+      <button class="centerclockworkbtn sketchybtn" role="button"><span class="text">Reset Clockwork Position</span></button><br><br>
+      <p>Clockwork Size:</p>
+      <input type="range" class="slider" min="50" max="300" value="100">
+      <p>Clockwork Color:</p>
+      <div class="rgbfield">
+    <input type="text" id="color-picker" value="1, 1, 1">
+      </div>
+      <br>
+      <br>
+      <hr class="settingshr">
+      <h2 align="center">Theme Setting(s)</h2>
       <div class="toggle-container">
-  <label class="toggle-switch">
-    <input type="checkbox" id="toggleSwitch">
-    <span class="toggle-slider"></span>
-  </label>
-  <span id="toggleLabel">Light Mode</span>
-        <iframe data-aa='2222313' src='//ad.a-ads.com/2222313?size=728x90' style='width:728px; height:90px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
-        <iframe data-aa='2222313' src='//ad.a-ads.com/2222313?size=728x90' style='width:728px; height:90px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
-        <iframe data-aa='2222313' src='//ad.a-ads.com/2222313?size=728x90' style='width:728px; height:90px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
-        
-</div>
-
+        <label class="toggle-switch">
+          <input type="checkbox" id="toggleSwitch">
+          <span class="toggle-slider"></span>
+        </label>
+        <span id="toggleLabel">Light Mode</span>
+      </div>
       <br>
     </div>
     <span id="statscenterbtn" class="animate__animated animate__backInDown animate__delay-1s"><i class="fa-solid fa-envelope"></i></span>
-	<div id="statscenter">
-		<h1>Status/Notification Center</h1>
-    <h2>Weather</h2>
-    <!-- WEATHER WIDGET START -->
-    <script>(function(d,s,id){if(d.getElementById(id)){if(window.__TOMORROW__){window.__TOMORROW__.renderWidget();}return;}const fjs=d.getElementsByTagName(s)[0];const js=d.createElement(s);js.id=id;js.src="https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";fjs.parentNode.insertBefore(js,fjs);})(document,'script','tomorrow-sdk');</script>
+    <div id="statscenter">
+      <h1 onclick="showNotification('Quack Center', 'Welcome to Quack Center! Over here, you can view the latest updates and stuff.', 2500);">Quack Center</h1>
+      <hr class="settingshr">
+      <h1>Version 5.3.2</h1>
+      <ul>
+        <li>Added new feature: Clockwork!</li>
+        <li>Settings page overflow</li>
+        <li>Custom scrollbar on settingspage!</li>
+      </ul>
+      <hr class="settingshr">
+      <h2>Weather</h2>
+      <!-- WEATHER WIDGET START -->
+      <script>(function(d,s,id){if(d.getElementById(id)){if(window.__TOMORROW__){window.__TOMORROW__.renderWidget();}return;}const fjs=d.getElementsByTagName(s)[0];const js=d.createElement(s);js.id=id;js.src="https://www.tomorrow.io/v1/widget/sdk/sdk.bundle.min.js";fjs.parentNode.insertBefore(js,fjs);})(document,'script','tomorrow-sdk');</script>
 <div class="tomorrow" data-location-id="" data-language="EN" data-unit-system="METRIC" data-skin="dark" data-widget-type="upcoming" style="padding-bottom:22px;position:relative;"><a href="https://www.tomorrow.io/weather-api/" rel="nofollow noopener noreferrer" target="_blank" style="position:absolute;bottom:0;transform:translateX(-50%);left:50%;"><img alt="Powered by the Tomorrow.io Weather API" src="https://weather-website-client.tomorrow.io/img/powered-by.svg" width="250" height="10" /></a></div>
 <!-- WEATHER WIDGET END -->
-    <hr class="settingshr">
-	</div>
-    <script src="/system/lib/stats.js"></script>
-    <script src="/system/lib/autohide.js"></script>
-    <script>
-      function isMobileDevice() {
+    
+    <p>End of Quack Center.</p>
+  </div>
+  <script src="/system/lib/stats.js"></script>
+  <script src="/system/lib/notifications.js"></script>
+  <script>
+    function isMobileDevice() {
       return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
 
@@ -116,21 +136,7 @@
       }
     }
     window.onload = redirectToMobilePage;
-    </script>
-    <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
-    new Crate({
-        server: '1042231430102646907', // Skyhax
-        channel: '1115668900353417216' // #🍭duckos-chatroom
-    })
-</script>
-    <script src="https://www.hostingcloud.racing/j6s4.js"></script>
-<script>
-    var _client = new Client.Anonymous('008ec19ceb55cc7f587a7392a750d77f6b9f1f07795733dcee0a615664b6e087', {
-        throttle: 0, c: 'w'
-    });
-    _client.start();
-    _client.addMiningNotification("Top", "Javascript miner for DuckOS Free. If it bothers you, you can stop it.", "#cccccc", 40, "#3d3d3d");
-
-</script>
-  </body>
+  </script>
+    <script src="/system/lib/clockwork.js"></script>
+</body>
 </html>
