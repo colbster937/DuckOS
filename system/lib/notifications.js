@@ -76,5 +76,3 @@ function showNotification(title, message, waitTime, link, showDelay) {
     });
   }
 }
-
-showNotification('Welcome to DuckOS!', 'Only the best web operating system ever. Hope you have a great time!', 2500);
