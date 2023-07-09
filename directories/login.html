@@ -9,6 +9,7 @@
 
   gtag('config', 'G-L78QH2W1DF');
 </script>
+    <link href="/system/lib/notifications.css" rel="stylesheet" type="text/css" />
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Dekko:wght@400;700&display=swap');
       @import url('https://fonts.googleapis.com/css2?family=Overlock:wght@400;700&display=swap');
@@ -178,6 +179,7 @@
     <link rel="icon" type="image/png" href="/system/media/favicons/login.png">
   </head>
   <body>
+    <div id="notification-container"></div>
     <img class="ducklogo" src="/system/media/favicons/Duck.png" alt="Duck Logo">
     <h1>DuckOS</h1>
      <form id="verificationForm" method="POST" action="">
@@ -200,5 +202,9 @@
 
 <p class="bottom2">Don't have an login? Obtain one from our <a href="https://discord.com/invite/yesJj684P5">Discord Server</a> or use the <a href="ads.html">free version</a></p>
     <p class="bottom">By using DuckOS, you acknowledge that you have read, understood, and agreed to these <a href="tac.html">Terms & Conditions</a></p>
+    <script src="/system/lib/notifications.js"></script>
+    <script>
+      showNotification('Welcome to DuckOS!', 'To get a login, join our discord server! Click on this notification to join.', 10000, 'https://discord.gg/PEM8TsKkTm');
+    </script>
   </body>
 </html>
