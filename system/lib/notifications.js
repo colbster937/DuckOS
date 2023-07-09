@@ -71,8 +71,19 @@ function showNotification(title, message, waitTime, link, showDelay) {
   }, waitTime);
 
   if (link) {
-    notification.addEventListener('click', () => {
-      window.location.href = link;
+    notification.addEventListener('click', (event) => {
+      // Check if the target of the click event is the notification itself or the close button
+      if (event.target === notification || event.target === closeButton) {
+        // Only redirect to the link if the click target is not the close button
+        if (event.target !== closeButton) {
+          window.location.href = link;
+        }
+        notification.classList.add('hide');
+
+        setTimeout(() => {
+          notification.remove();
+        }, 500);
+      }
     });
   }
 }
