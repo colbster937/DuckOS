@@ -1,95 +1,127 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Calculator</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-    
-    .calculator {
-      width: 200px;
-      height: 400px;
-      background-color: #f2f2f2;
-      border: 1px solid #ccc;
-      padding: 10px;
-      border-radius: 15px;
-      margin: 0 auto;
-    }
-    
-    .calculator input[type="button"] {
-      width: 40px;
-      height: 40px;
-      font-size: 16px;
-      margin: 2px;
-      border-radius: 15px;
-      border: 1px solid black;
-    }
-    .calculator input[type="button"]:hover {
-      width: 40px;
-      height: 40px;
-      font-size: 16px;
-      margin: 2px;
-      border-radius: 15px;
-      border: 1px solid black;
-      scale: 1.1;
-      cursor: pointer;
-    }
-    
-    .calculator input[type="text"] {
-      width: 90%;
-      margin-bottom: 10px;
-      border-radius: 15px;
-      text-align: center;
-      padding: 8px;
-      font-size: 18px;
-      border: 1px solid #ccc;
-    }
-  </style>
-</head>
-<body>
-  <div class="calculator">
-    <input type="text" id="result" readonly>
-    <input type="button" value="1" onclick="addToResult('1')">
-    <input type="button" value="2" onclick="addToResult('2')">
-    <input type="button" value="3" onclick="addToResult('3')">
-    <input type="button" value="+" onclick="addToResult('+')">
-    <br>
-    <input type="button" value="4" onclick="addToResult('4')">
-    <input type="button" value="5" onclick="addToResult('5')">
-    <input type="button" value="6" onclick="addToResult('6')">
-    <input type="button" value="-" onclick="addToResult('-')">
-    <br>
-    <input type="button" value="7" onclick="addToResult('7')">
-    <input type="button" value="8" onclick="addToResult('8')">
-    <input type="button" value="9" onclick="addToResult('9')">
-    <input type="button" value="*" onclick="addToResult('*')">
-    <br>
-    <input type="button" value="0" onclick="addToResult('0')">
-    <input type="button" value="." onclick="addToResult('.')">
-    <input type="button" value="=" onclick="calculateResult()">
-    <input type="button" value="/" onclick="addToResult('/')">
-    <br>
-    <input type="button" value="C" onclick="clearResult()">
-  </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+    /* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e0e3eb;
+}
+.container {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 10px 20px 20px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.display {
+  height: 80px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: right;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: #000e1a;
+  pointer-events: none;
+}
+.buttons {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.buttons button {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #eee;
+}
+.buttons button:active {
+  transform: scale(0.99);
+}
+.operator {
+  color: #2f9fff;
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" class="display" />
 
-  <script>
-    function addToResult(value) {
-      document.getElementById("result").value += value;
-    }
+      <div class="buttons">
+        <button class="operator" data-value="AC">AC</button>
+        <button class="operator" data-value="DEL">DEL</button>
+        <button class="operator" data-value="%">%</button>
+        <button class="operator" data-value="/">/</button>
 
-    function calculateResult() {
-      try {
-        var result = eval(document.getElementById("result").value);
-        document.getElementById("result").value = result;
-      } catch (error) {
-        document.getElementById("result").value = "Error";
-      }
-    }
+        <button data-value="7">7</button>
+        <button data-value="8">8</button>
+        <button data-value="9">9</button>
+        <button class="operator" data-value="*">*</button>
 
-    function clearResult() {
-      document.getElementById("result").value = "";
-    }
-  </script>
-</body>
+        <button data-value="4">4</button>
+        <button data-value="5">5</button>
+        <button data-value="6">6</button>
+        <button class="operator" data-value="-">-</button>
+
+        <button data-value="1">1</button>
+        <button data-value="2">2</button>
+        <button data-value="3">3</button>
+        <button class="operator" data-value="+">+</button>
+
+        <button data-value="0">0</button>
+        <button data-value="00">00</button>
+        <button data-value=".">.</button>
+        <button class="operator" data-value="=">=</button>
+      </div>
+    </div>
+
+    <script>const display = document.querySelector(".display");
+const buttons = document.querySelectorAll("button");
+const specialChars = ["%", "*", "/", "-", "+", "="];
+let output = "";
+
+//Define function to calculate based on button clicked.
+const calculate = (btnValue) => {
+  display.focus();
+  if (btnValue === "=" && output !== "") {
+    //If output has '%', replace with '/100' before evaluating.
+    output = eval(output.replace("%", "/100"));
+  } else if (btnValue === "AC") {
+    output = "";
+  } else if (btnValue === "DEL") {
+    //If DEL button is clicked, remove the last character from the output.
+    output = output.toString().slice(0, -1);
+  } else {
+    //If output is empty and button is specialChars then return
+    if (output === "" && specialChars.includes(btnValue)) return;
+    output += btnValue;
+  }
+  display.value = output;
+};
+
+//Add event listener to buttons, call calculate() on click.
+buttons.forEach((button) => {
+  //Button click listener calls calculate() with dataset value as argument.
+  button.addEventListener("click", (e) => calculate(e.target.dataset.value));
+});</script>
+  </body>
 </html>
