@@ -22,7 +22,8 @@
 
 
 <h2 align="center">DISCLAIMER 📝</h2>
-<p align="center"><a href="disclaimer.md">Click here to view the Disclaimer.</a></p>
+<p align="center"> <a href="disclaimer.md"><img height="60px" src="/system/media/github/disclaimer.png"></a>
+<p align="center">Click button to access disclaimer</p>
 
 
 <h2 align="center">License 📄</h2>
