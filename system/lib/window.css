@@ -1,0 +1,240 @@
+  body {
+    overflow: hidden;
+}
+
+#apps .appwindow {
+    position: absolute;
+    border: 1px solid transparent;
+    background-color: white;
+    -webkit-box-shadow: -7px 10px 22px -3px rgba(0, 0, 0, 0.69);
+    -moz-box-shadow: -7px 10px 22px -3px rgba(0, 0, 0, 0.69);
+    box-shadow: -7px 10px 22px -3px rgba(0, 0, 0, 0.69);
+    border-radius: 15px;
+    user-select: none;
+}
+
+.appwindow {
+    position: absolute;
+    border: 1px solid transparent;
+    background-color: white;
+    -webkit-box-shadow: -7px 10px 22px -3px rgba(0, 0, 0, 0.69);
+    -moz-box-shadow: -7px 10px 22px -3px rgba(0, 0, 0, 0.69);
+    box-shadow: -7px 10px 22px -3px rgba(0, 0, 0, 0.69);
+    border-radius: 15px;
+    user-select: none;
+    pointer-events: auto;
+}
+
+.toolbar {
+    height: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #605757;
+    color: white;
+    padding: 0 4px;
+    cursor: move;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding-left: 10px;
+    user-select: none;
+}
+
+.window-title {
+    margin: 0;
+    font-size: 14px;
+    user-select: none;
+}
+
+.toolbar>div {
+    display: flex;
+}
+
+.toolbar button {
+    font-size: 12px;
+    padding: 0 4px;
+    margin-left: 4px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+.toolbar button:hover {
+    background-color: #e0e0e0;
+}
+
+padding-left: 10px;
+padding-right: 10px;
+
+.toolbar button:active {
+    background-color: #d0d0d0;
+}
+
+.toolbar button.minimize-btn {
+    background-color: #eeff00;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.toolbar button.minimize-btn:hover {
+    background-color: #9ba608;
+}
+
+.toolbar button.maximize-btn {
+    background-color: #00ff04;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.toolbar button.maximize-btn:hover {
+    background-color: #07a209;
+}
+
+.toolbar button.close-btn {
+    background-color: #f44336;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.toolbar button.close-btn:hover {
+    background-color: #a80b00;
+}
+
+.buttondefault {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 15px;
+    width: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    color: white;
+    height: auto;
+    cursor: pointer;
+    user-select: none;
+    z-index: 9999;
+    transition: transform 0.2s ease-in-out;
+}
+
+.buttondefault:hover {
+    transform: scale(1.15);
+    border-radius: 10px;
+}
+
+
+#iframeapp {
+    border-radius: 15px;
+    border: 1px solid transparent;
+}
+
+.appframe {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+@keyframes grow {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes shrink {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+@keyframes squeeze {
+    0% {
+        opacity: 1;
+        height: 100%;
+    }
+
+    100% {
+        opacity: 0;
+        height: 0;
+    }
+}
+
+.grow {
+    animation: grow 300ms forwards;
+}
+
+.shrink {
+    animation: shrink 300ms forwards;
+}
+
+.squeeze {
+    animation: squeeze 300ms forwards;
+}
+@keyframes appwindow-open {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes appwindow-close {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+
+
+.appwindow-opening {
+  animation: appwindow-open 0.3s ease;
+}
+
+.appwindow-closing {
+  animation: appwindow-close 0.3s ease;
+}
+
+
+
+

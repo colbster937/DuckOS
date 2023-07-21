@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: black;
+      color: lime;
+      font-family: monospace;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    #terminal {
+      width: 100%;
+      height: 100vh;
+      padding: 4px;
+    }
+
+    #terminal-input {
+      display: flex;
+    }
+
+    #terminal-input-prefix {
+      color: lime;
+      margin-right: 8px;
+    }
+
+    #terminal-input-field {
+      flex-grow: 1;
+      background-color: transparent;
+      color: white;
+      border: none;
+      outline: none;
+    }
+
+    .terminal-line {
+      white-space: pre;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="terminal">
+    <div class="terminal-line">
+      <span>Welcome to the fake terminal!</span>
+    </div>
+    <div class="terminal-line">
+      <span>Type 'help' for a list of available commands.</span>
+    </div>
+    <div class="terminal-line">
+      <span id="terminal-output"></span>
+    </div>
+    <div id="terminal-input" class="terminal-line">
+      <span id="terminal-input-prefix">$</span>
+      <input id="terminal-input-field" type="text" autofocus />
+    </div>
+  </div>
+<script>
+  const terminalOutput = document.getElementById('terminal-output');
+  const terminalInputField = document.getElementById('terminal-input-field');
+  terminalInputField.addEventListener('keyup', handleKeyUp);
+  let currentDirectory = '/';
+
+  function handleKeyUp(event) {
+    if (event.key === 'Enter') {
+      const command = terminalInputField.value.trim();
+      terminalInputField.value = '';
+
+      displayCommand(command);
+      executeCommand(command);
+    }
+  }
+
+  function displayCommand(command) {
+    const commandLine = document.createElement('div');
+    commandLine.className = 'terminal-line';
+    commandLine.innerHTML = `<span><span id="terminal-input-prefix">$</span>${currentDirectory} ${command}</span>`;
+    terminalOutput.before(commandLine);
+  }
+
+  function displayOutput(output) {
+    const outputLine = document.createElement('div');
+    outputLine.className = 'terminal-line';
+    outputLine.innerText = output;
+    terminalOutput.before(outputLine);
+  }
+
+  function executeCommand(command) {
+    let output = '';
+
+    if (command === 'help') {
+      output += 'Available commands:\n';
+      output += 'help - Show available commands\n';
+      output += 'neofetch - Displays current operating system specifications.\n';
+      output += 'ls - Shows you the DuckOS Filesystem. Currently broken with CD command. \n';
+      output += 'date - Show the current date and time\n';
+      output += 'clear - Clear the terminal\n';
+      output += 'pwd - Show current directory\n';
+      output += 'cd [directory] - Change directory\n';
+      output += 'mkdir [directory] - Create a new directory\n';
+      output += 'rm [file/directory] - Remove a file or directory\n';
+      output += 'dog [file] - Display the contents of a file\n';
+    } else if (command === 'neofetch') {
+      output += 'OS: DuckOS Web 5\n';
+      output += 'HOST: ' + window.location.hostname + '\n';
+      output += 'Kernel: 6.3.4-201.fc38.x86_64 \n';
+      output += 'DE: DuckUI v2 \n';
+      output += 'Terminal: DuckOS Terminal Emulator \n';
+      output += 'Memory: 1GB \n';
+    } else if (command === 'date') {
+      const currentDate = new Date();
+      output += currentDate.toString();
+    } else if (command === 'ls') {
+      output += 'index.html, apps, directories, js, system, 401.html, 404.html, config.js, particles.json, psw.js, test.html \n';
+    } else if (command === 'clear') {
+      window.location.reload();
+      return;
+    } else if (command === 'pwd') {
+      output += currentDirectory;
+    } else if (command === 'cd') {
+      output += 'Please specify a directory.';
+    } else if (command.startsWith('cd ')) {
+      const directory = command.substring(3).trim();
+      if (directory === '..') {
+        const lastSlashIndex = currentDirectory.lastIndexOf('/');
+        currentDirectory = currentDirectory.substring(0, lastSlashIndex);
+      } else {
+        currentDirectory += '/' + directory;
+      }
+    } else if (command === 'mkdir') {
+      output += 'Please specify a directory name.';
+    } else if (command.startsWith('mkdir ')) {
+      const directory = command.substring(6).trim();
+      output += `Created directory '${directory}'.`;
+    } else if (command === 'rm') {
+      output += 'Please specify a file or directory.';
+    } else if (command.startsWith('rm ')) {
+      const fileOrDirectory = command.substring(3).trim();
+      output += `Removed '${fileOrDirectory}'.`;
+    } else if (command === 'dog') {
+      output += 'Please specify a file.';
+    } else if (command.startsWith('dog ')) {
+      const file = command.substring(4).trim();
+      if (file === 'neofetch') {
+        output += 'OS: DuckOS Web 5\n';
+        output += 'HOST: ' + window.location.hostname + '\n';
+        output += 'Kernel: 6.3.4-201.fc38.x86_64 \n';
+        output += 'DE: DuckUI v2 \n';
+        output += 'Terminal: DuckOS Terminal Emulator \n';
+        output += 'Memory: 1GB \n';
+      } else if (file === 'config.js') {
+        output += 'var config = {\n';
+        output += '  theme: "dark",\n';
+        output += '  fontSize: 14\n';
+        output += '};';
+      } else {
+        output += `File '${file}' not found.`;
+      }
+    } else {
+      output += `Invalid or missing package command: ${command}`;
+    }
+
+    displayOutput(output);
+  }
+</script>
+
+</body>
+</html>

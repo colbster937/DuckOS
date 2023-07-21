@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Dekko:wght@400;
+700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Overlock:wght@400;
+700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;
+700&display=swap');
+html {
+     background-image: url('/system/media/background.jpg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+}
+ .ducklogo {
+     width: 180px;
+     height: 180px;
+     border-radius: 50%;
+     position: absolute;
+     top: 30%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     border: 5px solid blue;
+}
+ h1 {
+     font-family: Overlock;
+     position: absolute;
+     top: calc(30% + 100px);
+     left: 50%;
+     transform: translateX(-50%);
+}
+ .subtitle {
+     font-family: overlock;
+     position: absolute;
+     top: calc(30% + 150px);
+     left: 50%;
+     transform: translateX(-50%);
+}
+ .bottom {
+     font-family: overlock;
+     position: absolute;
+     bottom: 1;
+     color: white;
+     left: 50%;
+     transform: translateX(-50%);
+}
+ .bottom2 {
+     font-family: overlock;
+     position: absolute;
+     bottom: calc(1 + 10px);
+     color: white;
+     left: 50%;
+     transform: translateX(-50%);
+}
+ form {
+     font-family: overlock;
+     position: absolute;
+     top: calc(30% + 200px);
+     left: 50%;
+     transform: translateX(-50%);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+ label {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-bottom: 10px;
+}
+ input {
+     position: relative;
+     text-align: center;
+     margin: 10px;
+     border-radius: 15px;
+     padding: 10px;
+     background-color: rgba(30, 30, 30, 0.3);
+     border: 0.1px solid transparent;
+     transition: transform 0.3s ease;
+     color: white;
+     backdrop-filter: blur(1000px);
+}
+ input:focus {
+     transform: scale(1.1);
+     border: 0.1px solid transparent;
+     outline: 0.1px solid transparent;
+}
+ input::placeholder {
+     color: white;
+}
+ .login {
+     transition: transform 0.4s ease;
+}
+ .login:hover {
+     cursor: pointer;
+     transform: scale(1.1);
+}
+ .login:focus {
+     outline: none;
+     transform: scale(1);
+}
+ .hidden {
+     display: none;
+}

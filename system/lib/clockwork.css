@@ -1,0 +1,87 @@
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker:wght@400;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fasthand:wght@400;700&display=swap');
+    .clockwork {
+      position: fixed;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: transparent;
+      text-align: center;
+      cursor: move;
+      z-index: 1;
+      display: block;
+      font: Overlock;
+    }
+
+    .clockwork h1.day {
+      margin-bottom: 0;
+      font-family: 'Permanent Marker', cursive;
+      font-size: 75px;
+    }
+
+    .clockwork p.date {
+      margin-top: 0;
+      font-family: 'Fasthand';
+      font-size: 25px;
+    }
+
+/* CSS */
+.sketchybtn {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.sketchybtn:hover,
+.sketchybtn:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+  cursor: pointer;
+}
+
+.sketchybtn:active {
+  background: var(--color);
+  color: #fff;
+}
+#color-picker {
+  position: relative;
+  text-align: center;
+  margin: 10px;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgba(30, 30, 30, 0.3);
+  border: 0.1px solid transparent;
+  transition: transform 0.3s ease;
+  color: white;
+  backdrop-filter: blur(1000px);
+  opacity: 1;
+  z-index: 1;
+}
+
+#color-picker:focus {
+  transform: scale(1.1);
+  border: 0.1px solid transparent;
+  outline: 0.1px solid transparent;
+}
+
+#color-picker::placeholder {
+  color: white;
+}

@@ -1,0 +1,78 @@
+    #timerwrapper {
+      text-align: center;
+      margin: 20px;
+      background-color: transparent;
+      border: 5px solid transparent;
+    }
+
+    #timer {
+      font-size: 36px;
+      margin-top: 2px;
+      margin-bottom: 10px;
+    }
+
+    /* CSS class for the animation */
+    .animate-timer {
+      animation: fadeInOut 1s infinite;
+    }
+
+    @keyframes fadeInOut {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    #minutes {
+  position: relative;
+  text-align: center;
+  margin: 10px;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgba(30, 30, 30, 0.3);
+  border: 0.1px solid transparent;
+  transition: transform 0.3s ease;
+  color: white;
+  backdrop-filter: blur(1000px);
+  opacity: 1;
+  z-index: 1;
+}
+
+#minutes:focus {
+  transform: scale(1.1);
+  border: 0.1px solid transparent;
+  outline: 0.1px solid transparent;
+}
+
+#minutes::placeholder {
+  color: white;
+}
+.timerbtn {
+  position: relative;
+  text-align: center;
+  margin: 10px;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: rgba(30, 30, 30, 0.3);
+  border: 0.1px solid transparent;
+  transition: transform 0.3s ease;
+  color: white;
+  backdrop-filter: blur(1000px);
+}
+.timerbtn {
+  transition: transform 0.4s ease;
+}
+
+.timerbtn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.timerbtn:focus {
+  outline: none; 
+  transform: scale(1); 
+}

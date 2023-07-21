@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Editor</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    #editor {
+      width: 90%;
+      height: 70%;
+      border: 1px solid #ccc;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+      overflow: auto;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      margin-top: 10px;
+    }
+
+    #fileInput {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="editor" contenteditable="true"></div>
+
+  <div class="button-container">
+    <input type="file" id="fileInput">
+    <button id="saveButton">Save as TXT</button>
+  </div>
+
+  <script>
+    var fileInput = document.getElementById('fileInput');
+    var editor = document.getElementById('editor');
+    var saveButton = document.getElementById('saveButton');
+
+    fileInput.addEventListener('change', function(e) {
+      var file = e.target.files[0];
+      var reader = new FileReader();
+
+      reader.onload = function(e) {
+        var content = e.target.result;
+        editor.textContent = content;
+      };
+
+      reader.readAsText(file);
+    });
+
+    saveButton.addEventListener('click', function() {
+      var txtContent = editor.textContent;
+      var filename = 'text.txt';
+      var element = document.createElement('a');
+      element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(txtContent));
+      element.setAttribute('download', filename);
+      element.style.display = 'none';
+      document.body.appendChild(element);
+      element.click();
+      document.body.removeChild(element);
+    });
+  </script>
+</body>
+</html>
