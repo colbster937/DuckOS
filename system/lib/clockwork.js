@@ -69,7 +69,7 @@
       document.addEventListener("keydown", function(event) {
   if (event.key === "`") {
     const redirectURL = document.getElementById("panicInput").value;
-    const finalRedirectURL = redirectURL ? redirectURL : "https://google.com";
+    const finalRedirectURL = redirectURL ? redirectURL : "https://bing.com";
     window.location.href = finalRedirectURL;
   }
 });
