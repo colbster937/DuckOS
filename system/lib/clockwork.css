@@ -11,6 +11,7 @@
       z-index: 1;
       display: block;
       font: Overlock;
+      user-select: none;
     }
 
     .clockwork h1.day {
