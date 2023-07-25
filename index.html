@@ -25,16 +25,13 @@
         window.location.href = "/directories/mobile.html";
       }
       window.addEventListener('load', function() {
-        var loader = document.getElementById('loader');
-        var content = document.getElementById('content');
-        setTimeout(function() {
-          loader.classList.add('hide');
-          setTimeout(function() {
-            loader.style.display = 'none';
-            content.style.display = 'block';
-          }, 1000);
-        }, 2000);
-      });
+      var loader = document.getElementById('loader');
+      var content = document.getElementById('content');
+      setTimeout(function() {
+        loader.classList.add('hide');
+        content.style.display = 'block';
+      }, 2000);
+    });
 
       function scrollToSection(sectionId) {
         const section = document.getElementById(sectionId);
@@ -78,7 +75,7 @@ Founder and CEO of Skyhax<br>If you want to talk to me, my new Discord username 
     <script src="/js/particles.min.js"></script>
     <script src="/js/particles.js"></script>
     <div id="loader">
-      <img src="/system/media/loading.gif" alt="Loading...">
+      <div class="loader"></div>
     </div>
     <div id="content">
       <div id="Home">
@@ -121,7 +118,7 @@ Founder and CEO of Skyhax<br>If you want to talk to me, my new Discord username 
         <div class="redirectcontainer">
           <button class="centerbtn" onclick="window.location.href='/directories/login.html'">Access DuckOS</button>
         </div>
-      </div> \ <div id="Kasm" class="section">
+      </div><div id="Kasm" class="section">
         <div class="intro">
           <div class="hookcontainer">
             <h1>Kasm</h1>
