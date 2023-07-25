@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
     function preventPropagation(e) {
         e.stopPropagation();
     }
-
    function toggleMode() {
     document.body.classList.toggle('light-mode');
     toggleSwitch.textContent = document.body.classList.contains('light-mode') ? 'Light Mode' : 'Dark Mode';

@@ -1,12 +1,13 @@
+let rammerheadLink = `${window.location.protocol}//study.${window.location.hostname}/`;
 const config = {
     buttons: [{
-            id: 'rammerhead-browser',
-            iframeSrc: window.location.protocol + '//study.' + window.location.hostname + '/',
-            defaultWidth: 50,
+            id: 'proxies',
+            iframeSrc: '/apps/proxies/index.html',
+            defaultWidth: 50, // in percentage not pixels :)
             defaultHeight: 80,
-            buttonText: 'Rammerhead',
-            windowTitle: 'Rammerhead Browser',
-            imgSrc: '/system/media/appicons/rammerhead_icon.png'
+            buttonText: 'Browser',
+            windowTitle: 'Proxies',
+            imgSrc: '/system/media/appicons/browser.png'
         },
         {
             id: 'a1r',
@@ -51,3 +52,4 @@ config.buttons.forEach(buttonConfig => {
     const $button = createButton(buttonConfig);
     $('#apps').append($button);
 });
+

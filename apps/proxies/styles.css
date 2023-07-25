@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Borel;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+select {
+    background-color: #f2f2f2;
+    color: #333;
+    font-family: Tajawal, sans-serif;
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    width: 200px;
+    cursor: pointer;
+  }
+  
+  option {
+    background-color: #f2f2f2;
+    color: #333;
+    font-family: Tajawal, sans-serif;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  option:checked {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .button-56 {
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+  }
+  
+  .button-56:after {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+  }
+  
+  .button-56:hover:after {
+    transform: translate(0, 0);
+  }
+  
+  .button-56:active {
+    background-color: #ffdeda;
+    outline: 0;
+  }
+  
+  .button-56:hover {
+    outline: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .button-56 {
+      padding: 0 40px;
+    }
+  }

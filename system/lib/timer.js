@@ -9,7 +9,7 @@ function startPauseTimer() {
   const minutesInput = document.getElementById("minutes");
   const minutes = parseFloat(minutesInput.value); // Use parseFloat to get decimal values
   if (isNaN(minutes) || minutes <= 0) {
-    alert("Please enter a valid number of minutes.");
+    alert("Please enter a integer, not a letter lmao");
     return;
   }
 

@@ -1,7 +1,7 @@
 $(document).ready(function() {
     let zIndexCounter = 1;
 
-  
+
     const createIFrameWindow = (config) => {
         const {
             iframeSrc,
@@ -25,12 +25,12 @@ $(document).ready(function() {
     `);
         const $closeButton = $window.find('.close-btn');
         $closeButton.on('click', function() {
-    $window.addClass('appwindow-closing');
-    $window.on('animationend', function() {
-      $window.remove();
-    });
-  });
-      
+            $window.addClass('appwindow-closing');
+            $window.on('animationend', function() {
+                $window.remove();
+            });
+        });
+
         const $iframe = $window.find('iframe');
         $iframe.on('load', function() {
             const iframeWindow = this.contentWindow;
@@ -96,7 +96,6 @@ $(document).ready(function() {
                 $window.find('.iframe-overlay').remove();
             }
         });
-      
 
 
 
@@ -111,7 +110,7 @@ $(document).ready(function() {
             }
         });
         $window.css('z-index', zIndexCounter++);
-      
+
         return $window;
     };
 
@@ -124,17 +123,17 @@ $(document).ready(function() {
                   </button>`);
 
         if (buttonConfig.onStart) {
-            createIFrameWindow(buttonConfig); 
+            createIFrameWindow(buttonConfig);
         }
 
         $button.on('click', function() {
             const $existingWindow = $(`#appwindow-${buttonConfig.id}`);
-    if ($existingWindow.length) {
-        $existingWindow.show();
-        $existingWindow.css('z-index', zIndexCounter++);
-    } else {
-        createIFrameWindow(buttonConfig);
-    }
+            if ($existingWindow.length) {
+                $existingWindow.show();
+                $existingWindow.css('z-index', zIndexCounter++);
+            } else {
+                createIFrameWindow(buttonConfig);
+            }
         });
         return $button;
     };
@@ -143,13 +142,13 @@ $(document).ready(function() {
 
 
     config.buttons.forEach(buttonConfig => {
-  const $button = createButton(buttonConfig);
-  $('#apps').append($button);
+        const $button = createButton(buttonConfig);
+        $('#apps').append($button);
 
-  const $menuapps = createButton(buttonConfig);
-  $('#menuapps').append($menuapps); 
-      
-});
+        const $menuapps = createButton(buttonConfig);
+        $('#menuapps').append($menuapps);
+
+    });
 
     $('body').on('click', '.minimize-btn', function() {
         $(this).closest('.appwindow').hide();
@@ -236,16 +235,16 @@ $(document).ready(function() {
 $('#multiplewindows').on('change', function() {
     const allowMultipleWindows = $(this).is(':checked');
     config.buttons.forEach(buttonConfig => {
-      const $existingWindows = $(`.appwindow-${buttonConfig.id}`);
-      if (allowMultipleWindows) {
-        // Enable opening multiple windows
-        $existingWindows.removeClass('appwindow-closing');
-      } else {
-        // Disable opening multiple windows
-        $existingWindows.addClass('appwindow-closing');
-        $existingWindows.on('animationend', function() {
-          $(this).remove();
-        });
-      }
+        const $existingWindows = $(`.appwindow-${buttonConfig.id}`);
+        if (allowMultipleWindows) {
+            // Enable opening multiple windows
+            $existingWindows.removeClass('appwindow-closing');
+        } else {
+            // Disable opening multiple windows
+            $existingWindows.addClass('appwindow-closing');
+            $existingWindows.on('animationend', function() {
+                $(this).remove();
+            });
+        }
     });
-  });
+});
