@@ -10,7 +10,7 @@
         <select id="linkDropdown">
             <option value="" disabled selected>Select Proxy</option>
             <option value="rammerhead" data-custom-link="true">Rammerhead</option>
-            <option value="doge" data-custom-link="true">Doge Unblocker</option>
+            <option value="https://duckosdoge-chainedtears.b4a.run/" data-custom-link="true">Doge Unblocker</option>
             <option value="immortal" data-custom-link="true">Immortal Proxy (UV)</option>
         </select>
         <button class="button-56" type="button" onclick="redirect()">Go</button>
@@ -23,8 +23,6 @@
 
     if (selectedValue === "rammerhead") {
         window.location.href = window.location.protocol + '//study.' + window.location.hostname + '/';
-    } else if (selectedValue === "doge") {
-        window.location.href = window.location.protocol + '//doge.' + window.location.hostname + '/';
     } else if (selectedValue === "immortal") {
         window.location.href = window.location.protocol + '//immortal.' + window.location.hostname + '/';
     } else if (selectedValue) {
