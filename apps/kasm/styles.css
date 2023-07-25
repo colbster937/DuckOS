@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Dekko:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Overlock:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap');
+
+body {
+    background-color: black;
+  color: white;
+  font-family: Overlock;
+    user-select: none;
+    overflow: hidden;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+h1, p {
+  text-align: center;
+}
+button {
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: transparent;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  transition: border-radius 0.3s;
+}
+button:hover {
+  border-radius: 5px;
+}
+a {
+  align-self: center;
+}

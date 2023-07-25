@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown Menu Redirect</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>Choose a proxy:</h1>
+    <form id="redirectForm">
+        <select id="linkDropdown">
+            <option value="" disabled selected>Select Proxy</option>
+            <option value="rammerhead" data-custom-link="true">Rammerhead</option>
+            <option value="doge" data-custom-link="true">Doge Unblocker</option>
+            <option value="immortal" data-custom-link="true">Immortal Proxy (UV)</option>
+        </select>
+        <button class="button-56" type="button" onclick="redirect()">Go</button>
+    </form>
+
+    <script>
+        function redirect() {
+    var dropdown = document.getElementById("linkDropdown");
+    var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+
+    if (selectedValue === "rammerhead") {
+        window.location.href = window.location.protocol + '//study.' + window.location.hostname + '/';
+    } else if (selectedValue === "doge") {
+        window.location.href = window.location.protocol + '//doge.' + window.location.hostname + '/';
+    } else if (selectedValue === "immortal") {
+        window.location.href = window.location.protocol + '//immortal.' + window.location.hostname + '/';
+    } else if (selectedValue) {
+        window.location.href = selectedValue;
+    } else {
+        alert("Please select a proxy.");
+    }
+}
+    </script>
+</body>
+</html>
