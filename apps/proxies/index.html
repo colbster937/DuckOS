@@ -6,6 +6,8 @@
 </head>
 <body>
     <h1>Choose a proxy:</h1>
+    <span id="errorSpan" style="color: red; display: none;">ERROR: No proxy selected.</span>
+    <br>
     <form id="redirectForm">
         <select id="linkDropdown">
             <option value="" disabled selected>Select Proxy</option>
@@ -14,7 +16,6 @@
             <option value="immortal" data-custom-link="true">Immortal Proxy (UV)</option>
         </select>
         <button class="button-56" type="button" onclick="redirect()">Go</button><br>
-        <span id="errorSpan" style="color: red; display: none;">ERROR: No proxy selected.</span>
     </form>
 
     <script>
