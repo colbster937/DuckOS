@@ -13,24 +13,26 @@
             <option value="https://duckosdoge-chainedtears.b4a.run/" data-custom-link="true">Doge Unblocker</option>
             <option value="immortal" data-custom-link="true">Immortal Proxy (UV)</option>
         </select>
-        <button class="button-56" type="button" onclick="redirect()">Go</button>
+        <button class="button-56" type="button" onclick="redirect()">Go</button><br>
+        <span id="errorSpan" style="color: red; display: none;">ERROR: No proxy selected.</span>
     </form>
 
     <script>
         function redirect() {
-    var dropdown = document.getElementById("linkDropdown");
-    var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+            var dropdown = document.getElementById("linkDropdown");
+            var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+            var errorSpan = document.getElementById("errorSpan");
 
-    if (selectedValue === "rammerhead") {
-        window.location.href = window.location.protocol + '//study.' + window.location.hostname + '/';
-    } else if (selectedValue === "immortal") {
-        window.location.href = window.location.protocol + '//immortal.' + window.location.hostname + '/';
-    } else if (selectedValue) {
-        window.location.href = selectedValue;
-    } else {
-        alert("Please select a proxy.");
-    }
-}
+            if (selectedValue === "rammerhead") {
+                window.location.href = window.location.protocol + '//study.' + window.location.hostname + '/';
+            } else if (selectedValue === "immortal") {
+                window.location.href = window.location.protocol + '//immortal.' + window.location.hostname + '/';
+            } else if (selectedValue) {
+                window.location.href = selectedValue;
+            } else {
+                errorSpan.style.display = "inline"; // Show the error message
+            }
+        }
     </script>
 </body>
 </html>
