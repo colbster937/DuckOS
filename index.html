@@ -25,15 +25,14 @@
         window.location.href = "/directories/mobile.html";
       }
       window.addEventListener('load', function() {
-      var loader = document.getElementById('loader');
-      var content = document.getElementById('content');
-      setTimeout(function() {
-        loader.classList.add('hide');
-        loader.style.display = 'none';
-        content.style.display = 'block';
-      }, 2000);
-    });
-
+        var loader = document.getElementById('loader');
+        var content = document.getElementById('content');
+        setTimeout(function() {
+          loader.classList.add('hide');
+          loader.style.display = 'none';
+          content.style.display = 'block';
+        }, 2000);
+      });
 
       function scrollToSection(sectionId) {
         const section = document.getElementById(sectionId);
@@ -77,7 +76,34 @@ Founder and CEO of Skyhax<br>If you want to talk to me, my new Discord username 
     <script src="/js/particles.min.js"></script>
     <script src="/js/particles.js"></script>
     <div id="loader">
-      <div class="loader"></div>
+      <main>
+        <svg class="ip" viewBox="0 0 256 128" width="256px" height="128px" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0%" stop-color="#5ebd3e" />
+              <stop offset="33%" stop-color="#ffb900" />
+              <stop offset="67%" stop-color="#f78200" />
+              <stop offset="100%" stop-color="#e23838" />
+            </linearGradient>
+            <linearGradient id="grad2" x1="1" y1="0" x2="0" y2="0">
+              <stop offset="0%" stop-color="#e23838" />
+              <stop offset="33%" stop-color="#973999" />
+              <stop offset="67%" stop-color="#009cdf" />
+              <stop offset="100%" stop-color="#5ebd3e" />
+            </linearGradient>
+          </defs>
+          <g fill="none" stroke-linecap="round" stroke-width="16">
+            <g class="ip__track" stroke="#ddd">
+              <path d="M8,64s0-56,60-56,60,112,120,112,60-56,60-56" />
+              <path d="M248,64s0-56-60-56-60,112-120,112S8,64,8,64" />
+            </g>
+            <g stroke-dasharray="180 656">
+              <path class="ip__worm1" stroke="url(#grad1)" stroke-dashoffset="0" d="M8,64s0-56,60-56,60,112,120,112,60-56,60-56" />
+              <path class="ip__worm2" stroke="url(#grad2)" stroke-dashoffset="358" d="M248,64s0-56-60-56-60,112-120,112S8,64,8,64" />
+            </g>
+          </g>
+        </svg>
+      </main>
     </div>
     <div id="content">
       <div id="Home">
@@ -120,7 +146,8 @@ Founder and CEO of Skyhax<br>If you want to talk to me, my new Discord username 
         <div class="redirectcontainer">
           <button class="centerbtn" onclick="window.location.href='/directories/login.html'">Access DuckOS</button>
         </div>
-      </div><div id="Kasm" class="section">
+      </div>
+      <div id="Kasm" class="section">
         <div class="intro">
           <div class="hookcontainer">
             <h1>Kasm</h1>
