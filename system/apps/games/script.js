@@ -30,6 +30,11 @@ const config = {
         url: "icons/emerald.jpg",
         link: "https://duckos-games.pages.dev/pokemon/emerald/"
       },
+      {
+        title: "Pokemon Fire Red",
+        url: "icons/fire.jpg",
+        link: "https://duckos-games.pages.dev/pokemon/fire-red/"
+      },
     ]
   };
 

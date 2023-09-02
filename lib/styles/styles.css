@@ -195,20 +195,20 @@ body {
 }
 
 .settings-container::-webkit-scrollbar-track {
-  background-color: rgba(79, 78, 78, 0.57);
+  background-color: rgba(79, 78, 78, 0);
   backdrop-filter: blur(10px);
   border-radius: 50px;
   margin-right: 3px;
 }
 
 .settings-container::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0);
   backdrop-filter: blur(10px);
   border-radius: 50px;
 }
 
 .settings-container::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(79, 78, 78, 0.57);
+  background-color: rgba(79, 78, 78, 0);
   backdrop-filter: blur(10px);
 }
 
@@ -389,20 +389,18 @@ body {
   align-items: flex-end;
 }
 .appstorebtn {
-  margin-top: 10px;
-  padding: 5px;
-  background-color: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 25px;
-  color: white;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 20px;
   border: none;
   font-family: Ysabeau Infant;
-  cursor: pointer;
-  font-size: 25px;
-  transition: all 0.3s;
+  background-color: rgba(78, 78, 78, 0.4);
+  color: white;
+  font-size: 20px;
 }
 .appstorebtn:hover {
-  transform: scale(0.8);
+  transform: scale(0.95);
 }
 
 @keyframes slideUp {
@@ -439,6 +437,9 @@ body {
   cursor: pointer;
 }
 .notification:hover {
+  background-color: rgba(70, 70, 70, 0.6);
+}
+.notification:active {
   transform: translateY(10px);
 }
 .notification-title {
@@ -452,7 +453,7 @@ body {
   top: 2px;
   right: 6px;
   padding: 5px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   transition: all 0.3s;
 }
@@ -477,4 +478,21 @@ body {
   100% {
     transform: translateX(100%);
   }
+}
+.resize-handle {
+  opacity: 0;
+}
+input {
+  border-radius: 20px;
+  width: 85%;
+  padding: 10px;
+  outline: none;
+  background-color: rgba(78, 78, 78, 0.4);
+  border: none;
+  text-align: center;
+  color: #e5d7d7;
+  transition: all 0.3s;
+}
+input:active {
+  transform: scale(1.1);
 }

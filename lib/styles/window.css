@@ -2,7 +2,7 @@
   position: absolute;
   width: 30%;
   height: 50%;
-  background-color: rgba(79, 78, 78, 0.3);
+  background-color: rgba(79, 78, 78, 0);
   backdrop-filter: blur(20px);
   border: none;
   border-radius: 25px;
