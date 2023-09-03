@@ -43,6 +43,9 @@ body::-webkit-scrollbar-thumb:hover {
   opacity: 1;
   transition: opacity 1s ease-in-out;
 }
+.noflex {
+  display: block;
+}
 .hide {
   opacity: 0;
   transition: opacity 0.5s ease-out;
