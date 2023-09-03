@@ -452,7 +452,10 @@ body {
   position: absolute;
   top: 2px;
   right: 6px;
-  padding: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   transition: all 0.3s;
