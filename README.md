@@ -115,7 +115,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License 📝
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the Apache 2.0 License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -139,7 +139,7 @@ _Short section right? I'm just one person working on DuckOS 😞_
 
 Resources that made DuckOS possible.
 
-* [MIT License](license.txt)
+* [Apache 2.0 License](license.txt)
 * [Fontawesome](https://fontawesome.com/)
 * [JQuery](https://jquery.com/)
 * [Visual Studio Code](https://code.visualstudio.com/)
