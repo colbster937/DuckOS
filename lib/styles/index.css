@@ -80,6 +80,8 @@ body::-webkit-scrollbar-thumb:hover {
   justify-content: space-around;
   width: 25%;
   height: 100%;
+  border-radius: 25px;
+  backdrop-filter: blur(10px);
 }
 .button {
   padding: 5px 15px;
@@ -250,4 +252,8 @@ body::-webkit-scrollbar-thumb:hover {
 .btn:active {
   box-shadow: #d6d6e7 0 3px 7px inset;
   transform: translateY(2px);
+}
+a {
+  text-decoration: none;
+  color: white;
 }
