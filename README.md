@@ -32,7 +32,7 @@
       <a href="#about-duckos">About DuckOS</a>
     </li>
     <li>
-      <a href="#getting-started">Self-Hosting</a>
+      <a href="#self-hosting">Self-Hosting</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
