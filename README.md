@@ -11,10 +11,10 @@
   <p align="center">
     A purely static web-based operating system designed to combat internet censorship.
     <br />
-    <a href="https://skyhax.xyz/soon.html"><strong><< Documentation >></strong></a>
+    <a href="https://skyhax.xyz/directories/soon.html"><strong><< Documentation >></strong></a>
     <br />
     <br />
-    <a href="https://skyhax.xyz/duckos.html">Quick Demo</a>
+    <a href="https://skyhax.xyz/directories/duckos.html">Quick Demo</a>
     ·
     <a href="https://skyhax.xyz">Official Website</a>
     ·
@@ -100,7 +100,7 @@ Distributed under the Apache 2.0 License. See `LICENSE.txt` for more information
 
 Arthur Jiang - [Discord Server](https://discord.gg/MxRvwQjrAa) - [Profile Page](https:/arthur-can.design/) - admin@skyhax.lol
 
-Project Link: [DuckOS Demo](https://skyhax.xyz/duckos)
+Project Link: [DuckOS Demo](https://skyhax.xyz/directories/duckos)
 
 _Short section right? I'm just one person working on DuckOS 😞_
 
