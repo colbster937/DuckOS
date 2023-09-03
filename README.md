@@ -26,7 +26,7 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Table of Contents 📖</summary>
   <ol>
     <li>
       <a href="#about-duckos">About DuckOS</a>
@@ -51,7 +51,7 @@
 ---
 
 <!-- ABOUT THE PROJECT -->
-## About DuckOS
+## About DuckOS 🪐
 
 ![Screenshot of DuckOS](media/showcase.png)
 
@@ -71,7 +71,7 @@ Find our website's link on the `top of the page`
 ---
 
 <!-- GETTING STARTED -->
-## Self-Hosting
+## Self-Hosting 💾
 These are instructions on hosting DuckOS by yourself.
 
 ### Prerequisites
@@ -95,7 +95,7 @@ These are instructions on hosting DuckOS by yourself.
 ---
 
 <!-- CONTRIBUTING -->
-## Contributing
+## Contributing 🦮
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -113,7 +113,7 @@ Don't forget to give the project a star! Thanks again!
 ---
 
 <!-- LICENSE -->
-## License
+## License 📝
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
@@ -122,7 +122,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 ---
 
 <!-- CONTACT -->
-## Contact
+## Contact 📱
 
 Arthur Jiang - [Discord Server](https://discord.gg/MxRvwQjrAa) - [Profile Page](https:/arthur-can.design/) - admin@skyhax.lol
 
@@ -135,7 +135,7 @@ _Short section right? I'm just one person working on DuckOS 😞_
 ---
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+## Acknowledgments 🤭
 
 Resources that made DuckOS possible.
 
@@ -153,7 +153,7 @@ Resources that made DuckOS possible.
 ---
 
 <!-- DONATIONS -->
-## Donations
+## Donations 💸
 
 ~~like~~, no, **love** the project? Consider donating to help me with the development of DuckOS!
 
@@ -168,6 +168,8 @@ Wise Transfer Email
 ```
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X8X5JDVA1)
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
