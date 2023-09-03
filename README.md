@@ -11,7 +11,7 @@
   <p align="center">
     A purely static web-based operating system designed to combat internet censorship.
     <br />
-    <a href="https://skyhax.xyz/directories/soon.html"><strong><< Documentation >></strong></a>
+    <a href="https://github.com/GikitSRC/DuckOS/wiki"><strong><< Documentation >></strong></a>
     <br />
     <br />
     <a href="https://skyhax.xyz/directories/duckos.html">Quick Demo</a>
