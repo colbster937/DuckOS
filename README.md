@@ -22,32 +22,6 @@
   </p>
 </div>
 
-
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents 📖</summary>
-  <ol>
-    <li>
-      <a href="#about-duckos">About DuckOS</a>
-    </li>
-    <li>
-      <a href="#self-hosting">Self-Hosting</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-    <li><a href="#donations">Donations</a></li>
-  </ol>
-</details>
-
----
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X8X5JDVA1)
 ---
 
 <!-- ABOUT THE PROJECT -->
