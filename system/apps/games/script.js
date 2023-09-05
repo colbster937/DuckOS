@@ -35,6 +35,11 @@ const config = {
         url: "icons/fire.jpg",
         link: "https://duckos-games.pages.dev/pokemon/fire-red/"
       },
+      {
+        title: "Pokemon Chaos Black",
+        url: "icons/black.jpg",
+        link: "https://duckos-games.pages.dev/pokemon/black/"
+      },
     ]
   };
 
