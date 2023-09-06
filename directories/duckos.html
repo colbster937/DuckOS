@@ -25,15 +25,16 @@
       document.referrer !== "https://arthur-can.design/" &&
       document.referrer !== "https://duckos.acompletenewb.repl.co/" &&
       document.referrer !== "https://skyhax.lol/"
-      ){
-        window.location.href = "invalid.html";
-       }
+    ) {
+      window.location.href = "invalid.html";
+    }
   </script>
 </head>
 
 <body>
   <div id="loader">
     <span class="loader"></span>
+    <p id="splashText"></p>
   </div>
   <div class="notification-container">
     <div id="notification" class="notification" onclick="executeNotificationFunction()" onmouseover="clearHideTimeout()"
@@ -86,6 +87,11 @@
       <p>Configure link the backtick key should redirect you to ;)</p>
       <input type="text" id="linkInput" placeholder="Configure Link">
       <p style="font-size: 10px;">Press enter to save changes</p>
+      <hr>
+      <h3>Page Cloaking</h3>
+      <p>Allows you to disguise the page title and favicon as something else.</p>
+      <button class="disguisebtn">Google Classroom</button>
+      <br>
       <hr>
       <h3>Theme</h3>
       <p>Light Theme</p>

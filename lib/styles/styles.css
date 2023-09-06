@@ -36,10 +36,12 @@ body {
   opacity: 1;
   transition: opacity 1s ease-in-out;
 }
+
 .hide {
   opacity: 0;
   transition: opacity 0.5s ease-out;
 }
+
 .loader {
   color: #fff;
   font-family: Consolas, Menlo, Monaco, monospace;
@@ -47,11 +49,13 @@ body {
   font-size: 78px;
   opacity: 0.8;
 }
+
 .loader:before {
   content: "{";
   display: inline-block;
   animation: pulse 0.4s alternate infinite ease-in-out;
 }
+
 .loader:after {
   content: "}";
   display: inline-block;
@@ -101,6 +105,7 @@ body {
   padding-left: 5px;
   padding-right: 5px;
 }
+
 .settingmenu {
   position: relative;
   left: 0;
@@ -112,16 +117,19 @@ body {
   transition: background-color 0.3s, padding 0.3s, color 0.3s, display 0.3s;
   user-select: none;
 }
+
 .settingmenu:hover {
   background-color: rgba(79, 78, 78, 0.3);
   padding-left: 5px;
   padding-right: 5px;
   color: white;
 }
+
 .settingmenu-span {
   margin: 3px;
   user-select: none;
 }
+
 .fullscreencontainer {
   position: relative;
   left: 0;
@@ -133,12 +141,14 @@ body {
   transition: background-color 0.3s, padding 0.3s, color 0.3s, display 0.3s;
   user-select: none;
 }
+
 .fullscreencontainer:hover {
   background-color: rgba(79, 78, 78, 0.3);
   padding-left: 5px;
   padding-right: 5px;
   color: white;
 }
+
 #settingslist {
   background-color: rgba(79, 78, 78, 0.57);
   backdrop-filter: blur(10px);
@@ -162,10 +172,12 @@ body {
   transform: translateY(0);
   z-index: 9999999999999;
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -175,6 +187,7 @@ body {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
   }
@@ -188,6 +201,7 @@ body {
   overflow: auto;
   z-index: 9999999999999;
 }
+
 .settings-container::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -224,6 +238,7 @@ body {
   margin: 10px;
   border-radius: 25px;
 }
+
 .settingsbox:hover {
   background-color: rgba(79, 78, 78, 0.57);
   transform: scale(1.1);
@@ -260,6 +275,7 @@ body {
   right: 10%;
   z-index: 100;
 }
+
 #appsContainer {
   display: flex;
   flex-wrap: wrap;
@@ -269,9 +285,11 @@ body {
   overflow: auto;
   z-index: 9999999999999;
 }
+
 #appsContainer img {
   width: 30px;
 }
+
 .appsbox {
   margin-left: 5px;
   margin-right: 5px;
@@ -283,11 +301,13 @@ body {
   border-radius: 25px;
   transition: background-color 0.3s, border-radius 0.3s, transform 0.3s;
 }
+
 .appsbox:hover {
   background-color: rgba(79, 78, 78, 0.3);
   transform: scale(1.1);
   border-radius: 10px;
 }
+
 #appsstoretoggle {
   margin-left: 5px;
   margin-right: 5px;
@@ -299,9 +319,11 @@ body {
   border-radius: 17px;
   transition: background-color 0.3s, border-radius 0.3s, transform 0.3s;
 }
+
 #appstoretoggle:hover {
   background-color: rgba(79, 78, 78, 0.6);
 }
+
 #appstore {
   display: none;
   position: fixed;
@@ -320,11 +342,14 @@ body {
   animation: bounce 0.5s ease both;
   transition: display 0.3s;
 }
+
 @keyframes bounce {
+
   0%,
   100% {
     transform: translateY(-10px);
   }
+
   50% {
     transform: translateY(0);
   }
@@ -362,6 +387,7 @@ body {
   align-items: center;
   width: 100%;
 }
+
 .row {
   display: flex;
   align-items: center;
@@ -373,21 +399,25 @@ body {
   border: 1px solid #ccc;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .image {
   width: 100px;
   height: 100px;
   margin-right: 10px;
   border-radius: 15px;
 }
+
 .info {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
+
 .button-container {
   display: flex;
   align-items: flex-end;
 }
+
 .appstorebtn {
   padding: 10px;
   cursor: pointer;
@@ -399,6 +429,7 @@ body {
   color: white;
   font-size: 20px;
 }
+
 .appstorebtn:hover {
   transform: scale(0.95);
 }
@@ -407,6 +438,7 @@ body {
   from {
     transform: translateY(100%);
   }
+
   to {
     transform: translateY(0);
   }
@@ -416,16 +448,19 @@ body {
   from {
     transform: translateY(0);
   }
+
   to {
     transform: translateY(100%);
   }
 }
+
 .notification-container {
   position: fixed;
   top: 7%;
   right: 20px;
   z-index: 999999999999999999999999999999999;
 }
+
 .notification {
   display: none;
   background-color: rgba(70, 70, 70, 0.4);
@@ -436,16 +471,20 @@ body {
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
 }
+
 .notification:hover {
   background-color: rgba(70, 70, 70, 0.6);
 }
+
 .notification:active {
   transform: translateY(10px);
 }
+
 .notification-title {
   font-weight: bold;
   margin-bottom: 5px;
 }
+
 .close-button {
   cursor: pointer;
   display: none;
@@ -460,31 +499,39 @@ body {
   border-radius: 20px;
   transition: all 0.3s;
 }
+
 .close-button:hover {
   transform: scale(0.9);
 }
+
 .notification:hover .close-button {
   display: block;
 }
+
 @keyframes slideIn {
   0% {
     transform: translateX(100%);
   }
+
   100% {
     transform: translateX(0);
   }
 }
+
 @keyframes slideOut {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(100%);
   }
 }
+
 .resize-handle {
   opacity: 0;
 }
+
 input {
   border-radius: 20px;
   width: 85%;
@@ -496,7 +543,24 @@ input {
   color: #e5d7d7;
   transition: all 0.3s;
 }
-input:active {
-  transform: scale(1.1);
+
+input:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: scale(0.95);
 }
 
+input:active {
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: scale(0.9);
+}
+
+.noflex {
+  display: block;
+  position: fixed;
+  margin-bottom: 10px;
+}
+
+#splashText {
+  position: fixed;
+  bottom: 0;
+}

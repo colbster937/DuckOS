@@ -10,6 +10,7 @@
   justify-content: center;
   padding: 10px;
 }
+
 .background-img img {
   width: 75px;
   height: 50px;
@@ -19,10 +20,12 @@
   border: 2px solid transparent;
   transition: border-radius 0.3s, transform 0.3s;
 }
+
 .background-img img:hover {
   transform: scale(1.5);
   border-radius: 18px;
 }
+
 .custom-upload {
   width: 80%;
   margin-left: 10%;
@@ -36,21 +39,29 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: background-color 0.3s, padding 0.3s, color 0.3s;
+  transition: all 0.3s;
 }
+
 .custom-upload:hover {
-  background-color: rgba(79, 78, 78, 0.8);
-  transform: scale(1.1);
-  transition: background-color 0.3s, padding 0.3s, transform 0.3s;
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: scale(0.95);
 }
+
+.custom-upload:active {
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: scale(0.9);
+}
+
 .custom-input {
   display: none;
   cursor: pointer;
 }
+
 .upload-span {
   cursor: pointer;
   text-align: center;
 }
+
 .background-img::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -81,6 +92,7 @@
   width: 60px;
   height: 34px;
 }
+
 .themeslider {
   position: absolute;
   cursor: pointer;
@@ -92,6 +104,7 @@
   transition: 0.4s;
   border-radius: 34px;
 }
+
 .themeslider:before {
   position: absolute;
   content: "";
@@ -103,9 +116,32 @@
   transition: 0.4s;
   border-radius: 50%;
 }
-input:checked + .themeslider {
+
+input:checked+.themeslider {
   background-color: #2196f3;
 }
-input:checked + .themeslider:before {
+
+input:checked+.themeslider:before {
   transform: translateX(26px);
+}
+
+.disguisebtn {
+  padding: 10px;
+  border-radius: 25px;
+  background-color: rgba(79, 78, 78, 0.57);
+  cursor: pointer;
+  transition: all 0.3s;
+  color: white;
+  font-family: Ysabeau Infant;
+  border: none;
+}
+
+.disguisebtn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: scale(0.95);
+}
+
+.disguisebtn:active {
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: scale(0.9);
 }
