@@ -141,6 +141,8 @@ Wise Transfer Email
 1mp0ss1bl321@gmail.com
 ```
 
+Ko-Fi Support Link
+
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X8X5JDVA1)
 
 
