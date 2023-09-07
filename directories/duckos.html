@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <title>DuckOS v6</title>
   <link rel="icon" type="image/x-icon" href="/media/favicons/default.png">
+  <meta name="description" content="A purely static web-based operating system designed to combat internet censorship. Modern looks and everything!">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
   <link href="/lib/styles/styles.css" rel="stylesheet" type="text/css" />
   <link href="/lib/styles/window.css" rel="stylesheet" type="text/css" />
@@ -90,9 +91,20 @@
       <hr>
       <h3>Page Cloaking</h3>
       <p>Allows you to disguise the page title and favicon as something else.</p>
-      <button class="disguisebtn">Google Classroom</button>
+      <div id="buttonContainer"></div>
       <br>
       <hr>
+      <h3>Custom Cloaking</h3>
+      <label for="tabTitleInput">Tab Title:</label>
+      <input type="text" id="tabTitleInput">
+      <br>
+      <label for="faviconInput">Favicon URL:</label>
+      <input type="text" id="faviconInput">
+      <br>
+      <button id="setCustomFavicon" class="disguisebtn">Apply Changes</button>
+      <br>
+      <hr>
+      <br>
       <h3>Theme</h3>
       <p>Light Theme</p>
       <label class="switch">
