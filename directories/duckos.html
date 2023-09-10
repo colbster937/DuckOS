@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>DuckOS v6</title>
-  <link rel="icon" type="image/x-icon" href="/media/favicons/default.png">
+  <link rel="icon" type="image/x-icon" href="/media/favicons/duckos.png">
   <meta name="description" content="A purely static web-based operating system designed to combat internet censorship. Modern looks and everything!">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
   <link href="/lib/styles/styles.css" rel="stylesheet" type="text/css" />
@@ -20,6 +20,7 @@
       document.referrer !== "https://duckos.site/" &&
       document.referrer !== "https://mesmerizing.skin/" &&
       document.referrer !== "https://skyhax.store/" &&
+      document.referrer !== "https://beta-33e42.skyhax.xyz/" &&
       document.referrer !== "https://studyclub.biz/" &&
       document.referrer !== "https://skyhax.online" &&
       document.referrer !== "https://chainedtears.dev/" &&
@@ -79,7 +80,7 @@
       <div class="background-img"></div>
       <div class="custom-upload">
         <label for="custom-input">
-          <span class="upload-span">Upload</span>
+          <span class="upload-span">Upload Custom</span>
           <input type="file" id="custom-input" class="custom-input" accept="image/*">
         </label>
       </div>
@@ -90,16 +91,20 @@
       <p style="font-size: 10px;">Press enter to save changes</p>
       <hr>
       <h3>Page Cloaking</h3>
-      <p>Allows you to disguise the page title and favicon as something else.</p>
+      <p>Built-in presets that disguises the page as the corresponding site.</p>
       <div id="buttonContainer"></div>
       <br>
       <hr>
       <h3>Custom Cloaking</h3>
       <label for="tabTitleInput">Tab Title:</label>
+      <br>
       <input type="text" id="tabTitleInput">
       <br>
+      <br>
       <label for="faviconInput">Favicon URL:</label>
+      <br>
       <input type="text" id="faviconInput">
+      <br>
       <br>
       <button id="setCustomFavicon" class="disguisebtn">Apply Changes</button>
       <br>

@@ -1,7 +1,7 @@
 .background-img {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 4px;
   height: 200px;
   overflow: auto;
   margin-bottom: 4px;
@@ -12,8 +12,8 @@
 }
 
 .background-img img {
-  width: 75px;
-  height: 50px;
+  width: 125px;
+  height: 100px;
   border-radius: 15px;
   object-fit: cover;
   cursor: pointer;
@@ -22,7 +22,7 @@
 }
 
 .background-img img:hover {
-  transform: scale(1.5);
+  transform: scale(0.95);
   border-radius: 18px;
 }
 

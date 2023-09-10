@@ -26,18 +26,18 @@ const config = {
       link: "https://duckos-games.pages.dev/tetris/"
     },
     {
-      title: "Pokemon Emerald",
+      title: "Pokemon Emerald (GBA)",
       url: "icons/emerald.jpg",
       link: "https://duckos-games.pages.dev/pokemon/emerald/"
     },
     {
-      title: "Pokemon Fire Red",
+      title: "Pokemon Fire Red (GBA)",
       url: "icons/fire.jpg",
       link: "https://duckos-games.pages.dev/pokemon/fire-red/"
     },
     {
-      title: "Pokemon Chaos Black",
-      url: "icons/black.jpg",
+      title: "Pokemon Black (NDS)",
+      url: "icons/black.png",
       link: "https://duckos-games.pages.dev/pokemon/black/"
     },
   ]

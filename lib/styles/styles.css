@@ -152,8 +152,8 @@ body {
 #settingslist {
   background-color: rgba(79, 78, 78, 0.57);
   backdrop-filter: blur(10px);
-  width: 20%;
-  height: 400px;
+  width: 35%;
+  height: 75%;
   border-radius: 25px;
   margin-top: 5px;
   display: none;
