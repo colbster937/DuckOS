@@ -564,3 +564,54 @@ input:active {
   position: fixed;
   bottom: 0;
 }
+
+    .clockwork {
+      position: fixed;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: transparent;
+      text-align: center;
+      cursor: move;
+      z-index: 1;
+      display: block;
+      font: Overlock;
+      user-select: none;
+    }
+
+    .clockwork h1.day {
+      margin-bottom: 0;
+      font-size: 75px;
+    }
+
+    .clockwork p.date {
+      margin-top: 0;
+      font-size: 25px;
+    }
+.sketchybtn {
+  width: 50%;
+  margin-left: 25%;
+  height: 25px;
+  border-radius: 25px;
+  background-color: rgba(79, 78, 78, 0.57);
+  color: white;
+  font-size: 17px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+  font-family: Ysabeau Infant;
+}
+
+.sketchybtn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: scale(0.95);
+}
+
+.sketchybtn:active {
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: scale(0.9);
+}

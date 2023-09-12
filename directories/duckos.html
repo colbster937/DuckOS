@@ -34,6 +34,10 @@
 </head>
 
 <body>
+  <div class="clockwork">
+    <h1 class="day"></h1>
+    <p class="date"></p>
+  </div>
   <div id="loader">
     <span class="loader"></span>
     <p id="splashText"></p>
@@ -107,6 +111,18 @@
       <br>
       <br>
       <button id="setCustomFavicon" class="disguisebtn">Apply Changes</button>
+      <br>
+      <hr>
+      <br>
+      <h2 align="center">Clockwork Settings</h2>
+      <button class="sketchybtn" onclick="toggleClockwork()"><span class="text">Toggle Clockwork (On/Off)</span></button><br>
+      <button class="centerclockworkbtn sketchybtn" role="button"><span class="text">Reset Clockwork Position</span></button><br>
+      <p>Clockwork Size:</p>
+      <input type="range" class="slider" min="50" max="300" value="100">
+      <p>Clockwork Color:</p>
+      <div class="rgbfield">
+    <input type="text" id="color-picker" value="1, 1, 1">
+      </div>
       <br>
       <hr>
       <br>
