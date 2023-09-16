@@ -16,6 +16,31 @@ const config = {
       link: "https://duckos-games.pages.dev/2048/"
     },
     {
+      title: "Tank Trouble",
+      url: "icons/tankt.png",
+      link: "https://duckos-games.pages.dev/tanktrouble/"
+    },
+    {
+      title: "Surviv.io",
+      url: "icons/surviv.jpg",
+      link: "https://duckos-games.pages.dev/surviv/"
+    },
+    {
+      title: "Slope",
+      url: "icons/slope.jpg",
+      link: "https://duckos-games.pages.dev/slope/"
+    },
+    {
+      title: "Ducklife",
+      url: "icons/ducklife.jpg",
+      link: "https://duckos-games.pages.dev/ducklife/"
+    },
+    {
+      title: "1v1.lol",
+      url: "icons/1v1-lol.jpg",
+      link: "https://duckos-games.pages.dev/1v1lol/"
+    },
+    {
       title: "paper.io",
       url: "icons/paperio.jpg",
       link: "https://duckos-games.pages.dev/paperio2/"
@@ -34,11 +59,6 @@ const config = {
       title: "Pokemon Fire Red (GBA)",
       url: "icons/fire.jpg",
       link: "https://duckos-games.pages.dev/pokemon/fire-red/"
-    },
-    {
-      title: "Pokemon Black (NDS)",
-      url: "icons/black.png",
-      link: "https://duckos-games.pages.dev/pokemon/black/"
     },
   ]
 };

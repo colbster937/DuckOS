@@ -245,8 +245,9 @@ body {
 }
 
 .settingsbox img {
-  width: 50px;
-  height: 50px;
+  width: 65px;
+  height: 75px;
+  border-radius: 15px;
 }
 
 .settingsbox p {
@@ -574,7 +575,7 @@ input:active {
       text-align: center;
       cursor: move;
       z-index: 1;
-      display: block;
+      display: none;
       font: Overlock;
       user-select: none;
     }
@@ -582,11 +583,13 @@ input:active {
     .clockwork h1.day {
       margin-bottom: 0;
       font-size: 75px;
+      color: white;
     }
 
     .clockwork p.date {
       margin-top: 0;
       font-size: 25px;
+      color: white;
     }
 .sketchybtn {
   width: 50%;
@@ -596,7 +599,7 @@ input:active {
   background-color: rgba(79, 78, 78, 0.57);
   color: white;
   font-size: 17px;
-  padding: 15px;
+  padding: 25px;
   display: flex;
   align-items: center;
   justify-content: center;

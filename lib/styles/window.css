@@ -151,16 +151,19 @@
   left: 0;
   width: 100%;
   height: 100%;
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
   transform: none;
-  transition: top 0.3s, left 0.3s, width 0.3s, height 0.3s, transform 0.3s;
+  transition: all 0.3s;
 }
 .window.active {
   transform: scale(1);
   opacity: 1;
 }
 .window-body {
-  border-radius: 25px;
-  height: 92%;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  height: 95%;
   padding: none;
   overflow: auto;
 }
