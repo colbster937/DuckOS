@@ -136,6 +136,11 @@ Zelle Phone Number
 +19255770178
 ```
 
+Cashapp Tag
+```bash
+$chainedtears
+```
+
 Wise Transfer Email
 ```bash
 1mp0ss1bl321@gmail.com
