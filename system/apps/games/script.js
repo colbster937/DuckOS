@@ -1,3 +1,4 @@
+const link = "https://duckos-games.pages.dev"
 const config = {
   images: [
     {
@@ -8,7 +9,7 @@ const config = {
     {
       title: "Legend of Zelda",
       url: "icons/zelda.png",
-      link: "https://duckos-games.pages.dev/zelda/"
+      link: link + "/zelda",
     },
     {
       title: "2048",
@@ -29,6 +30,21 @@ const config = {
       title: "Slope",
       url: "icons/slope.jpg",
       link: "https://duckos-games.pages.dev/slope/"
+    },
+    {
+      title: "World's Hardest Game",
+      url: "icons/worlds-hardest-game.jpg",
+      link: "https://duckos-games.pages.dev/worlds-hardest-game/"
+    },
+    {
+      title: "World's Hardest Game 2",
+      url: "icons/worlds-hardest-game-2.jpg",
+      link: "https://duckos-games.pages.dev/worlds-hardest-game-2/"
+    },
+    {
+      title: "The Impossible Quiz",
+      url: "icons/impossiblequiz.png",
+      link: "https://duckos-games.pages.dev/the-impossible-quiz/"
     },
     {
       title: "Ducklife",

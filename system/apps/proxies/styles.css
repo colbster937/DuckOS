@@ -107,7 +107,12 @@ select {
 
   #errorSpan {
     font-family: nunito;
+    text-align: center;
   }
 #loadingSpan {
   font-family: nunito;
+  text-align: center;
+}
+p {
+  margin: 5px;
 }
