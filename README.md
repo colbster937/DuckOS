@@ -50,7 +50,7 @@ These are instructions on hosting DuckOS by yourself.
 
 ### Prerequisites
 
-* 10MB of Disk Space
+* 28MB of Disk Space (1MB if you replace the images with FontAwesome)
 * Your own Domain
 * Static Web Hosting Service
 
