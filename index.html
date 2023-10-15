@@ -1,213 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Skyhax</title>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3407930819317243"
-   crossorigin="anonymous"></script>
-  <link rel="icon" type="image/x-icon" href="/media/favicons/skyhax.png">
-  <meta name="description" content="Skyhax - Leading the future of web technology and bypassing internet censorship.">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/lib/styles/index.css" />
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-
-        .popup {
-            display: block; 
-            position: fixed;
-          left: 2.5%;
-          top: 2.5%;
-            width: 95%; 
-            height: 95%; 
-            background-color: black;
-            color: white;
-            border-radius: 15px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-            text-align: center;
-            z-index: 99999999999999999999999999999999999999999999999999999999;
-          padding: 10px;
-          overflow: auto;
-        }
-
-        .close-button {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background-color: #ff0000;
-            color: #fff;
-            border: none;
-            border-radius: 50%;
-            width: 30px;
-            height: 30px;
-            cursor: pointer;
-            font-size: 18px;
-          transition: all 0.3s;
-        }
-
-        .close-button:hover {
-            background-color: #cc0000;
-            transform: scale(0.9);
-        }
-      .noback {
-        background-color: transparent;
-        color: white;
-      }
-      .here {
-        color: blue;
-        transition: all 0.3s;
-      }
-      .here:hover {
-        transform: scale(0.9);
-      }
-    </style>
-</head>
-<body>
-    <div class="popup" id="popup">
-        <div class="popup-content">
-            <button id="closePopupButton" class="close-button"></button>
-            <h1 class="noback" style="color: red;">Thank you, everyone. And I mean it.</h1>
-
-          <p class="noback">Skyhax holds a special place in my heart. The years spent crafting DuckOS, from v4 (I can't even remember why I started with 4) to v5 (a monumental achievement, all done without a template), and finally to v6, have been a journey I cherish. But, as much as I hate to admit it, I can't keep up with the work anymore. Next year, I'm stepping into high school, and I already have two high school courses in eighth grade. It's not something to brag about, as most kids are already handling three high school courses. However, my grades... they are not good at all. In the US, high school course grades impact your college application. Skyhax is devouring both my time and money that could've been invested in improving those grades, something my parents and I don't approve of.</p>
-          <p class="noback">I can't express how grateful I am for the journey Skyhax has taken me on. It all started in sixth grade when I was building Carrd sites and has led to me earning my Responsive Web Design certificate and fostering a fantastic community on Discord. It was an incredibly tough decision, but I've decided to put Skyhax development on hold for now. The site, servers, and proxies will still be up, and everything will remain free of charge. Work on Skyhax and DuckOS will resume after a substantial (and hopefully positive) bump in my next report card.</p>
-          <p class="noback">I understand this might not impact you as a user for now, but when I officially start high school, I'll likely have no time left for Skyhax. Extra classes imposed by my parents, peer pressure to socialize, and the growing pile of homework and assignments will consume my days. That's why this letter is here. After careful consideration, I've realized that Skyhax is on a downward spiral, and I've lost all motivation to continue. We've already weathered two major setbacks, and our community is rapidly falling apart. You can see how the deletion of a 400-member Discord server has affected our mood and traffic, leaving us with fewer active members.</p>
-          <p class="noback">After a great deal of thought, I've come to a decision: I will either sell Skyhax or entrust it to one of my close friends. The price is negotiable, with no fixed minimum or maximum. If you're interested, we can discuss it at <code>admin@skyhax.lol</code>.</p>
-          <p class="noback">I want to extend my heartfelt thanks to everyone who has shown appreciation and given DuckOS a try. In three years, we've grown to about <b>600 Discord members</b> in total, including the two deleted servers. We've achieved <b>46.78k</b> site visits and used <b>86.2GB</b> of encrypted bandwidth, handling <b>118.14k</b> site requests across all our domains (Kasm servers excluded).</p>
-          <p class="noback">I can't express how genuinely happy I am to have built this incredible community and shared DuckOS with so many. Thank you from the bottom of my heart for the support, encouragement, and camaraderie you've offered throughout this journey. It's been an amazing experience, and I'm incredibly grateful to each and every one of you. <br><br> I hope the new owner of Skyhax will take good care of everyone.</p>
-          <br>
-          <br>
-          <p class="noback">With sincere apologies and heartfelt appreciation, <p class="noback" style="color: red;">Arthur Jiang</p></p>
-          <p class="noback">P.S - You can always keep up with the work I'm doing in my bio <a class="here" href="https://skyhax.lol">here.</a></p>
-          
-        </div>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Skyhax</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3407930819317243"
+     crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/media/favicons/skyhax.png">
+    <meta name="description" content="Skyhax - Leading the future of web technology and bypassing internet censorship.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/lib/styles/index.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <div id="loader">
+      <div class="noflex">
+      <div class="loader">
+      <div style="--i: 1"></div>
+      <div style="--i: 2"></div>
+      <div style="--i: 3"></div>
+      <div style="--i: 4"></div>
+      </div>
+        <br>
+        <br>
+      <p style="color: white;">Imagine this loading animation is a actual good one while you wait ;)</p></div>
     </div>
-
-  <div id="loader">
-    <div class="noflex">
-    <div class="loader">
-    <div style="--i: 1"></div>
-    <div style="--i: 2"></div>
-    <div style="--i: 3"></div>
-    <div style="--i: 4"></div>
+    <div class="navbar">
+      <div class="logo" onclick="location.reload();">
+        <img onclick="location.reload();" class="logoimg animate__animated animate__rollIn animate__delay-3s" src="/media/logo.gif" alt="Logo">
+      </div>
+      <div class="buttons animate__animated animate__zoomIn animate__delay-3s">
+        <button class="button" onclick="scrollToSection('.home')">Home</button>
+        <button class="button" onclick="scrollToSection('.duck')">DuckOS</button>
+        <button class="button" onclick="scrollToSection('.kasm')">Kasm</button>
+        <button class="button" onclick="scrollToSection('.contact')">Contact</button>
+        <button class="button" onclick="scrollToSection('.ads')">Ad</button>
+      </div>
     </div>
-      <br>
-      <br>
-    <p style="color: white;">Imagine this loading animation is a actual good one while you wait ;)</p></div>
-  </div>
-  <div class="navbar">
-    <div class="logo" onclick="location.reload();">
-      <img onclick="location.reload();" class="logoimg animate__animated animate__rollIn animate__delay-3s" src="/media/logo.gif" alt="Logo">
+    <div class="section home">
+      <div class="content">
+        <h1 class="animate__animated animate__backInDown animate__delay-3s">Welcome to Skyhax</h1>
+        <p class="animate__animated animate__backInUp animate__delay-3s">Leading the future of web technology, internet censorship bypassing and UI/UX design.</p>
+      </div>
     </div>
-    <div class="buttons animate__animated animate__zoomIn animate__delay-3s">
-      <button class="button" onclick="scrollToSection('.home')">Home</button>
-      <button class="button" onclick="scrollToSection('.duck')">DuckOS</button>
-      <button class="button" onclick="scrollToSection('.kasm')">Kasm</button>
-      <button class="button" onclick="scrollToSection('.contact')">Contact</button>
-      <button class="button" onclick="scrollToSection('.ads')">Ad</button>
+    <div class="section duck animate__animated animate__fadeIn animate__delay-3s">
+      <div class="content">
+        <h2>DuckOS</h2>
+        <p>A modern, futuristic looking operating system themed unblocking service with dynamic proxy links & tons of games! With an fake terminal emulator, app store, notes and more!</p>
+        <img class="duckss" src="/media/index/duckss.png">
+        <br>
+        <br>
+        <a href="/directories/duckos.html" id="fullscreenredirect">
+          <button class="btn" id="fullscreenredirect" role="button">Boot DuckOS</button>
+        </a>
+        <p>By using DuckOS, you agree to our <b><a href="/directories/tos.html">Terms of Service</a></b></p>
+      </div>
     </div>
-  </div>
-  <div class="section home">
-    <div class="content">
-      <h1 class="animate__animated animate__backInDown animate__delay-3s">Welcome to Skyhax</h1>
-      <p class="animate__animated animate__backInUp animate__delay-3s">Leading the future of web technology, internet censorship bypassing and UI/UX design.</p>
+    <div class="section kasm animate__animated animate__fadeIn animate__delay-3s">
+      <div class="content">
+        <h2>Kasm</h2>
+        <p>A free cloud computer right inside your browser! Run your favorite apps or operating systems right here!</p>
+        <img class="duckss" src="/media/index/kasmss.png">
+        <br>
+        <br>
+        <a href="https://98.51.32.204/" target="_blank">
+          <button class="btn" role="button">Go to Kasm</button>
+        </a>
+        <p>By using our Kasm server, you agree to our <b><a href="/directories/tos.html">Terms of Service</a></b></p>
+      </div>
     </div>
-  </div>
-  <div class="section duck animate__animated animate__fadeIn animate__delay-3s">
-    <div class="content">
-      <h2>DuckOS</h2>
-      <p>A modern, futuristic looking operating system themed unblocking service with dynamic proxy links & tons of games! With an fake terminal emulator, app store, notes and more!</p>
-      <img class="duckss" src="/media/index/duckss.png">
-      <br>
-      <br>
-      <a href="/directories/duckos.html" id="fullscreenredirect">
-        <button class="btn" id="fullscreenredirect" role="button">Boot DuckOS</button>
-      </a>
-      <p>By using DuckOS, you agree to our <b><a href="/directories/tos.html">Terms of Service</a></b></p>
+    <div class="section contact animate__animated animate__fadeIn animate__delay-3s">
+      <div class="content">
+        <h2>Contact</h2>
+        <p>Here are some of our socials you can contact us with</p>
+        <a href="https://discord.gg/MxRvwQjrAa">
+          <button class="btn" role="button" target="_blank">Discord Server</button>
+        </a>
+        <a href="https://github.com/GikitSRC/DuckOS">
+          <button class="btn" role="button" target="_blank">Github</button>
+        </a>
+        <a href="duckos.html">
+          <button class="btn" role="button" target="_blank">TikTok</button>
+        </a>
+      </div>
     </div>
-  </div>
-  <div class="section kasm animate__animated animate__fadeIn animate__delay-3s">
-    <div class="content">
-      <h2>Kasm</h2>
-      <p>A free cloud computer right inside your browser! Run your favorite apps or operating systems right here!</p>
-      <img class="duckss" src="/media/index/kasmss.png">
-      <br>
-      <br>
-      <a href="https://98.51.32.204/" target="_blank">
-        <button class="btn" role="button">Go to Kasm</button>
-      </a>
-      <p>By using our Kasm server, you agree to our <b><a href="/directories/tos.html">Terms of Service</a></b></p>
+    <div class="section ads animate__animated animate__fadeIn animate__delay-4s">
+      <div class="content">
+        <h2>Ad</h2>
+        <p>This single space for ads help keep the entire website funded. <br> Click on it if you wanna help us earn extra income ;)</p>
+      </div>
+      <iframe data-aa='2257126' src='//ad.a-ads.com/2257126?size=728x90' style='width:728px; height:90px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
     </div>
-  </div>
-  <div class="section contact animate__animated animate__fadeIn animate__delay-3s">
-    <div class="content">
-      <h2>Contact</h2>
-      <p>Here are some of our socials you can contact us with</p>
-      <a href="https://discord.gg/MxRvwQjrAa">
-        <button class="btn" role="button" target="_blank">Discord Server</button>
-      </a>
-      <a href="https://github.com/GikitSRC/DuckOS">
-        <button class="btn" role="button" target="_blank">Github</button>
-      </a>
-      <a href="duckos.html">
-        <button class="btn" role="button" target="_blank">TikTok</button>
-      </a>
-    </div>
-  </div>
-  <div class="section ads animate__animated animate__fadeIn animate__delay-4s">
-    <div class="content">
-      <h2>Ad</h2>
-      <p>This single space for ads help keep the entire website funded. <br> Click on it if you wanna help us earn extra income ;)</p>
-    </div>
-    <iframe data-aa='2257126' src='//ad.a-ads.com/2257126?size=728x90' style='width:728px; height:90px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
-  </div>
-  <script>
-    function scrollToSection(sectionClass) {
-      const section = document.querySelector(sectionClass);
-      if (section) {
-        section.scrollIntoView({
-          behavior: 'smooth'
-        });
-      }
-    }
-    window.addEventListener('load', function() {
-      var loader = document.getElementById('loader');
-      var content = document.getElementById('content');
-      setTimeout(function() {
-        loader.classList.add('hide');
-        loader.style.display = 'none';
-        content.style.display = 'block';
-        document.body.style.overflow = 'auto';
-      }, 2500);
-    });
-
-    function setOverflowAuto() {
-      document.body.style.overflow = 'auto';
-    }
-    window.addEventListener('load', function() {
-      setTimeout(setOverflowAuto, 2500);
-    });
-  </script>
-  <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
-  <script>
-  kofiWidgetOverlay.draw('chainedtears', {
-  'type': 'floating-chat',
-  'floating-chat.donateButton.text': 'Support me',
-  'floating-chat.donateButton.background-color': '#323842',
-  'floating-chat.donateButton.text-color': '#fff'
-  });
-  </script>
-  <script src="/lib/scripts/basic.js"></script>
-    
     <script>
-        const closePopupButton = document.getElementById("closePopupButton");
-        const popup = document.getElementById("popup");
+      function scrollToSection(sectionClass) {
+        const section = document.querySelector(sectionClass);
+        if (section) {
+          section.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      }
+      window.addEventListener('load', function() {
+        var loader = document.getElementById('loader');
+        var content = document.getElementById('content');
+        setTimeout(function() {
+          loader.classList.add('hide');
+          loader.style.display = 'none';
+          content.style.display = 'block';
+          document.body.style.overflow = 'auto';
+        }, 2500);
+      });
 
-        closePopupButton.addEventListener("click", () => {
-            popup.style.display = "none";
-        });
+      function setOverflowAuto() {
+        document.body.style.overflow = 'auto';
+      }
+      window.addEventListener('load', function() {
+        setTimeout(setOverflowAuto, 2500);
+      });
     </script>
-</body>
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('chainedtears', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.background-color': '#323842',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
+    <script src="/lib/scripts/basic.js"></script>
+  </body>
 </html>
