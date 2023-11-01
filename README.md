@@ -138,7 +138,7 @@ Zelle Phone Number
 
 Cashapp Tag
 ```bash
-$chainedtears
+$skyhax
 ```
 
 Wise Transfer Email
