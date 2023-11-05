@@ -1,0 +1,181 @@
+.window {
+  position: absolute;
+  width: 30%;
+  height: 50%;
+  background-color: rgba(79, 78, 78, 0);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 2px solid rgba(75, 75, 75, 0.8);
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  resize: both;
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.4s, transform 0.4s;
+  min-width: 250px;
+  color: white;
+  min-height: 38px;
+  padding: none;
+}
+
+.window-header {
+  color: white;
+  border-bottom: 0px solid rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  margin: none;
+  cursor: grab;
+  padding-left: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  user-select: none;
+}
+.window-header:active {
+  cursor: grabbing;
+}
+.apps-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: none;
+  width: 100%;
+  overflow: auto;
+}
+.window-body::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+  border-radius: 50px;
+}
+
+.window-body::-webkit-scrollbar-track {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  margin-right: 0px;
+}
+
+.window-body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+}
+
+.window-body::-webkit-scrollbar-thumb:hover {
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+}
+
+.window-front-button {
+  background-color: #0011ff;
+  border-radius: 25px;
+  font-size: 16px;
+  padding: 3px;
+  border: none;
+  color: white;
+  float: right;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  transition: scale 0.3s, background-color 0.3s;
+}
+
+.window-front-button:hover {
+  background-color: #0916c8;
+  transform: scale(1.1);
+}
+
+.window-close-button {
+  background-color: red;
+  border-radius: 25px;
+  font-size: 16px;
+  padding: 3px;
+  border: none;
+  color: white;
+  float: right;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  padding-left: 3px;
+  padding-right: 3px;
+  transition: scale 0.3s, background-color 0.3s;
+}
+.window-close-button:hover {
+  background-color: darkred;
+  transform: scale(1.1);
+}
+.window-minimize-button {
+  background-color: yellow;
+  border-radius: 50px;
+  padding: 3px;
+  border: none;
+  color: white;
+  width: 20px;
+  height: 20px;
+  float: right;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: scale 0.3s, background-color 0.3s;
+}
+.window-minimize-button:hover {
+  background-color: #cebe0d;
+  transform: scale(1.1);
+}
+.window-maximize-button {
+  background-color: lime;
+  border-radius: 50px;
+  padding: 3px;
+  border: none;
+  width: 20px;
+  height: 20px;
+  color: white;
+  float: right;
+  cursor: pointer;
+  transition: scale 0.3s, background-color 0.3s;
+}
+.window-maximize-button:hover {
+  background-color: #00b300;
+  transform: scale(1.1);
+}
+.window.minimized {
+  height: 30px;
+  transition: height 0.3s, bottom 0.3s;
+  overflow: hidden;
+  position: fixed;
+}
+.window.maximized {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  transform: none;
+  transition: all 0.3s;
+}
+.window.active {
+  transform: scale(1);
+  opacity: 1;
+}
+.window-body {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  height: 95%;
+  padding: none;
+  overflow: auto;
+}
+
+.maximized {
+  width: 90%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  position: fixed;
+  resize: none;
+}

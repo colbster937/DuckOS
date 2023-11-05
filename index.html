@@ -1,147 +1,134 @@
-<head>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>Skyhax</title>
-  <link rel="icon" type="image/x-icon" href="/media/favicons/skyhax.png">
-    <style>
-      @import 'https://fonts.googleapis.com/css?family=Inconsolata';
-  
-      html {
-        min-height: 100%;
-      }
-  
-      body {
-        box-sizing: border-box;
-        height: 100%;
-        background-color: #000000;
-        background-image: radial-gradient(#11581E, #041607), url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
-        background-repeat: no-repeat;
-        background-size: cover;
-        font-family: 'Inconsolata', Helvetica, sans-serif;
-        font-size: 1.5rem;
-        color: rgba(128, 255, 128, 0.8);
-        text-shadow:
-          0 0 1ex rgba(51, 255, 51, 1),
-          0 0 2px rgba(255, 255, 255, 0.8);
-        overflow: hidden;
-      }
-  
-      .noise {
-        pointer-events: none;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-image: url("https://media.giphy.com/media/oEI9uBYSzLpBK/giphy.gif");
-        background-repeat: no-repeat;
-        background-size: cover;
-        z-index: -1;
-        opacity: .02;
-      }
-  
-      .overlay {
-        pointer-events: none;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background:
-          repeating-linear-gradient(180deg,
-            rgba(0, 0, 0, 0) 0,
-            rgba(0, 0, 0, 0.3) 50%,
-            rgba(0, 0, 0, 0) 100%);
-        background-size: auto 4px;
-        z-index: 1;
-      }
-  
-      .overlay::before {
-        content: "";
-        pointer-events: none;
-        position: absolute;
-        display: block;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(0deg,
-            transparent 0%,
-            rgba(32, 128, 32, 0.2) 2%,
-            rgba(32, 128, 32, 0.8) 3%,
-            rgba(32, 128, 32, 0.2) 3%,
-            transparent 100%);
-        background-repeat: no-repeat;
-        animation: scan 7.5s linear 0s infinite;
-      }
-  
-      @keyframes scan {
-        0% {
-          background-position: 0 -100vh;
-        }
-  
-        35%,
-        100% {
-          background-position: 0 100vh;
-        }
-      }
-  
-      .terminal {
-        box-sizing: inherit;
-        position: absolute;
-        height: 100%;
-        width: 1000px;
-        max-width: 100%;
-        padding: 4rem;
-        text-transform: uppercase;
-      }
-  
-      .output {
-        color: rgba(128, 255, 128, 0.8);
-        text-shadow:
-          0 0 1px rgba(51, 255, 51, 0.4),
-          0 0 2px rgba(255, 255, 255, 0.8);
-      }
-  
-      .output::before {
-        content: "> ";
-      }
-  
-      /*
-  .input {
-    color: rgba(192, 255, 192, 0.8);
-    text-shadow:
-        0 0 1px rgba(51, 255, 51, 0.4),
-        0 0 2px rgba(255, 255, 255, 0.8);
-  }
-  
-  .input::before {
-    content: "$ ";
-  }
-  */
-      a {
-        color: #fff;
-        text-decoration: none;
-      }
-  
-      a::before {
-        content: "[";
-      }
-  
-      a::after {
-        content: "]";
-      }
-  
-      .errorcode {
-        color: white;
-      }
-    </style>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3407930819317243"
+     crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/media/favicons/skyhax.png">
+    <meta name="description" content="Skyhax - Leading the future of web technology and bypassing internet censorship.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/lib/styles/index.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
-    <div class="noise"></div>
-    <div class="overlay"></div>
-    <div class="terminal">
-      <h1>Server <span class="errorcode">Maintenence</span>
-      </h1>
-      <p class="output">We're working hard to integrate <b>redacted</b> to Skyhax! We will be back up in <b>1.5 HOURS.</b>
-      </p>
-      <p class="output">In the meantime, you can try to <a href="https://arthur-can.design">visit my bio page</a>. </p>
-      <p class="output">From Arthur Jiang, Founder (CEO) and the only developer of Skyhax</p>
+    <div id="loader">
+      <div class="noflex">
+      <div class="loader">
+      <div style="--i: 1"></div>
+      <div style="--i: 2"></div>
+      <div style="--i: 3"></div>
+      <div style="--i: 4"></div>
+      </div>
+        <br>
+        <br>
+      <p style="color: white;">Imagine this loading animation is a actual good one while you wait ;)</p></div>
     </div>
+    <div class="navbar">
+      <div class="logo" onclick="location.reload();">
+        <img onclick="location.reload();" class="logoimg animate__animated animate__rollIn animate__delay-3s" src="/media/logo.gif" alt="Logo">
+      </div>
+      <div class="buttons animate__animated animate__zoomIn animate__delay-3s">
+        <button class="button" onclick="scrollToSection('.home')">Home</button>
+        <button class="button" onclick="scrollToSection('.duck')">DuckOS</button>
+        <button class="button" onclick="scrollToSection('.kasm')">Kasm</button>
+        <button class="button" onclick="scrollToSection('.contact')">Contact</button>
+        <button class="button" onclick="scrollToSection('.ads')">Ad</button>
+      </div>
+    </div>
+    <div class="section home">
+      <div class="content">
+        <h1 class="animate__animated animate__backInDown animate__delay-3s">Welcome to Skyhax</h1>
+        <p class="animate__animated animate__backInUp animate__delay-3s">Leading the future of web technology, internet censorship bypassing and UI/UX design.</p>
+      </div>
+    </div>
+    <div class="section duck animate__animated animate__fadeIn animate__delay-3s">
+      <div class="content">
+        <h2>DuckOS</h2>
+        <p>A modern, futuristic looking operating system themed unblocking service with dynamic proxy links & tons of games! With an fake terminal emulator, app store, notes and more!</p>
+        <img class="duckss" src="/media/index/duckss.png">
+        <br>
+        <br>
+        <a href="/directories/duckos.html" id="fullscreenredirect">
+          <button class="btn" id="fullscreenredirect" role="button">Boot DuckOS</button>
+        </a>
+        <p>By using DuckOS, you agree to our <b><a href="/directories/tos.html">Terms of Service</a></b></p>
+      </div>
+    </div>
+    <div class="section kasm animate__animated animate__fadeIn animate__delay-3s">
+      <div class="content">
+        <h2>Kasm</h2>
+        <p>A free cloud computer right inside your browser! Run your favorite apps or operating systems right here!</p>
+        <img class="duckss" src="/media/index/kasmss.png">
+        <br>
+        <br>
+        <a href="https://98.51.32.204/" target="_blank">
+          <button class="btn" role="button">Go to Kasm</button>
+        </a>
+        <p>By using our Kasm server, you agree to our <b><a href="/directories/tos.html">Terms of Service</a></b></p>
+      </div>
+    </div>
+    <div class="section contact animate__animated animate__fadeIn animate__delay-3s">
+      <div class="content">
+        <h2>Contact</h2>
+        <p>Here are some of our socials you can contact us with</p>
+        <a href="https://discord.gg/MxRvwQjrAa">
+          <button class="btn" role="button" target="_blank">Discord Server</button>
+        </a>
+        <a href="https://github.com/GikitSRC/DuckOS">
+          <button class="btn" role="button" target="_blank">Github</button>
+        </a>
+        <a href="duckos.html">
+          <button class="btn" role="button" target="_blank">TikTok</button>
+        </a>
+      </div>
+    </div>
+    <div class="section ads animate__animated animate__fadeIn animate__delay-4s">
+      <div class="content">
+        <h2>Ad</h2>
+        <p>This single space for ads help keep the entire website funded. <br> Click on it if you wanna help us earn extra income ;)</p>
+      </div>
+      <iframe data-aa='2257126' src='//ad.a-ads.com/2257126?size=728x90' style='width:728px; height:90px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+    </div>
+    <script>
+      function scrollToSection(sectionClass) {
+        const section = document.querySelector(sectionClass);
+        if (section) {
+          section.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      }
+      window.addEventListener('load', function() {
+        var loader = document.getElementById('loader');
+        var content = document.getElementById('content');
+        setTimeout(function() {
+          loader.classList.add('hide');
+          loader.style.display = 'none';
+          content.style.display = 'block';
+          document.body.style.overflow = 'auto';
+        }, 2500);
+      });
+
+      function setOverflowAuto() {
+        document.body.style.overflow = 'auto';
+      }
+      window.addEventListener('load', function() {
+        setTimeout(setOverflowAuto, 2500);
+      });
+    </script>
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('chainedtears', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.background-color': '#323842',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
+    <script src="/lib/scripts/basic.js"></script>
+    <iframe style="display: none; width: 1px; height: 1px;" src="https://duckos-apps-visits.acompletenewb.repl.co/?tracking=Skyhax+Site+Visit"></iframe>
   </body>
+</html>
