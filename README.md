@@ -98,7 +98,7 @@ Distributed under the Apache 2.0 License. See `LICENSE.txt` for more information
 <!-- CONTACT -->
 ## Contact 📱
 
-Arthur Jiang - [Discord Server](https://discord.gg/MxRvwQjrAa) - [Profile Page](https:/arthur-can.design/) - admin@skyhax.lol
+Arthur Jiang - [Discord Server](https://discord.gg/MxRvwQjrAa) - [Profile Page](https://arthur-can.design/) - admin@skyhax.lol
 
 Project Link: [DuckOS Demo](https://skyhax.xyz/directories/duckos)
 
