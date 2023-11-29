@@ -27,7 +27,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About DuckOS 🪐
 
-![Screenshot of DuckOS]([https://media.discordapp.net/attachments/1141194299996897320/1162793530813583500/7Hu7Nyu.png?ex=657499dd&is=656224dd&hm=6c3a3bf31d8f414aedafdace83e9d65b1b213f3aea606137f3d3772feb8f130c&=&format=webp&quality=lossless&width=1432&height=676]
+![Screenshot of DuckOS]([https://media.discordapp.net/attachments/1141194299996897320/1162793530813583500/7Hu7Nyu.png?ex=657499dd&is=656224dd&hm=6c3a3bf31d8f414aedafdace83e9d65b1b213f3aea606137f3d3772feb8f130c&=&format=webp&quality=lossless&width=1432&height=676])
 
 There are so many web-based operating systems out there for this purpose... (I won't call out names) but I never tought they feel like a real Operating System. That's when I got the idea of creating my own web-based operating system, with a unique look and packed with features, having a goal of being at least 90% bug-free and easy to use. But why should you choose to use DuckOS over the others?
 
