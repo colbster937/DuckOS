@@ -2,7 +2,7 @@
 <a name="readme-top"></a>
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://skyhax.xyz">
     <img src="media/logo.gif" alt="Logo" width="80" height="80">
   </a>
 
