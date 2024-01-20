@@ -3,13 +3,13 @@ const config = {
   images: [
     {
       title: "Minecraft",
-      url: "gamefiles/minecraft/icon.png",
-      link: "gamefiles/minecraft/index.html"
+      url: "./gamefiles/minecraft/icon.png",
+      link: "./gamefiles/minecraft/index.html"
     },
     {
       title: "Legend of Zelda",
-      url: "icons/zelda.png",
-      link: link + "/zelda",
+      url: "./icons/zelda.png",
+      link: link + "./zelda",
     },
     {
       title: "2048",

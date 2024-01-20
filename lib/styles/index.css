@@ -116,22 +116,22 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .section.home {
   background-color: transparent;
-  background-image: url("/media/index/home.png");
+  background-image: url("../../media/index/home.png");
   border-bottom: 5px solid white;
 }
 .section.duck {
   background-color: transparent;
-  background-image: url("/media/index/duck.png");
+  background-image: url("../../media/index/duck.png");
   border-bottom: 5px solid white;
 }
 .section.kasm {
   background-color: transparent;
-  background-image: url("/media/index/kasm.png");
+  background-image: url("../../media/index/kasm.png");
   border-bottom: 5px solid white;
 }
 .section.contact {
   background-color: transparent;
-  background-image: url("/media/index/about.png");
+  background-image: url("../../media/index/about.png");
   border-bottom: 5px solid white;
 }
 .section.ads {

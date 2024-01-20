@@ -16,7 +16,7 @@ body {
 body {
   height: 100%;
   font-family: Ysabeau Infant;
-  background-image: url("/media/backgrounds/background-1.png");
+  background-image: url("../../media/backgrounds/background-1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
