@@ -123,36 +123,3 @@ Resources that made DuckOS possible.
 **My amazing and encouraging friends that prevented me from giving up on this project 💖**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
----
-
-<!-- DONATIONS -->
-## Donations 💸
-
-~~like~~, no, **love** the project? Consider donating to help me with the development of DuckOS!
-
-Zelle Phone Number
-```bash
-+19255770178
-```
-
-Cashapp Tag
-```bash
-$skyhax
-```
-
-Wise Transfer Email
-```bash
-1mp0ss1bl321@gmail.com
-```
-
-Ko-Fi Support Link
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/X8X5JDVA1)
-
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
