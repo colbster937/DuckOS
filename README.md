@@ -98,11 +98,11 @@ Distributed under the Apache 2.0 License. See `LICENSE.txt` for more information
 <!-- CONTACT -->
 ## Contact 📱
 
-# XENITHZ - DISCORD: x3n1thz
+### XENITHZ - DISCORD: x3n1thz
 
-# justinkk - Discord: justinkk1
+### justinkk - Discord: justinkk1
 
-# Colbster937 - [Email](mailto:colbster937@colbster937.dev) - [Profile](https://colbster937.dev) - Discord: Colbster937
+### Colbster937 - [Email](mailto:colbster937@colbster937.dev) - [Profile](https://colbster937.dev) - Discord: Colbster937
 
 [Discord Server](https://discord.gg/MxRvwQjrAa)
 
@@ -126,6 +126,5 @@ Resources that made DuckOS possible.
 * [Canva](https://www.canva.com/)
 * [Github](https://github.com)
   <br>
-**My amazing and encouraging friends that prevented me from giving up on this project 💖**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
