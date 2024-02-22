@@ -98,11 +98,17 @@ Distributed under the Apache 2.0 License. See `LICENSE.txt` for more information
 <!-- CONTACT -->
 ## Contact 📱
 
-Arthur Jiang - [Discord Server](https://discord.gg/MxRvwQjrAa) - [Profile Page](https://arthur-can.design/) - admin@skyhax.lol
+# XENITHZ - DISCORD: x3n1thz
+
+# justinkk - Discord: justinkk1
+
+# Colbster937 - [Email](mailto:colbster937@colbster937.dev) - [Profile](https://colbster937.dev) - Discord: Colbster937
+
+[Discord Server](https://discord.gg/MxRvwQjrAa)
 
 Project Link: [DuckOS Demo](https://skyhax.xyz/directories/duckos)
 
-_Short section right? I'm just one person working on DuckOS 😞_
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
