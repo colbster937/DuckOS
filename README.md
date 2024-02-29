@@ -98,7 +98,7 @@ Distributed under the Apache 2.0 License. See `LICENSE.txt` for more information
 <!-- CONTACT -->
 ## Contact 📱
 
-### XENITHZ - DISCORD: x3n1thz
+### XENITHZ - DISCORD: codecorruption
 
 ### justinkk - Discord: justinkk1
 
