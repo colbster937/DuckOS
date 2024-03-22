@@ -98,11 +98,11 @@ Distributed under the Apache 2.0 License. See `LICENSE.txt` for more information
 <!-- CONTACT -->
 ## Contact 📱
 
-### XENITHZ - DISCORD: codecorruption
+### [XENITHZ](https://github.com/X3N1THZ) - DISCORD: codecorruption
 
 ### justinkk - [Email](hi@justinkopf.com) - [Website](https://justinkopf.com) - iMessage: message@justinkopf.com
 
-### Colbster937 - [Email](mailto:colbster937@colbster937.dev) - [Profile](https://colbster937.dev) - Discord: Colbster937
+### [Colbster937](https://github.com/colbychittenden) - [Email](mailto:colbster937@colbster937.dev) - [Profile](https://colbster937.dev) - Discord: Colbster937
 
 [Discord Server](https://discord.gg/MxRvwQjrAa)
 
