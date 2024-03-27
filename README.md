@@ -104,6 +104,8 @@ Distributed under the Apache 2.0 License. See `LICENSE.txt` for more information
 
 ### [Colbster937](https://github.com/colbychittenden) - [Email](mailto:colbster937@colbster937.dev) - [Profile](https://colbster937.dev) - Discord: Colbster937
 
+### Original Skyhax founder: Arthur Jiang - [Profile Page](https://arthur-can.design) - admin@skyhax.lol
+
 [Discord Server](https://discord.gg/MxRvwQjrAa)
 
 Project Link: [DuckOS Demo](https://skyhax.xyz/directories/duckos)
